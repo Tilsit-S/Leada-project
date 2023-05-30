@@ -1,0 +1,178 @@
+.partnership {
+    background: #1D2931;
+    margin-bottom: 71px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    &__content {
+        position: relative;
+        max-width: 678px;
+        padding-bottom: 70px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("../img/main/partnership_pig.png");
+            background-size: cover;
+            width: 616px;
+            height: 561px;
+            top: 0;
+            left: -627px;
+        }
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 46px;
+        color: #FFFFFF;
+        padding-top: 71px;
+    }
+    
+    &__title {
+        max-width: 560px;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 55px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 50px;
+    }
+    
+    &__button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        border: 0;
+        color: #fff;
+        background-color: #f15f79;
+        padding: 22px 115px;
+        margin-top: 50px;
+        border-radius: 33px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .partnership {
+        @media (max-width: $tablet-width) {
+            margin-bottom: 49px;
+        }
+
+        &__content {
+            @media (max-width: $tablet-width) {
+                max-width: 393px;
+                padding-bottom: 50px;
+            }
+    
+            &::before {
+                @media (max-width: $tablet-width) {
+                    position: absolute;
+                    content: "";
+                    background-image: url("../img/main/partnership_pig_tablet.png");
+                    background-size: cover;
+                    width: 380px;
+                    height: 417px;
+                    top: 17px;
+                    left: -335px;
+                }
+            }
+        }
+    
+        &__text {
+            @media (max-width: $tablet-width) {
+                font-size: 28px;
+                line-height: 34px;
+                padding-top: 50px;
+            }
+        }
+        
+        &__title {
+            @media (max-width: $tablet-width) {
+                font-size: 35px;
+                line-height: 43px;
+                margin-top: 30px;
+            }
+        }
+        
+        &__button {
+            @media (max-width: $tablet-width) {
+                width: 388px;
+                height: 55px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                padding: 17px 0;
+                margin-top: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .partnership {
+        @media (max-width: $mobile-width) {
+            margin-bottom: 41px;
+        }
+    
+        &__wrapper {
+            @media (max-width: $mobile-width) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    
+        &__content {
+            @media (max-width: $mobile-width) {
+                max-width: 320px;
+                padding-bottom: 40px;
+            }
+    
+            &::before {
+                @media (max-width: $mobile-width) {
+                    position: absolute;
+                    content: "";
+                    background-image: url("../img/main/partnership_pig.png");
+                    background-size: cover;
+                    top: 220px;
+                    left: 0;
+                    width: 300px;
+                    height: 273px;
+                }
+            }
+        }
+    
+        &__text {
+            @media (max-width: $mobile-width) {
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                padding-top: 40px;
+            }
+        }
+        
+        &__title {
+            @media (max-width: $mobile-width) {
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 273px;
+            }
+        }
+        
+        &__button {
+            @media (max-width: $mobile-width) {
+                width: 300px;
+                height: 45px;
+                font-size: 14px;
+                line-height: 17px;
+                margin-top: 1px;
+                padding: 14px 0;
+            }
+        }
+    }
+}

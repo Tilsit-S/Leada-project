@@ -1,0 +1,182 @@
+.request {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 70px;
+        padding-left: 17px;
+    }
+
+    &__title {
+        max-width: 856px;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 55px;
+        text-align: center;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        position: relative;
+        max-width: 606px;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #1d2931;
+        margin-bottom: 50px;
+
+        &::before {
+            position: absolute;
+            content: url("../img/main/form_redline.svg");
+            width: 642px;
+            height: 34px;
+            top: 12px;
+            left: -686px;
+        }
+
+        &::after {
+            position: absolute;
+            content: url("../img/main/form_redline.svg");
+            width: 642px;
+            height: 34px;
+            top: 13px;
+            right: -686px;
+            transform: scaleX(-1);
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        border: 0;
+        color: #fff;
+        background-color: #f15f79;
+        padding: 22px 115px;
+        border-radius: 33px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .request {
+        &__content {
+            @media (max-width: $tablet-width) {
+                padding-left: 0;
+                padding-bottom: 50px;
+            }
+        }
+
+        &__title {
+            @media (max-width: $tablet-width) {
+                font-size: 35px;
+                line-height: 43px;
+                padding-top: 50px;
+                margin-bottom: 30px;
+            }
+        }
+
+        &__text {
+            @media (max-width: $tablet-width) {
+                max-width: 340px;
+                font-size: 22px;
+                line-height: 27px;
+                margin-bottom: 30px;
+            }
+
+            &::before {
+                @media (max-width: $tablet-width) {
+                    position: absolute;
+                    content: " ";
+                    background-image: url("../img/main/form_redline_tablet.svg");
+                    background-size: cover;
+                    width: 162px;
+                    height: 34px;
+                    top: 10px;
+                    left: -215px;
+                }
+            }
+
+            &::after {
+                @media (max-width: $tablet-width) {
+                    position: absolute;
+                    content: " ";
+                    background-image: url("../img/main/form_redline_tablet.svg");
+                    background-size: cover;
+                    width: 162px;
+                    height: 34px;
+                    top: 10px;
+                    right: -215px;
+                    transform: scaleX(-1);
+                }
+            }
+        }
+
+        &__link {
+            @media (max-width: $tablet-width) {
+                width: 328px;
+                padding: 17px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .request {
+        &__content {
+            @media (max-width: $mobile-width) {
+                padding-bottom: 40px;
+            }
+        }
+
+        &__title {
+            @media (max-width: $mobile-width) {
+                font-size: 20px;
+                line-height: 24px;
+                padding-top: 40px;
+                margin-bottom: 23px;
+            }
+        }
+
+        &__text {
+            @media (max-width: $mobile-width) {
+                max-width: 201px;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 18px;
+            }
+
+            &::before {
+                @media (max-width: $mobile-width) {
+                    width: 60px;
+                    height: 15px;
+                    top: 3px;
+                    left: -69px;
+                }
+            }
+
+            &::after {
+                @media (max-width: $mobile-width) {
+                    width: 60px;
+                    height: 15px;
+                    top: 3px;
+                    left: 209px;
+                }
+            }
+        }
+
+        &__link {
+            @media (max-width: $mobile-width) {
+                width: 100%;
+                font-size: 14px;
+                line-height: 17px;
+                padding: 14px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+//@import
+    //"./node_modules/bootstrap/scss/bootstrap";
+
+@import
+    "normalize",
+    "fonts",
+    "variables",
+    "mixins",
+    "global",
+    "animation";
+
+// block
+
+@import
+    "block/index/header.scss",
+    "block/index/launch.scss",
+    "block/index/features.scss",
+    "block/index/feedback.scss",
+    "block/index/partnership.scss",
+    "block/index/cooperation.scss",
+    "block/index/whatsapp-form.scss",
+    "block/index/case.scss",
+    "block/index/response.scss",
+    "block/index/request.scss",
+    "block/index/footer.scss";
+    

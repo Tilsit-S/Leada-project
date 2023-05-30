@@ -1,0 +1,179 @@
+.features {
+    background: #1D2931;
+
+    &__content {
+        position: relative;
+        max-width: 660px;
+        padding: 93px 0 0 35px;
+
+        &::before {
+            position: absolute;
+            content: url("../img/main/features_banner_desktop.png");
+            background-repeat: no-repeat;
+            top: 25px;
+            left: 705px;
+        }
+    }
+
+    &__slogan {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 73px;
+        padding-left: 1px;
+        margin-bottom: 146px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &__description {
+        position: relative;
+        max-width: 560px;
+        padding-bottom: 128px;
+    
+        &::before {
+            position: absolute;
+            content: " ";
+            background-image: url("../img/main/features_red-line_desktop2.svg");
+            width: 642px;
+            height: 34px;
+            background-repeat: no-repeat;
+            top: -101px;
+            left: -388px;
+        }
+    
+        & p {
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            padding-left: 7px;
+            color: #ffffff;
+        }
+    }
+}
+
+
+@media (max-width: $tablet-width) {
+    .features {
+        &__content {
+            @media (max-width: $tablet-width) {
+                position: relative;
+                max-width: 452px;
+                padding-top: 50px;
+                padding-left: 0px;
+            }
+        
+            &::before {
+                
+                @media (max-width: $tablet-width) {
+                    position: absolute;
+                    content: url("../img/main/features_banner_tablet.png");
+                    background-repeat: no-repeat;
+                    top: 34px;
+                    left: 323px;
+                }
+            }
+        }
+
+        &__slogan {
+            @media (max-width: $tablet-width) {
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 49px;
+                text-transform: uppercase;
+                margin-bottom: 138px;
+            }
+        }
+
+        &__description {
+            @media (max-width: $tablet-width) {
+                padding-bottom: 49px;
+            }
+        
+            &::before {
+                @media (max-width: $tablet-width) {
+                    position: absolute;
+                    content: " ";
+                    background-image: url("../img/main/features_red-line_desktop1.svg");
+                    width: 258px;
+                    height: 34px;
+                    top: -102px;
+                    left: -40px;
+                }
+            }
+        
+            & p {
+                @media (max-width: $tablet-width) {
+                    max-width: 356px;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: $mobile-width) {
+    .features {
+        &__content {
+            @media (max-width: $mobile-width) {
+                padding-top: 40px;
+            }
+
+            &::before {
+                @media (max-width: $mobile-width) {
+                    position: absolute;
+                    content: " ";
+                    background-image: url("../img/main/features_banner_desktop.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 206px;
+                    height: 203px;
+                    top: 100px;
+                    left: 104px;
+                }
+            }
+        }
+
+        &__slogan {
+            @media (max-width: $mobile-width) {
+                max-width: 260px;
+                font-size: 24px;
+                line-height: 29px;
+                margin-bottom: 167px;
+            }
+        }
+
+        &__description {
+            @media (max-width: $mobile-width) {
+                max-width: 260px;
+                font-size: 16px;
+                line-height: 20px;
+                padding-bottom: 38px;
+            }
+        
+            &::before {
+                @media (max-width: $mobile-width) {
+                    position: absolute;
+                    content: " ";
+                    background-image: url("../img/main/features_red-line_desktop1.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 168px;
+                    height: 24px;
+                    top: -130px;
+                    left: -33px;
+                }
+            }
+        
+            & p {
+                @media (max-width: $mobile-width) {
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

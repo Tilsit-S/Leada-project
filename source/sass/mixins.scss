@@ -1,0 +1,27 @@
+@mixin breakpoint {
+    width: $fixed-width;
+    margin: 0 auto;
+    padding: 0 80px;
+
+    @media (max-width: $fixed-width) {
+        width: 1200px;
+        padding: 0;
+    }
+
+    @media (max-width: $tablet-width) {
+        width: $tablet-width;
+        padding: 0 20px;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: $mobile-width;
+        padding: 0 20px;
+    }
+}
+
+@mixin font-setting($size, $line-height, $font-width, $font-color) {
+    font-size: $size;
+    line-height: $line-height;
+    font-weight: $font-width;
+    color: $font-color;
+}

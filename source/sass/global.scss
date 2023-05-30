@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Montserrat";
+    background-color: $white;
+    min-width: 320px;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.container {
+    @include breakpoint;
+    width: $fixed-width;
+    margin: 0 auto;
+
+    @media (max-width: $tablet-width) {
+        width: $tablet-width;
+        padding: 0 40px;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: $mobile-width;
+        padding: 0 10px;
+    }
+}
