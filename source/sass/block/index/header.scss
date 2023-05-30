@@ -17,8 +17,23 @@
         &__logo {
             margin-right: -30px;
 
+            @media (max-width: $fixed-width) {
+                margin-right: 0;
+            }
+
             & img {
                 padding-left: 15px;
+
+                @media (max-width: $fixed-width) {
+                    padding-left: 0;
+                    width: 126px;
+                    height: 54px;
+                }
+
+                @media (max-width: 1000px) {
+                    width: 100px;
+                    height: 40px;
+                }
             }
         }
 
@@ -28,11 +43,35 @@
             justify-content: space-between;
             width: 802px;
             margin-left: 3px;
+
+            @media (max-width: $fixed-width) {
+                padding: 0 20px;
+            }
+
+            @media (max-width: 1000px) {
+                padding: 0 50px;
+            }
+
+            @media (max-width: 860px) {
+                padding: 0 30px;
+            }
         }
 
         &__link {
             display: flex;
             flex-direction: row;
+
+            & img {
+                @media (max-width: $fixed-width) {
+                    width: 38px;
+                    height: 38px;
+                }
+
+                @media (max-width: 1000px) {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
         }
 
         &__item a {
@@ -40,6 +79,21 @@
             font-size: 18px;
             line-height: 24px;
             color: #1d2931;
+
+            @media (max-width: $fixed-width) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            @media (max-width: 1000px) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            @media (max-width: 860px) {
+                font-size: 13px;
+                line-height: 18px;
+            }
         }
 
         &__whatsapp {
@@ -57,62 +111,55 @@
 @media (max-width: $tablet-width) {
     .header {
         &::before {
-            @media (max-width: $tablet-width) {
                 height: 5px;
-            }
         }
 
         .navigation {
-            @media (max-width: $tablet-width) {
                 padding-top: 9px;
                 padding-left: 6px;
-            }
-
-            &__logo {
-                & img {
-                    @media (max-width: $tablet-width) {
-                        padding: 0;
-                    }
-                }
-            }
 
             &__list {
-                @media (max-width: $tablet-width) {
-                    margin-left: 30px;
-                    max-width: 463px;
+                margin-left: 30px;
+                max-width: 463px;
+                padding: 0;
+
+                @media (max-width: $mobile-adaptive-width) {
+                    display: none;
                 }
             }
 
             &__link {
-                @media (max-width: $tablet-width) {
-                    padding-right: 4px;
+                padding-right: 4px;
+
+                @media (max-width: $mobile-adaptive-width) {
+                    display: none;
                 }
 
                 & img {
-                    @media (max-width: $tablet-width) {
-                        width: 38px;
-                        height: 38px;
+                    width: 38px;
+                    height: 38px;
+
+                    @media (max-width: $mobile-adaptive-width) {
+                        display: none;
                     }
                 }
             }
 
             &__item a {
-                @media (max-width: $tablet-width) {
-                    font-size: 13px;
-                    line-height: 24px;
-                }
-            }
-
-            &__logo img {
-                @media (max-width: $tablet-width) {
-                    width: 78px;
-                    height: 31px;
-                }
+                font-size: 13px;
+                line-height: 24px;
             }
 
             &__button {
-                @media (max-width: $tablet-width) {
-                    display: none;
+                display: none;
+
+                & img {
+                    width: 34px;
+                    height: 34px;
+                }
+
+                @media (max-width: $mobile-adaptive-width) {
+                    display: block;
                 }
             }
         }
@@ -122,36 +169,10 @@
 @media (max-width: $mobile-width) {
     .header {
         .navigation {
-            @media (max-width: $mobile-width) {
-                padding: 5px 0;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-
-            &__list {
-                @media (max-width: $mobile-width) {
-                    display: none;
-                }
-            }
-
-            &__link {
-                @media (max-width: $mobile-width) {
-                    display: none;
-                }
-
-                & img {
-                    @media (max-width: $mobile-width) {
-                        display: none;
-                    }
-                }
-            }
-
-            &__button {
-                @media (max-width: $mobile-width) {
-                    display: block;
-                }
-            }
+            padding: 5px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 }
