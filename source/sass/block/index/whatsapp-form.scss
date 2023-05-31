@@ -9,11 +9,9 @@
     &__content {
         position: relative;
         max-width: 780px;
-        padding-left: 2px;
 
         @media (max-width: $tablet-width) {
             max-width: 420px;
-            padding-left: 8px;
         }
 
         &::before {
@@ -137,7 +135,6 @@
         &__content {
             @media (max-width: $tablet-width) {
                 max-width: 420px;
-                padding-left: 8px;
             }
 
             &::before {
