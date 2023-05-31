@@ -130,13 +130,11 @@
 
 @media (max-width: $tablet-width) {
     .cooperation {
-        @media (max-width: $tablet-width) {
-            margin-bottom: 30px;
-        }
+        margin-bottom: 31px;
 
         &__content {
             @media (max-width: $tablet-width) {
-                padding-left: 4px;
+                padding-left: 0;
             }
         }
 
@@ -173,7 +171,7 @@
 
             &:not(:last-child) {
                 @media (max-width: $tablet-width) {
-                    margin-right: 22px;
+                    margin-right: 20px;
                     margin-bottom: 20px;
                 }
             }

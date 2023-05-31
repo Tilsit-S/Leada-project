@@ -169,12 +169,10 @@
         }
 
         &__button {
-            @media (max-width: $tablet-width) {
-                width: 328px;
-                height: 55px;
-                background: url("../img/main/whatsapp_button_tablet.svg");
-                margin-bottom: 46px;
-            }
+            width: 328px;
+            height: 55px;
+            background: url("../img/main/whatsapp_button_tablet.svg");
+            margin-bottom: 45px;
 
             &::after {
                 @media (max-width: $tablet-width) {
