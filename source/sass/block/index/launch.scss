@@ -5,18 +5,41 @@
         padding-top: 86px;
         padding-left: 17px;
         margin-bottom: 70px;
-        /*
+
+        @media (max-width: 1000px) {
+            padding-top: 65px;
+        }
+
+        @media (max-width: 860px) {
+            padding-top: 45px;
+        }
+        
         &::before {
             position: absolute;
             content: " ";
             background-image: url("../img/main/launch_banner_remake.png");
+            background-size: cover;
             background-repeat: no-repeat;
             width: 1023px;
             height: 717px;
             top: -21px;
             right: -681px;
             z-index: -3;
-        }*/
+
+            @media (max-width: 1000px) {
+                right: -544px;
+                width: 903px;
+                height: 635px;
+                top: -10px;
+            }
+    
+            @media (max-width: 860px) {
+                right: -440px;
+                width: 838px;
+                height: 587px;
+                top: -10px;
+            }
+        }
     }
 
     &__slogan {
@@ -28,10 +51,12 @@
 
         @media (max-width: 1000px) {
             font-size: 40px;
+            line-height: 48px;
         }
 
         @media (max-width: 860px) {
             font-size: 37px;
+            line-height: 45px;
         }
     }
     
@@ -59,6 +84,7 @@
         }
 
         @media (max-width: 860px) {
+            max-width: 455px;
             font-size: 25px;
             line-height: 30px;
         }
@@ -112,6 +138,7 @@
         line-height: 20px;
         text-align: center;
         border: 2px solid #1D2931;
+        background-color: #ffffff;
         border-radius: 33px;
         padding: 22px 0 22px 80px;
     
@@ -139,7 +166,7 @@
                 padding-left: 6px;
                 margin-bottom: 40px;
             }
-            /*
+            
             &::before {
                 @media (max-width: $tablet-width) {
                     position: absolute;
@@ -152,7 +179,7 @@
                     right: -228px;
                     z-index: -3;
                 }
-            }*/
+            }
         }
 
         &__slogan {
@@ -233,7 +260,7 @@
                 padding-left: 0;
                 margin-bottom: 20px;
             }
-            /*
+            
             &::before {
                 @media (max-width: $mobile-width) {
                     position: absolute;
@@ -247,7 +274,7 @@
                     right: 2px;
                     z-index: -3;
                 }
-            }*/
+            }
         }
 
         &__slogan {
