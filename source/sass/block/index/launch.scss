@@ -5,15 +5,18 @@
         padding-top: 86px;
         padding-left: 17px;
         margin-bottom: 70px;
-    
+        /*
         &::before {
             position: absolute;
-            content: url("../img/main/launch_banner_remake.png");
+            content: " ";
+            background-image: url("../img/main/launch_banner_remake.png");
             background-repeat: no-repeat;
+            width: 1023px;
+            height: 717px;
             top: -21px;
             right: -681px;
             z-index: -3;
-        }
+        }*/
     }
 
     &__slogan {
@@ -22,6 +25,14 @@
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 46px;
+
+        @media (max-width: 1000px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 860px) {
+            font-size: 37px;
+        }
     }
     
     &__colortext {
@@ -39,17 +50,38 @@
     
     &__description p {
         color: #ffffff;
+        font-size: 30px;
+        line-height: 37px;
+
+        @media (max-width: 1000px) {
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+        @media (max-width: 860px) {
+            font-size: 25px;
+            line-height: 30px;
+        }
     }
     
     &__description::before {
         position: absolute;
-        content: url("../img/main/launch_backline.png");
+        content: " ";
+        background-image: url("../img/main/launch_backline.png");
         background-repeat: no-repeat;
         left: -370px;
         top: -13px;
-        width: 300px;
+        width: 900px;
         height: 200px;
         z-index: -1;
+
+        @media (max-width: 1000px) {
+            top: -19px;
+        }
+
+        @media (max-width: 860px) {
+            top: -25px;
+        }
     }
     
     &__button {
@@ -107,17 +139,20 @@
                 padding-left: 6px;
                 margin-bottom: 40px;
             }
-        
+            /*
             &::before {
                 @media (max-width: $tablet-width) {
                     position: absolute;
-                    content: url("../img/main/main_banner_tablet.png");
+                    content: " ";
+                    background-image: url("../img/main/main_banner_tablet.png");
+                    width: 469px;
+                    height: 384px;
                     background-repeat: no-repeat;
                     top: 76px;
                     right: -228px;
                     z-index: -3;
                 }
-            }
+            }*/
         }
 
         &__slogan {
@@ -198,7 +233,7 @@
                 padding-left: 0;
                 margin-bottom: 20px;
             }
-        
+            /*
             &::before {
                 @media (max-width: $mobile-width) {
                     position: absolute;
@@ -212,7 +247,7 @@
                     right: 2px;
                     z-index: -3;
                 }
-            }
+            }*/
         }
 
         &__slogan {
