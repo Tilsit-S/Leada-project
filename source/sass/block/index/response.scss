@@ -54,6 +54,8 @@
 
 @media (max-width: $tablet-width) {
     .response {
+        padding-bottom: 61px;
+
         &__title {
             @media (max-width: $tablet-width) {
                 font-size: 35px;
