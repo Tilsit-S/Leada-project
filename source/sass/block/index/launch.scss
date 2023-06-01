@@ -4,7 +4,7 @@
         max-width: 781px;
         padding-top: 86px;
         padding-left: 17px;
-        margin-bottom: 70px;
+        padding-bottom: 70px;
         /*
         &::before {
             position: absolute;
@@ -34,11 +34,11 @@
             font-size: 37px;
         }
     }
-    
+
     &__colortext {
-        color: #F15F79;
+        color: #f15f79;
     }
-    
+
     &__description {
         position: relative;
         max-width: 457px;
@@ -47,7 +47,7 @@
         line-height: 37px;
         margin: 0 0 115px 0;
     }
-    
+
     &__description p {
         color: #ffffff;
         font-size: 30px;
@@ -63,7 +63,7 @@
             line-height: 30px;
         }
     }
-    
+
     &__description::before {
         position: absolute;
         content: " ";
@@ -83,13 +83,13 @@
             top: -25px;
         }
     }
-    
+
     &__button {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
     }
-    
+
     &__button-app {
         font-weight: 500;
         font-size: 16px;
@@ -97,12 +97,12 @@
         text-align: center;
         border: none;
         color: #ffffff;
-        background-color: #F15F79;
+        background-color: #f15f79;
         padding: 22px 66px;
         margin-right: 33px;
         border-radius: 33px;
     }
-    
+
     &__button-whatsapp {
         position: relative;
         width: 273px;
@@ -111,10 +111,10 @@
         font-size: 16px;
         line-height: 20px;
         text-align: center;
-        border: 2px solid #1D2931;
+        border: 2px solid #1d2931;
         border-radius: 33px;
         padding: 22px 0 22px 80px;
-    
+
         &::before {
             position: absolute;
             content: " ";
@@ -136,8 +136,8 @@
                 position: relative;
                 max-width: 500px;
                 padding-top: 17px;
-                padding-left: 6px;
-                margin-bottom: 40px;
+                padding-left: 2px;
+                padding-bottom: 40px;
             }
             /*
             &::before {
@@ -163,13 +163,13 @@
                 text-transform: uppercase;
             }
         }
-        
+
         &__description {
             @media (max-width: $tablet-width) {
                 margin: 0 0 132px;
             }
         }
-        
+
         &__description p {
             @media (max-width: $tablet-width) {
                 max-width: 350px;
@@ -178,7 +178,7 @@
                 line-height: 28px;
             }
         }
-        
+
         &__description::before {
             @media (max-width: $tablet-width) {
                 position: absolute;
@@ -191,7 +191,7 @@
                 z-index: -1;
             }
         }
-        
+
         &__button-app {
             @media (max-width: $tablet-width) {
                 width: 212px;
@@ -200,14 +200,14 @@
                 margin-right: 20px;
             }
         }
-        
+
         &__button-whatsapp {
             @media (max-width: $tablet-width) {
                 width: 212px;
                 height: 55px;
                 padding: 17px 0 22px 65px;
             }
-        
+
             &::before {
                 @media (max-width: $tablet-width) {
                     position: absolute;
@@ -229,9 +229,9 @@
     .launch {
         &__content {
             @media (max-width: $mobile-width) {
-                padding-top: 22px;
+                padding-top: 11px;
                 padding-left: 0;
-                margin-bottom: 20px;
+                padding-bottom: 20px;
             }
             /*
             &::before {
@@ -259,13 +259,13 @@
                 margin-bottom: 23px;
             }
         }
-        
+
         &__description {
             @media (max-width: $mobile-width) {
                 margin: 0 0 157px;
             }
         }
-        
+
         &__description p {
             @media (max-width: $mobile-width) {
                 max-width: 250px;
@@ -274,8 +274,8 @@
                 line-height: 20px;
             }
         }
-        
-        &__description::before {    
+
+        &__description::before {
             @media (max-width: $mobile-width) {
                 position: absolute;
                 content: " ";
@@ -286,14 +286,14 @@
                 height: 80px;
             }
         }
-        
+
         &__button {
             @media (max-width: $mobile-width) {
                 display: flex;
                 flex-direction: column;
             }
         }
-        
+
         &__button-app {
             @media (max-width: $mobile-width) {
                 width: 100%;
@@ -304,10 +304,10 @@
                 text-align: center;
                 padding: 14px 88px;
                 margin-bottom: 10px;
-                color: #FFFFFF;
+                color: #ffffff;
             }
         }
-        
+
         &__button-whatsapp {
             @media (max-width: $mobile-width) {
                 width: 300px;
@@ -316,11 +316,11 @@
                 font-size: 14px;
                 line-height: 17px;
                 text-align: center;
-                border: 2px solid #1D2931;
+                border: 2px solid #1d2931;
                 border-radius: 33px;
                 padding: 14px 0 14px 48px;
             }
-        
+
             &::before {
                 @media (max-width: $mobile-width) {
                     position: absolute;
