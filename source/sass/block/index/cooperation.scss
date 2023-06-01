@@ -1,6 +1,4 @@
 .cooperation {
-    margin-bottom: 70px;
-
     &__content {
         padding-left: 17px;
     }
@@ -130,13 +128,9 @@
 
 @media (max-width: $tablet-width) {
     .cooperation {
-        @media (max-width: $tablet-width) {
-            margin-bottom: 30px;
-        }
-
         &__content {
             @media (max-width: $tablet-width) {
-                padding-left: 4px;
+                padding: 50px 0 30px 0;
             }
         }
 
@@ -173,7 +167,7 @@
 
             &:not(:last-child) {
                 @media (max-width: $tablet-width) {
-                    margin-right: 22px;
+                    margin-right: 20px;
                     margin-bottom: 20px;
                 }
             }
@@ -212,13 +206,9 @@
 
 @media (max-width: $mobile-width) {
     .cooperation {
-        @media (max-width: $mobile-width) {
-            margin-bottom: 41px;
-        }
-
         &__content {
             @media (max-width: $mobile-width) {
-                padding-left: 0;
+                padding: 41px 0 42px 0;
             }
         }
 

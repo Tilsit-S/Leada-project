@@ -9,11 +9,9 @@
     &__content {
         position: relative;
         max-width: 780px;
-        padding-left: 2px;
 
         @media (max-width: $tablet-width) {
             max-width: 420px;
-            padding-left: 8px;
         }
 
         &::before {
@@ -137,7 +135,6 @@
         &__content {
             @media (max-width: $tablet-width) {
                 max-width: 420px;
-                padding-left: 8px;
             }
 
             &::before {
@@ -169,12 +166,10 @@
         }
 
         &__button {
-            @media (max-width: $tablet-width) {
-                width: 328px;
-                height: 55px;
-                background: url("../img/main/whatsapp_button_tablet.svg");
-                margin-bottom: 46px;
-            }
+            width: 328px;
+            height: 55px;
+            background: url("../img/main/whatsapp_button_tablet.svg");
+            margin-bottom: 45px;
 
             &::after {
                 @media (max-width: $tablet-width) {
