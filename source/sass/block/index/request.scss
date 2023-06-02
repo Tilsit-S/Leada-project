@@ -59,6 +59,7 @@
             right: -686px;
             transform: scaleX(-1);
         }
+
         @media (max-width: 885px) {
             &::before {
                 position: absolute;
@@ -101,7 +102,7 @@
 @media (max-width: $tablet-width) {
     .request {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 51px;
 
         &__content {
             padding-left: 0;
