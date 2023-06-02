@@ -728,7 +728,7 @@
                 }
 
                 &::before {
-                    @media (max-width: $tablet-width) {
+                    @media (max-width: 965px) {
                         left: 112px;
                     }
                 }
