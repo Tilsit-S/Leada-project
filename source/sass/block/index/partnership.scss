@@ -11,6 +11,15 @@
         max-width: 678px;
         padding-bottom: 70px;
 
+        @media (max-width: 1200px) {
+            max-width: 620px;
+            z-index: 3;
+        }
+
+        @media (max-width: 1000px) {
+            max-width: 540px;
+        }
+
         &::before {
             position: absolute;
             content: "";
@@ -20,6 +29,20 @@
             height: 561px;
             top: 0;
             left: -627px;
+
+            @media (max-width: 1200px) {
+                width: 573px;
+                height: 520px;
+                left: -509px;
+                z-index: -1;
+            }
+
+            @media (max-width: 1000px) {
+                width: 523px;
+                height: 478px;
+                left: -441px;
+                top: 22px;
+            }
         }
     }
 
@@ -29,6 +52,16 @@
         line-height: 46px;
         color: #FFFFFF;
         padding-top: 71px;
+
+        @media (max-width: 1200px) {
+            font-size: 32px;
+            line-height: 42px;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
     
     &__title {
@@ -39,6 +72,16 @@
         text-transform: uppercase;
         color: #FFFFFF;
         margin-top: 50px;
+
+        @media (max-width: 1200px) {
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 37px;
+            line-height: 45px;
+        }
     }
     
     &__button {
@@ -57,10 +100,22 @@
 
 @media (max-width: $tablet-width) {
     .partnership {
+        &__wrapper {
+            @media (max-width: 700px) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
         &__content {
             @media (max-width: $tablet-width) {
                 max-width: 393px;
                 padding-bottom: 50px;
+                z-index: 1;
+
+                @media (max-width: 500px) {
+                    width: 100%;
+                }
             }
     
             &::before {
@@ -73,6 +128,18 @@
                     height: 417px;
                     top: 17px;
                     left: -335px;
+                    z-index: -1;
+                }
+
+                @media (max-width: 700px) {
+                    position: absolute;
+                    content: "";
+                    background-image: url("../img/main/partnership_pig.png");
+                    background-size: cover;
+                    top: 196px;
+                    left: -4px;
+                    width: 469px;
+                    height: 406px;
                 }
             }
         }
@@ -83,6 +150,11 @@
                 line-height: 34px;
                 padding-top: 50px;
             }
+
+            @media (max-width: 500px) {
+                font-size: 23px;
+                line-height: 28px;
+            }
         }
         
         &__title {
@@ -90,6 +162,16 @@
                 font-size: 35px;
                 line-height: 43px;
                 margin-top: 30px;
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 700px) {
+                margin-bottom: 260px;
+            }
+
+            @media (max-width: 500px) {
+                font-size: 30px;
+                line-height: 36px;
             }
         }
         
@@ -102,6 +184,10 @@
                 line-height: 20px;
                 padding: 17px 0;
                 margin-top: 35px;
+            }
+
+            @media (max-width: 500px) {
+                width: 100%;
             }
         }
     }
