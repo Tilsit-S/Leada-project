@@ -1,4 +1,6 @@
 .case {
+    padding-bottom: 70px;
+
     &__content {
         padding: 40px 0 0 17px;
     }
@@ -124,13 +126,17 @@
             }
         }
 
-        &__card-list {
+        //// TODO
+
+        &__list-wrapper {
             display: flex;
-            flex-direction: row;
-            margin-bottom: 50px;
+            flex-flow: row wrap;
+            gap: 30px 30px;
+            margin-bottom: 20px;
         }
 
         &__button {
+            display: block;
             font-weight: 500;
             font-size: 16px;
             line-height: 20px;
@@ -140,7 +146,7 @@
             background-color: #f15f79;
             padding: 22px 80px;
             border-radius: 33px;
-            margin: 0 0 72px 406px;
+            margin: 0 auto;
         }
     }
 }
