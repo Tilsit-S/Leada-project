@@ -102,7 +102,7 @@
 
 
 
-                <form class="launch__modal modal">
+                <form class="launch__modal modal modal_open">
                     <div class="modal__box">
                         <h3 class="modal__title">Заполните <span class="launch__colortext">форму</span></h3>
                         <p class="modal__description">Чтобы получить <span class="launch__colortext">бесплатную</span>консультацию от нашего эксперта:</p>
@@ -112,8 +112,10 @@
                         <input type="text" class="modal__form" placeholder="Укажите ваши текущие показатели или текущую ситуацию?">
                         <input type="text" class="modal__form" placeholder="Укажите конверсию вашего сайта (если знаете)">
                         <input type="text" class="modal__form" placeholder="Укажите ваш средний чек (если знаете)">
-                        <input type="text" class="modal__user-name" placeholder="Ф.И.О.">
-                        <input type="tel" class="modal__user-phone" placeholder="+7 (___) ___-__-__">
+                        <label for="user-name">Ваше имя</label>
+                        <input type="text" class="modal__user-name" id="user-name" placeholder="Ф.И.О.">
+                        <label for="tel">Ваш телефон</label>
+                        <input type="tel" class="modal__user-phone" id="tel" placeholder="+7 (___) ___-__-__">
                         <button class="modal__button">Отправить форму</button>
                         <p class="modal__privacy">Отправляя данные, вы соглашаетесь с условиями <a><span class="launch__colortext">политики конфиденциальности</span></a></p>
                     </div>
