@@ -1,0 +1,45 @@
+.modal__box {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 464px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 30px 30px 30px;
+    border-radius: 33px;
+    background-color: #ffffff;
+    z-index: 999;
+}
+
+.modal__title {
+    width: 182px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.modal__description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.modal__form {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #1D2931;
+    border-radius: 20px;
+}
