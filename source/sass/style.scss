@@ -1,26 +1,17 @@
 //@import
-    //"./node_modules/bootstrap/scss/bootstrap";
+//"./node_modules/bootstrap/scss/bootstrap";
 
-@import
-    "normalize",
-    "fonts",
-    "variables",
-    "mixins",
-    "global",
-    "animation";
+@import "normalize", "fonts", "variables", "mixins", "global", "animation";
 
-// block
+// components
 
-@import
-    "block/index/header.scss",
-    "block/index/launch.scss",
-    "block/index/features.scss",
-    "block/index/feedback.scss",
-    "block/index/partnership.scss",
-    "block/index/cooperation.scss",
-    "block/index/whatsapp-form.scss",
-    "block/index/case.scss",
-    "block/index/response.scss",
-    "block/index/request.scss",
-    "block/index/footer.scss";
-    
+@import "block/components/header.scss", "block/components/launch.scss",
+    "block/components/features.scss", "block/components/feedback.scss",
+    "block/components/partnership.scss", "block/components/cooperation.scss",
+    "block/components/whatsapp-form.scss", "block/components/case.scss",
+    "block/components/response.scss", "block/components/request.scss",
+    "block/components/footer.scss";
+
+// subcomponents
+
+@import "block/subcomponents/card.scss";
