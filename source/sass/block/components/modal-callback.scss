@@ -1,43 +1,53 @@
-.modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.modal-callback {
+    position: absolute;
+    // display: none;
+    // TODO remove after done
+    display: block;
+    left: 50%;
+    top: 174px;
+    width: 464px;
+    min-height: 1000px;
+    padding: 40px 30px 30px 30px;
+    border-radius: 33px;
+    background-color: white;
+    transform: translate(-50%, 0%);
 
-    &__container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        overflow: hidden;
-        overflow-y: auto;
-        width: 464px;
-        height: auto;
-        padding: 40px 30px 30px 30px;
-        border-radius: 33px;
-        background-color: #ffffff;
-        z-index: 999;
+    &.open {
+        display: block;
     }
 
     &__close {
         position: absolute;
-        top: -8px;
-        right: 4px;
-        font-size: 50px;
-        width: 20px;
-        height: 20px;
+        top: -26px;
+        right: -26px;
+        width: 30px;
+        height: 30px;
+        padding: 0;
         border: none;
         background-color: transparent;
-        transform: rotate(45deg);
+
+        &::after,
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
     }
-    
+
     &__title {
         position: relative;
         width: 182px;
@@ -68,10 +78,10 @@
             height: 15px;
             top: 38px;
             right: -295px;
-            transform: matrix(-1,0,0,1,0,0);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
         }
     }
-    
+
     &__description {
         font-weight: 500;
         font-size: 18px;
@@ -79,17 +89,17 @@
         text-align: center;
         margin-bottom: 21px;
     }
-    
+
     &__form {
         position: relative;
         width: 100%;
         height: 79px;
-        background: #FFFFFF;
-        border: 1px solid #1D2931;
+        background: #ffffff;
+        border: 1px solid #1d2931;
         border-radius: 20px;
         font-size: 12px;
         line-height: 15px;
-        color: #7D92A1;
+        color: #7d92a1;
         padding: 10px 0 54px 10px;
         margin-bottom: 20px;
 
@@ -110,14 +120,14 @@
             width: 100%;
         }
     }
-    
+
     &__user {
         position: relative;
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 10px;
-    
+
         &::before {
             position: absolute;
             top: 3px;
@@ -126,56 +136,55 @@
             font-weight: 400;
             font-size: 12px;
             line-height: 15px;
-            color: #F15F79;
+            color: #f15f79;
         }
     }
-    
+
     &__user-name {
         width: 100%;
         padding: 22px 0 22px 20px;
-        border: 1px solid #1D2931;
+        border: 1px solid #1d2931;
         border-radius: 33px;
         margin-bottom: 20px;
     }
-    
+
     &__phone {
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 10px;
     }
-    
+
     &__user-phone {
         width: 100%;
         padding: 22px 0 22px 20px;
-        border: 1px solid #F15F79;
+        border: 1px solid #f15f79;
         border-radius: 33px;
         margin-bottom: 20px;
     }
-    
+
     &__button {
         padding: 22px 0;
         width: 100%;
         height: 65px;
-        background: #1D2931;
+        background: #1d2931;
         border-radius: 33px;
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
         text-align: center;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 9px;
     }
-    
+
     &__privacy {
         font-weight: 500;
         font-size: 12px;
         line-height: 16px;
         text-align: center;
-        color: #7D92A1;
+        color: #7d92a1;
     }
 }
-
 
 @media (max-width: $tablet-width) {
     .modal {
@@ -201,9 +210,9 @@
             right: 0;
             width: 20px;
             height: 20px;
-            border: 2px solid #FFFFFF;
+            border: 2px solid #ffffff;
         }
-        
+
         &__title {
             width: 182px;
             font-size: 26px;
@@ -229,85 +238,84 @@
                 height: 15px;
                 top: 38px;
                 right: -280px;
-                transform: matrix(-1,0,0,1,0,0);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
             }
         }
-        
+
         &__description {
             font-size: 16px;
             line-height: 20px;
             text-align: center;
             margin-bottom: 21px;
         }
-        
+
         &__form {
             border-radius: 20px;
             font-size: 12px;
             line-height: 15px;
             padding: 10px 0 40px 10px;
-            color: #7D92A1;
+            color: #7d92a1;
             margin-bottom: 10px;
         }
-        
+
         &__user {
             position: relative;
             font-weight: 600;
             font-size: 18px;
             line-height: 22px;
             margin-bottom: 10px;
-        
+
             &::before {
                 display: none;
             }
         }
-        
+
         &__user-name {
             width: 100%;
             padding: 22px 0 22px 20px;
-            border: 1px solid #1D2931;
+            border: 1px solid #1d2931;
             border-radius: 33px;
             margin-bottom: 10px;
         }
-        
+
         &__phone {
             font-weight: 600;
             font-size: 18px;
             line-height: 22px;
             margin-bottom: 10px;
         }
-        
+
         &__user-phone {
             width: 100%;
             padding: 22px 0 22px 20px;
-            border: 1px solid #1D2931;
+            border: 1px solid #1d2931;
             border-radius: 33px;
             margin-bottom: 20px;
         }
-        
+
         &__button {
             padding: 22px 0;
             width: 100%;
             height: 65px;
-            background: #1D2931;
+            background: #1d2931;
             border-radius: 33px;
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
             text-align: center;
-            color: #FFFFFF;
+            color: #ffffff;
             margin-bottom: 9px;
         }
-        
+
         &__privacy {
             font-weight: 500;
             font-size: 12px;
             line-height: 16px;
             text-align: center;
-            color: #7D92A1;
+            color: #7d92a1;
         }
     }
 }
-
 
 @media (max-width: $mobile-width) {
     .modal {
@@ -331,7 +339,7 @@
             background-color: transparent;
             transform: rotate(45deg);
         }
-        
+
         &__title {
             position: relative;
             width: 182px;
@@ -362,10 +370,10 @@
                 height: 15px;
                 top: 38px;
                 right: -280px;
-                transform: matrix(-1,0,0,1,0,0);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
             }
         }
-        
+
         &__description {
             font-weight: 500;
             font-size: 18px;
@@ -373,19 +381,19 @@
             text-align: center;
             margin-bottom: 21px;
         }
-        
+
         &__form {
             width: 100%;
-            background: #FFFFFF;
-            border: 1px solid #1D2931;
+            background: #ffffff;
+            border: 1px solid #1d2931;
             border-radius: 20px;
             font-size: 12px;
             line-height: 15px;
             padding: 10px 0 40px 10px;
-            color: #7D92A1;
+            color: #7d92a1;
             margin-bottom: 10px;
         }
-        
+
         &__user {
             position: relative;
             font-weight: 600;
@@ -393,20 +401,20 @@
             line-height: 22px;
             margin-bottom: 10px;
             text-align: center;
-        
+
             &::before {
                 display: none;
             }
         }
-        
+
         &__user-name {
             width: 100%;
             padding: 12px 0 12px 20px;
-            border: 1px solid #1D2931;
+            border: 1px solid #1d2931;
             border-radius: 33px;
             margin-bottom: 20px;
         }
-        
+
         &__phone {
             font-weight: 600;
             font-size: 18px;
@@ -414,36 +422,35 @@
             margin-bottom: 10px;
             text-align: center;
         }
-        
+
         &__user-phone {
             width: 100%;
             padding: 12px 0 12px 20px;
-            border: 1px solid #1D2931;
+            border: 1px solid #1d2931;
             border-radius: 33px;
             margin-bottom: 20px;
         }
-        
+
         &__button {
             padding: 22px 0;
             width: 100%;
             height: 65px;
-            background: #1D2931;
+            background: #1d2931;
             border-radius: 33px;
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
             text-align: center;
-            color: #FFFFFF;
+            color: #ffffff;
             margin-bottom: 9px;
         }
-        
+
         &__privacy {
             font-weight: 500;
             font-size: 12px;
             line-height: 16px;
             text-align: center;
-            color: #7D92A1;
+            color: #7d92a1;
         }
     }
 }
-
