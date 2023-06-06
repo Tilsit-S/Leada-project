@@ -10,8 +10,10 @@
     "block/components/partnership.scss", "block/components/cooperation.scss",
     "block/components/whatsapp-form.scss", "block/components/case.scss",
     "block/components/response.scss", "block/components/request.scss",
-    "block/components/footer.scss", "block/index/modal.scss";
+    "block/components/footer.scss", "block/components/modal-callback.scss",
+    "block/components/modal-message.scss";
 
 // subcomponents
 
-@import "block/subcomponents/card.scss";
+@import "block/subcomponents/card.scss",
+    "block/subcomponents/modal-overlay.scss";
