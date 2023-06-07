@@ -172,7 +172,7 @@
 
 @media (max-width: $tablet-width) {
     .modal-callback {
-        position: relative;
+        /*position: relative;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -184,7 +184,21 @@
         padding: 30px 20px;
         border-radius: 33px;
         background-color: #ffffff;
-        z-index: 999;
+        z-index: 999;*/
+
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 174px;
+        width: 464px;
+        padding: 30px 20px;
+        border-radius: 33px;
+        background-color: white;
+        transform: translate(-50%, 0%);
+
+        @media (max-width: 550px) {
+            width: 320px;
+        }
 
         &__close {
             position: absolute;
@@ -195,6 +209,11 @@
             padding: 0;
             border: none;
             background-color: transparent;
+
+            @media (max-width: 550px) {
+                top: -45px;
+                right: 135px;
+            }
     
             &::after,
             &::before {
@@ -226,24 +245,38 @@
             &::before {
                 position: absolute;
                 content: "";
-                background-image: url("../img/main/form_redline.svg");
+                background-image: url("../img/main/redline-modal-tablet.svg");
                 background-size: cover;
-                width: 378px;
+                width: 126px;
                 height: 20px;
                 top: 31px;
-                left: -385px;
+                left: -132px;
+
+                @media (max-width: 550px) {
+                    width: 106px;
+                    height: 16px;
+                    top: 31px;
+                    left: -60px;
+                }
             }
 
             &::after {
                 position: absolute;
                 content: "";
-                background-image: url("../img/main/form_redline.svg");
+                background-image: url("../img/main/redline-modal-tablet.svg");
                 background-size: cover;
-                width: 378px;
+                width: 126px;
                 height: 20px;
                 top: 31px;
                 left: 207px;
                 transform: matrix(-1, 0, 0, 1, 0, 0);
+
+                @media (max-width: 550px) {
+                    width: 106px;
+                    height: 16px;
+                    top: 31px;
+                    left: 154px;
+                }
             }
         }
 
@@ -352,8 +385,8 @@
 
         &__close {
             position: absolute;
-            top: -26px;
-            right: -26px;
+            top: -45px;
+            right: 125px;
             width: 30px;
             height: 30px;
             padding: 0;
