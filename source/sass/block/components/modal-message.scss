@@ -1,3 +1,184 @@
 .modal-message {
-    display: none;
+    position: absolute;
+    // display: none;
+    // TODO remove after done
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 33%;
+    width: 434px;
+    padding: 40px 66px;
+    border-radius: 33px;
+    background-color: white;
+    transform: translate(-50%, 0%);
+
+    &__title {
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("../img/main/redline-modal.svg");
+            background-size: cover;
+            width: 131px;
+            height: 20px;
+            top: 45px;
+            left: 0;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url("../img/main/redline-modal.svg");
+            background-size: cover;
+            width: 131px;
+            height: 20px;
+            top: 45px;
+            right: 0;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+    }
+
+    &__text {
+        width: 280px;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .loader {
+        display: none;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .modal-message {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        top: 33%;
+        width: 328px;
+        padding: 30px 32px 29px 32px;
+        border-radius: 33px;
+        background-color: white;
+        transform: translate(-50%, 0%);
+
+        @media (max-width: 500px) {
+            width: 300px;
+        }
+
+        &__title {
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 27px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 11px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url("../img/main/redline-message-tablet.svg");
+                background-size: cover;
+                width: 92px;
+                height: 20px;
+                top: 37px;
+                left: 0;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url("../img/main/redline-message-tablet.svg");
+                background-size: cover;
+                width: 92px;
+                height: 20px;
+                top: 37px;
+                right: 0;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+            }
+        }
+
+        &__text {
+            width: 280px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .loader {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: $mobile-width) {
+    .modal-message {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        top: 33%;
+        width: 300px;
+        padding: 30px 37px;
+        border-radius: 33px;
+        background-color: white;
+        transform: translate(-50%, 0%);
+
+        &__title {
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url("../img/main/redline-message-tablet.svg");
+                background-size: cover;
+                width: 92px;
+                height: 20px;
+                top: 37px;
+                left: 0;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url("../img/main/redline-message-tablet.svg");
+                background-size: cover;
+                width: 92px;
+                height: 20px;
+                top: 37px;
+                right: 0;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+            }
+        }
+
+        &__text {
+            width: 280px;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+        }
+
+        .loader {
+            display: none;
+        }
+    }
 }

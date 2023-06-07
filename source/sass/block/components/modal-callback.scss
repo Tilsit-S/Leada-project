@@ -6,7 +6,6 @@
     left: 50%;
     top: 174px;
     width: 464px;
-    min-height: 1000px;
     padding: 40px 30px 30px 30px;
     border-radius: 33px;
     background-color: white;
@@ -126,17 +125,6 @@
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 10px;
-
-        &::before {
-            position: absolute;
-            top: 3px;
-            right: 0;
-            content: "Такой номер не зарегистрирован";
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            color: #f15f79;
-        }
     }
 
     &__user-phone {
@@ -148,6 +136,7 @@
     }
 
     &__button {
+        position: relative;
         padding: 22px 0;
         width: 100%;
         height: 65px;
@@ -159,6 +148,17 @@
         text-align: center;
         color: #ffffff;
         margin-bottom: 9px;
+
+        &::before {
+            position: absolute;
+            top: -113px;
+            left: 154px;
+            content: "Такой номер не зарегистрирован";
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #f15f79;
+        }
     }
 
     &__privacy {
@@ -171,46 +171,67 @@
 }
 
 @media (max-width: $tablet-width) {
-    .modal {
-        &__container {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            overflow: hidden;
-            overflow-y: auto;
-            width: 444px;
-            height: auto;
-            padding: 30px 20px;
-            border-radius: 33px;
-            background-color: #ffffff;
-            z-index: 999;
-        }
+    .modal-callback {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        overflow: hidden;
+        overflow-y: auto;
+        width: 444px;
+        height: auto;
+        padding: 30px 20px;
+        border-radius: 33px;
+        background-color: #ffffff;
+        z-index: 999;
 
         &__close {
             position: absolute;
-            top: 0;
-            right: 0;
-            width: 20px;
-            height: 20px;
-            border: 2px solid #ffffff;
+            top: -26px;
+            right: -26px;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+    
+            &::after,
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                border-radius: 8px;
+                background-color: white;
+            }
+    
+            &::after {
+                transform: rotate(-45deg);
+            }
+    
+            &::before {
+                transform: rotate(45deg);
+            }
         }
 
         &__title {
-            width: 182px;
-            font-size: 26px;
-            line-height: 32px;
+            width: 200px;
+            font-size: 22px;
+            line-height: 27px;
 
             &::before {
                 position: absolute;
                 content: "";
                 background-image: url("../img/main/form_redline.svg");
                 background-size: cover;
-                width: 273px;
-                height: 15px;
-                top: 38px;
-                left: -280px;
+                width: 378px;
+                height: 20px;
+                top: 31px;
+                left: -385px;
             }
 
             &::after {
@@ -218,26 +239,33 @@
                 content: "";
                 background-image: url("../img/main/form_redline.svg");
                 background-size: cover;
-                width: 273px;
-                height: 15px;
-                top: 38px;
-                right: -280px;
+                width: 378px;
+                height: 20px;
+                top: 31px;
+                left: 207px;
                 transform: matrix(-1, 0, 0, 1, 0, 0);
             }
         }
 
         &__description {
+            width: 350px;
             font-size: 16px;
             line-height: 20px;
             text-align: center;
-            margin-bottom: 21px;
+            margin: 0 auto;
+            padding-bottom: 21px;
+
+            @media (max-width: 550px) {
+                width: auto;
+            }
         }
 
         &__form {
             border-radius: 20px;
             font-size: 12px;
             line-height: 15px;
-            padding: 10px 0 40px 10px;
+            padding: 10px;
+            height: 65px;
             color: #7d92a1;
             margin-bottom: 10px;
         }
@@ -256,7 +284,7 @@
 
         &__user-name {
             width: 100%;
-            padding: 22px 0 22px 20px;
+            padding: 17px 0 17px 20px;
             border: 1px solid #1d2931;
             border-radius: 33px;
             margin-bottom: 10px;
@@ -271,16 +299,16 @@
 
         &__user-phone {
             width: 100%;
-            padding: 22px 0 22px 20px;
+            padding: 17px 0 17px 20px;
             border: 1px solid #1d2931;
             border-radius: 33px;
             margin-bottom: 20px;
         }
 
         &__button {
-            padding: 22px 0;
+            padding: 17px 0;
             width: 100%;
-            height: 65px;
+            height: 55px;
             background: #1d2931;
             border-radius: 33px;
             font-weight: 600;
@@ -289,6 +317,18 @@
             text-align: center;
             color: #ffffff;
             margin-bottom: 9px;
+
+            &::before {
+                display: none;
+                position: absolute;
+                top: -105px;
+                left: 154px;
+                content: "Такой номер не зарегистрирован";
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: #f15f79;
+            }
         }
 
         &__privacy {
@@ -302,34 +342,52 @@
 }
 
 @media (max-width: $mobile-width) {
-    .modal {
-        &__container {
-            width: 300px;
-            height: auto;
-            padding: 30px 20px 50px 20px;
-            border-radius: 33px;
-            background-color: #ffffff;
-            z-index: 999;
-        }
+    .modal-callback {
+        width: 300px;
+        height: auto;
+        padding: 30px 20px 50px 20px;
+        border-radius: 33px;
+        background-color: #ffffff;
+        z-index: 999;
 
         &__close {
             position: absolute;
-            top: -8px;
-            right: 4px;
-            font-size: 50px;
-            width: 20px;
-            height: 20px;
+            top: -26px;
+            right: -26px;
+            width: 30px;
+            height: 30px;
+            padding: 0;
             border: none;
             background-color: transparent;
-            transform: rotate(45deg);
+    
+            &::after,
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                border-radius: 8px;
+                background-color: white;
+            }
+    
+            &::after {
+                transform: rotate(-45deg);
+            }
+    
+            &::before {
+                transform: rotate(45deg);
+            }
         }
 
         &__title {
             position: relative;
             width: 182px;
             font-weight: 800;
-            font-size: 26px;
-            line-height: 32px;
+            font-size: 20px;
+            line-height: 24px;
             text-align: center;
             margin: 0 auto;
             text-transform: uppercase;
@@ -359,30 +417,30 @@
         }
 
         &__description {
+            width: auto;
             font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
+            font-size: 14px;
+            line-height: 17px;
             text-align: center;
             margin-bottom: 21px;
         }
 
         &__form {
-            width: 100%;
-            background: #ffffff;
-            border: 1px solid #1d2931;
             border-radius: 20px;
             font-size: 12px;
             line-height: 15px;
-            padding: 10px 0 40px 10px;
+            padding: 10px;
+            height: 60px;
             color: #7d92a1;
             margin-bottom: 10px;
         }
 
         &__user {
+            display: block;
             position: relative;
             font-weight: 600;
-            font-size: 18px;
-            line-height: 22px;
+            font-size: 16px;
+            line-height: 20px;
             margin-bottom: 10px;
             text-align: center;
 
@@ -400,9 +458,10 @@
         }
 
         &__phone {
+            display: block;
             font-weight: 600;
-            font-size: 18px;
-            line-height: 22px;
+            font-size: 16px;
+            line-height: 20px;
             margin-bottom: 10px;
             text-align: center;
         }
@@ -416,14 +475,14 @@
         }
 
         &__button {
-            padding: 22px 0;
+            padding: 14px 0;
             width: 100%;
-            height: 65px;
+            height: 45px;
             background: #1d2931;
             border-radius: 33px;
             font-weight: 600;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 14px;
+            line-height: 17px;
             text-align: center;
             color: #ffffff;
             margin-bottom: 9px;

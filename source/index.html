@@ -929,10 +929,10 @@
                 </div>
             </div>
         </footer>
-
+        
         <div class="modal-overlay">
-            <div class="modal-callback" id="modal-form">
-                <form class="modal-callback__container">
+            <!--<div class="modal-callback" id="modal-form">
+                <form class="modal-callback__box">
                     <button class="modal-callback__close">
                         <span class="visually-hidden"
                             >Закрыть модальное окно</span
@@ -953,10 +953,10 @@
                     <textarea class="modal-callback__form">Укажите ваши текущие показатели или текущую ситуацию?</textarea>
                     <textarea class="modal-callback__form">Укажите конверсию вашего сайта (если знаете)</textarea>
                     <textarea class="modal-callback__form">Укажите ваш средний чек (если знаете)</textarea>
-                    <label class="modal__user" for="user-name">Ваше имя</label>
-                    <input type="text" class="modal__user-name" id="user-name" placeholder="Ф.И.О.">
-                    <label class="modal__phone" for="tel">Ваш телефон</label>
-                    <input type="tel" class="modal__user-phone" id="tel" placeholder="+7 (___) ___-__-__">
+                    <p class="modal-callback__user">Ваше имя</p>
+                    <input type="text" class="modal-callback__user-name" id="user-name" placeholder="Ф.И.О.">
+                    <p class="modal-callback__phone" for="tel">Ваш телефон</p>
+                    <input type="tel" class="modal-callback__user-phone" id="tel" placeholder="+7 (___) ___-__-__">
                     <button class="modal-callback__button">
                         Отправить форму
                     </button>
@@ -970,25 +970,15 @@
                     </p>
                 </form>
             </div>
+        -->
             <div class="modal-message">
                 <div class="loader">Отправка...</div>
-                <p>
-                    <span class="modal-message__title">Успех!</span>
-                    <span class="modal-message__text"
-                        >Ваша заявка успешно отправлена.</span
-                    >
-                    <span class="modal-message__text"
-                        >Мы перезвоним вам как можно скорее.</span
-                    >
-                </p>
-                <button
-                    class="callback-modal__close-btn"
-                    type="button"
-                    title="Закрыть окно"
-                ></button>
+                <p class="modal-message__title">Успех!</p>
+                <p class="modal-message__text">Ваша заявка успешно отправлена. Мы перезвоним вам как можно скорее.</p>
+                <button class="modal-callback__close" type="button" title="Закрыть окно"></button>
             </div>
         </div>
-
+        
         <script src="js/index.js"></script>
     </body>
 </html>
