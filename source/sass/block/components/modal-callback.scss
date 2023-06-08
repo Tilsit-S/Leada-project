@@ -172,20 +172,6 @@
 
 @media (max-width: $tablet-width) {
     .modal-callback {
-        /*position: relative;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        overflow: hidden;
-        overflow-y: auto;
-        width: 444px;
-        height: auto;
-        padding: 30px 20px;
-        border-radius: 33px;
-        background-color: #ffffff;
-        z-index: 999;*/
-
         position: absolute;
         display: block;
         left: 50%;
@@ -197,7 +183,7 @@
         transform: translate(-50%, 0%);
 
         @media (max-width: 550px) {
-            width: 320px;
+            width: 315px;
         }
 
         &__close {
