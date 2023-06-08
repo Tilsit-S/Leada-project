@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     &::before {
         display: block;
         content: " ";
@@ -102,6 +103,10 @@
             background: none;
             display: none;
         }
+
+        &__pop-up {
+            display: none;
+        }
     }
 }
 
@@ -159,6 +164,10 @@
                     display: block;
                 }
             }
+
+            &__pop-up {
+                display: none;
+            }
         }
     }
 }
@@ -170,6 +179,67 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
+            .pop-up {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 283px;
+                padding: 40px 40px 22px 26px;
+                background: #1d2931;
+                z-index: 2;
+        
+                &__wrapper {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    width: 100%;
+                    margin-bottom: 18px;
+                    padding-left: 4px;
+                }
+        
+                &__list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 36px;
+                    padding: 0 20px;
+                }
+        
+                &__sublist {
+                    display: none;
+                    margin-top: 13px;
+                    margin-bottom: 15px;
+                    font-size: 12px;
+                    line-height: 15px;
+        
+                    &__sublist-item {
+                        display: inline-block;
+                        width: 40%;
+                        margin-bottom: 9px;
+        
+                        &:nth-child(odd) {
+                            margin-right: 4%;
+                        }
+                    }
+                }
+        
+                &__item-link {
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #ffffff;
+                }
+        
+                &__link {
+                    display: flex;
+                    flex-direction: row;
+                    padding-top: 4px;
+        
+                    a:first-child {
+                        margin-right: 10px;
+                    }
+                }
+            }
         }
     }
 }
