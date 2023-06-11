@@ -60,3 +60,30 @@ ul {
 .container {
     @include breakpoint;
 }
+
+.button {
+    &.red {
+        background-color: #F15F79;
+
+        &:hover {
+            background-color: #E63C5A;
+        }
+    
+        &:active {
+            opacity: 0.8;
+        }
+    }
+
+    &.black {
+        background-color: #1D2931;
+
+        &:hover {
+            background-color: #F15F79;
+            border: #F15F79;
+        }
+    
+        &:active {
+            opacity: 0.8;
+        }
+    }
+}

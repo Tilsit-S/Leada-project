@@ -459,11 +459,12 @@
 
         &__button {
             position: relative;
-            padding: 20px 115px;
+            padding: 20px 117px;
             max-width: 374px;
             background: #1d2931;
             color: #ffffff;
             border-radius: 33px;
+            border: none;
 
             @media (max-width: 1250px) {
                 max-width: 350px;
