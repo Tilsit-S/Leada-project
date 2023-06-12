@@ -31,10 +31,6 @@ main {
 a {
     text-decoration: none;
     cursor: pointer;
-
-    &:hover {
-        opacity: 0.8;
-    }
 }
 
 h1,
@@ -92,8 +88,8 @@ ul {
     }
 }
 
-svg {
-    &:active {
+.link {
+    &:hover {
         opacity: 0.8;
     }
 }

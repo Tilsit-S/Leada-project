@@ -46,6 +46,26 @@
                 left: -315px;
             }
         }
+
+        &::after {
+            position: absolute;
+            content: " ";
+            background-image: url("../img/main/whatsapp_whiteline.svg");
+            background-size: cover;
+            bottom: 76px;
+            right: -369px;
+            width: 713px;
+            height: 34px;
+
+            @media (max-width: 1200px) {
+                bottom: 84px;
+                right: -500px;
+            }
+
+            @media (max-width: 1000px) {
+                display: none;
+            }
+        }
     }
 
     &__title {
@@ -103,15 +123,6 @@
         border: none;
         border-radius: 33px;
         margin-bottom: 64px;
-
-        &::after {
-            position: absolute;
-            content: url("../img/main/whatsapp_whiteline.svg");
-            top: 22px;
-            right: -775px;
-            width: 713px;
-            height: 34px;
-        }
     }
 }
 
@@ -143,6 +154,10 @@
                     left: 195px;
                     opacity: 0.4;
                 }
+            }
+
+            &::after {
+                display: none;
             }
         }
 

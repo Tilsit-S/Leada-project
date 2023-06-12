@@ -55,6 +55,18 @@
             }
         }
 
+        &__telegram svg path {
+            &:hover {
+                fill: #1D2931;
+            }
+        }
+        
+        &__whatsapp svg path {
+            &:hover {
+                fill: #1D2931;
+            }
+        }
+
         &__link {
             display: flex;
             flex-direction: row;
@@ -444,3 +456,8 @@
         }
     }
 }
+
+
+
+
+
