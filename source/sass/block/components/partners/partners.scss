@@ -4,7 +4,7 @@
         max-width: 1200px;
         display: flex;
         flex-direction: row;
-        padding: 47px 0 50px 18px;
+        padding: 49px 0 50px 18px;
         padding-bottom: 50px;
     }
     
@@ -55,11 +55,9 @@
     .partners {
 
         &__wrapper {
-            max-width: 1200px;
             display: flex;
             flex-direction: row;
-            padding: 47px 0 50px 0;
-            padding-bottom: 50px;
+            padding: 31px 0 64px;
         }
         
         &__info {
@@ -73,8 +71,8 @@
                 background-image: url("../img/partners/redline.svg");
                 background-size: cover;
                 background-repeat: no-repeat;
-                bottom: 0;
-                left: -480px;
+                bottom: 1px;
+                left: -474px;
                 width: 743px;
                 height: 34px;
             }
@@ -90,7 +88,7 @@
             font-size: 14px;
             line-height: 17px;
             color: #1D2931;
-            margin-bottom: 50px;
+            margin-bottom: 49px;
         }
 
         &__title {
@@ -119,8 +117,7 @@
         &__wrapper {
             display: flex;
             flex-direction: row;
-            padding: 20px 0 50px 0;
-            padding-bottom: 50px;
+            padding: 20px 0 54px 0;
         }
         
         &__info {
@@ -134,25 +131,25 @@
                 background-image: url("../img/partners/redline.svg");
                 background-size: contain;
                 background-repeat: no-repeat;
-                bottom: -27px;
-                left: -122px;
-                width: 278px;
+                bottom: -19px;
+                left: -123px;
+                width: 286px;
                 height: 19px;
             }
         }
 
         img {
             position: absolute;
-            top: 60px;
-            right: -10px;
+            top: 41px;
+            right: 0;
             width: 268px;
             height: 239px;
         }
 
         &__link {
             font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
+            font-size: 12px;
+            line-height: 15px;
             color: #1D2931;
             margin-bottom: 20px;
         }
@@ -164,7 +161,7 @@
             line-height: 24px;
             text-transform: uppercase;
             color: #1D2931;
-            margin-bottom: 176px;
+            margin-bottom: 178px;
         }
 
         &__description {
