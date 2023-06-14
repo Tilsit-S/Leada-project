@@ -1,5 +1,4 @@
 .cardlist {
-
     &__list {
         display: flex;
         flex-direction: row;
@@ -100,8 +99,8 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 37px 20px;
-            padding-bottom: 51px;
+            gap: 17px 20px;
+            padding-bottom: 31px;
             padding-left: 0;
         }
 
@@ -109,7 +108,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 212px;
+            width: 212px;
             margin-bottom: 20px;
 
             &:nth-child(1) {
@@ -150,6 +149,11 @@
                     height: 65px;
                 }
             }
+        }
+
+        &__icon {
+            height: 101px;
+            margin-bottom: 20px;
         }
         
         &__title {
@@ -193,13 +197,14 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 39px 20px;
-            padding-bottom: 39px;
+            gap: 19px 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             padding-left: 0;
         }
 
         &__item {
-            max-width: 100%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -209,6 +214,11 @@
                 height: 131px;
                 margin-bottom: 20px;
             }
+        }
+
+        &__icon {
+            width: 100%;
+            height: 131px;
         }
         
         &__title {
@@ -245,3 +255,6 @@
         }
     }
 }
+
+
+

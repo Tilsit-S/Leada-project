@@ -1,6 +1,7 @@
 .partners {
 
     &__wrapper {
+        position: relative;
         max-width: 1200px;
         display: flex;
         flex-direction: row;
@@ -9,7 +10,6 @@
     }
     
     &__info {
-        position: relative;
         width: 404px;
 
         &::before {
@@ -19,8 +19,8 @@
             background-image: url("../img/partners/redline.svg");
             background-size: 743px 34px;
             background-repeat: no-repeat;
-            bottom: -33px;
-            left: -362px;
+            bottom: 17px;
+            left: -344px;
             width: 743px;
             height: 34px;
         }
@@ -41,6 +41,21 @@
         text-transform: uppercase;
         color: #1D2931;
         margin-bottom: 29px;
+
+        @media (max-width: 1100px) {
+            font-size: 39px;
+            line-height: 49px;
+        }
+
+        @media (max-width: 1100px) {
+            font-size: 39px;
+            line-height: 49px;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 36px;
+            line-height: 46px;
+        }
     }
 
     &__description {
@@ -49,12 +64,44 @@
         line-height: 37px;
         color: #1D2931;
         margin-bottom: 70px;
+
+        @media (max-width: 1100px) {
+            font-size: 27px;
+            line-height: 33px;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 25px;
+            line-height: 31px;
+        }
     }
 
     img {
         position: absolute;
         top: 49px;
-        right: 437px;
+        right: 85px;
+
+        @media (max-width: 1100px) {
+            width: 400px;
+            height: 380px;
+            right: 65px;
+        }
+
+        @media (max-width: 1000px) {
+            right: 0;
+        }
+
+
+        @media (max-width: 850px) {
+            width: 375px;
+            height: 336px;
+            right: -70px;
+        }
+
+
+        
+
+
     }
 }
 
@@ -64,7 +111,7 @@
         &__wrapper {
             display: flex;
             flex-direction: row;
-            padding: 31px 0 64px;
+            padding: 31px 0 43px;
         }
         
         &__info {
@@ -79,16 +126,37 @@
                 background-image: url("../img/partners/redline.svg");
                 background-size: 743px 34px;
                 background-repeat: no-repeat;
-                bottom: 1px;
-                left: -474px;
+                bottom: -11px;
+                left: -466px;
                 width: 743px;
                 height: 34px;
+
+                @media (max-width: 400px) {
+                    background-size: 670px 29px;
+                    width: 670px;
+                    height: 29px;
+                }
             }
         }
 
         img {
+            top: 30px;
+            left: 290px;
             width: 386px;
             height: 343px;
+
+            @media (max-width: 650px) {
+                top: 37px;
+                left: 290px;
+                width: 363px;
+                height: 322px;
+                z-index: -1;
+            }
+
+            @media (max-width: 520px) {
+                left: 60px;
+                opacity: 0.4;
+            }
         }
 
         &__link {
@@ -100,12 +168,23 @@
         }
 
         &__title {
+            width: 285px;
             font-weight: 800;
             font-size: 29px;
             line-height: 35px;
             text-transform: uppercase;
             color: #1D2931;
             margin-bottom: 29px;
+
+            @media (max-width: 650px) {
+                font-size: 26px;
+                line-height: 32px;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 22px;
+                line-height: 28px;
+            }
         }
 
         &__description{
@@ -113,6 +192,16 @@
             font-size: 20px;
             line-height: 24px;
             color: #1D2931;
+
+            @media (max-width: 650px) {
+                font-size: 22px;
+                line-height: 28px;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 19px;
+                line-height: 24px;
+            }
         }
     }
 }
@@ -138,21 +227,22 @@
                 position: absolute;
                 content: "";
                 background-image: url("../img/partners/redline.svg");
-                background-size: 286px 19px;
+                background-size: 177px 15px;
                 background-repeat: no-repeat;
-                bottom: -19px;
-                left: -123px;
-                width: 286px;
-                height: 19px;
+                bottom: -34px;
+                left: -8px;
+                width: 177px;
+                height: 15px;
             }
         }
 
         img {
             position: absolute;
-            top: 41px;
-            right: 0;
+            top: 42px;
+            left: 42px;
             width: 268px;
             height: 239px;
+            opacity: 1;
         }
 
         &__link {
@@ -177,6 +267,7 @@
             width: 320px;
             font-size: 16px;
             line-height: 20px;
+            margin-bottom: 0;
         }
     }
 
