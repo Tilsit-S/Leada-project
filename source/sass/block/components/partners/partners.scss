@@ -10,17 +10,17 @@
     
     &__info {
         position: relative;
-        max-width: 404px;
-        margin-right: 162px;
+        width: 404px;
 
         &::before {
+            display: block;
             position: absolute;
             content: "";
             background-image: url("../img/partners/redline.svg");
-            background-size: cover;
+            background-size: 743px 34px;
             background-repeat: no-repeat;
-            bottom: 0;
-            left: -370px;
+            bottom: -33px;
+            left: -362px;
             width: 743px;
             height: 34px;
         }
@@ -48,6 +48,13 @@
         font-size: 30px;
         line-height: 37px;
         color: #1D2931;
+        margin-bottom: 70px;
+    }
+
+    img {
+        position: absolute;
+        top: 49px;
+        right: 437px;
     }
 }
 
@@ -66,10 +73,11 @@
             margin-right: 50px;
 
             &::before {
+                display: block;
                 position: absolute;
                 content: "";
                 background-image: url("../img/partners/redline.svg");
-                background-size: cover;
+                background-size: 743px 34px;
                 background-repeat: no-repeat;
                 bottom: 1px;
                 left: -474px;
@@ -100,7 +108,7 @@
             margin-bottom: 29px;
         }
 
-        &__description {
+        &__description{
             font-weight: 600;
             font-size: 20px;
             line-height: 24px;
@@ -126,10 +134,11 @@
             margin-right: 50px;
 
             &::before {
+                display: block;
                 position: absolute;
                 content: "";
                 background-image: url("../img/partners/redline.svg");
-                background-size: contain;
+                background-size: 286px 19px;
                 background-repeat: no-repeat;
                 bottom: -19px;
                 left: -123px;
@@ -165,8 +174,13 @@
         }
 
         &__description {
+            width: 320px;
             font-size: 16px;
             line-height: 20px;
         }
+    }
+
+    br {
+        display: none;
     }
 }
