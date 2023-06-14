@@ -1,28 +1,68 @@
 .blog {
     &__wrapper {
-        padding: 50px 0 70px 0;
+        padding: 51px 0 70px 17px;
     }
 
     &__link {
-        margin-bottom: 50px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 48px;
+        color: #1D2931;
     }
 
     &__title {
+        position: relative;
         font-weight: 800;
         font-size: 43px;
         line-height: 52px;
         text-align: center;
         text-transform: uppercase;
         color: #1D2931;
-        margin-bottom: 41px;
+        margin-bottom: 40px;
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            background-image: url("../img/partners/redline.svg");
+            background-size: 743px 34px;
+            background-repeat: no-repeat;
+            bottom: 17px;
+            left: -362px;
+            top: 8px;
+            width: 743px;
+            height: 34px;
+        }
+
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            background-image: url("../img/partners/redline.svg");
+            background-size: 743px 34px;
+            background-repeat: no-repeat;
+            bottom: 17px;
+            right: -360px;
+            top: 8px;
+            width: 743px;
+            height: 34px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
     }
 
     &__list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 10px 10px;
+        gap: 28px 10px;
         margin-bottom: 30px;
+    }
+
+    &__card-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 30px;
     }
 
     &__item {
@@ -42,6 +82,7 @@
 
         &:first-child {
             border: none;
+            padding: 13px 55px;
 
             a {
                 color: #FFFFFF;
