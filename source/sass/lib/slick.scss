@@ -1,0 +1,49 @@
+.slick-slider {
+    .slick-disabled {
+        display: none !important;
+    }
+
+    .slick-arrow {
+        position: relative;
+        width: 33px;
+        height: 28px;
+        font-size: 0;
+        line-height: 0;
+        border: none;
+        border-radius: 6px;
+        background-color: #f15f79;
+
+        &::after,
+        &::before {
+            position: absolute;
+            content: "";
+            top: 6px;
+            left: 17px;
+            width: 9px;
+            height: 15px;
+            background-image: url("../img/main/slider-chevron.png");
+            background-size: cover;
+        }
+
+        &::before {
+            left: 10px;
+        }
+
+        &:hover {
+            background-color: #1d2931;
+        }
+
+        &.slick-prev {
+            &::after,
+            &::before {
+                left: 13px;
+                transform: rotate(180deg);
+            }
+
+            &::before {
+                left: 6px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
