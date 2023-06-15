@@ -1,8 +1,6 @@
 .modal-message {
     position: absolute;
-    // display: none;
-    // TODO remove after done
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -13,6 +11,10 @@
     border-radius: 33px;
     background-color: white;
     transform: translate(-50%, 0%);
+
+    &.show {
+        display: flex;
+    }
 
     &__title {
         font-weight: 800;
@@ -61,7 +63,6 @@
 @media (max-width: $tablet-width) {
     .modal-message {
         position: absolute;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -122,11 +123,9 @@
     }
 }
 
-
 @media (max-width: $mobile-width) {
     .modal-message {
         position: absolute;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;

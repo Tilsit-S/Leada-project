@@ -10,9 +10,14 @@
         <meta name="Description" content="Leada" />
         <title>Leada</title>
         <link rel="stylesheet" href="css/style.min.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
     </head>
     <body>
-        
+
         <header class="page-header header">
             <div class="header__wrapper container">
                 <div class="header__navigation navigation">
@@ -47,7 +52,7 @@
                             <a href="blog.html">Блог</a>
                         </li>
                     </ul>
-                    <button type="button" class="navigation__button">
+                    <button type="button" class="navigation__button burger-btn">
                         <img
                             src="../img/header/burger.svg"
                             width="27"
@@ -58,7 +63,7 @@
                     
                     <div class="navigation__pop-up pop-up">
                         <div class="pop-up__wrapper">
-                            <button class="pop-up__burger-button-close"></button>
+                            <button class="pop-up__burger-button-close burger-btn-close"></button>
                             <ul class="pop-up__list">
                                 <li class="pop-up__item">
                                     <a class="pop-up__item-link link" href="#">Услуги</a>
@@ -178,9 +183,8 @@
                 </div>
             </div>
         </header>
-    
+
         <main class="page-main main">
-            
             <section class="main__launch launch">
                 <div class="launch__wrapper container">
                     <div class="launch__content">
@@ -196,7 +200,7 @@
                             </p>
                         </div>
                         <div class="launch__button">
-                            <button type="button" class="button red launch__button-app">
+                            <button type="button" class="launch__button-app button modal-btn red">
                                 Оставить заявку
                             </button>
                             <a class="button launch__button-whatsapp"></a>
@@ -204,7 +208,8 @@
                     </div>
                 </div>
             </section>
-                
+
+
             <section class="main__features features">
                 <div class="features__wrapper container">
                     <div class="features__content">
@@ -221,7 +226,8 @@
                     </div>
                 </div>
             </section>
-                
+
+
             <section class="main__feedback feedback">
                 <div class="feedback__wrapper container">
                     <div class="feedback__slogan">
@@ -315,7 +321,6 @@
                     </div>
                 </div>
             </section>
-                
             <section class="main__partnership partnership">
                 <div class="partnership__wrapper container">
                     <div class="partnership__content">
@@ -329,7 +334,7 @@
                                 >маркетинг с нами в долгую!</span
                             >
                         </h3>
-                        <button class="partnership__button button red">
+                        <button class="partnership__button button modal-btn red">
                             Обсудить проект
                         </button>
                     </div>
@@ -422,34 +427,40 @@
                                     <span class="launch__colortext">кейсы</span>
                                 </h3>
                                 <ul class="price__list">
-                                    <li class="price__item" data-list="all">
-                                        Все кейсы
+                                    <li
+                                        class="price__item price__item--active"
+                                        data-list="all"
+                                    >
+                                        <span>Все кейсы</span>
                                     </li>
                                     <li class="price__item" data-list="sites">
-                                        Ведение сайтов
+                                        <span>Ведение сайтов</span>
                                     </li>
                                     <li
                                         class="price__item"
                                         data-list="services"
                                     >
-                                        Услуги
+                                        <span>Услуги</span>
                                     </li>
                                     <li class="price__item" data-list="sites2">
-                                        Ведение сайтов
+                                        <span>Ведение сайтов</span>
                                     </li>
                                     <li
                                         class="price__item"
                                         data-list="services2"
                                     >
-                                        Услуги
+                                        <span>Услуги</span>
                                     </li>
                                 </ul>
-                                <div class="price__list-wrapper">
+                                <div
+                                    class="price__list-wrapper show-list"
+                                    data-list="all"
+                                >
                                     <div class="card">
                                         <div class="card__wrapper">
                                             <img
                                                 src="../img/main/card-item_man.png"
-                                                width="374"
+                                                width="372"
                                                 alt="young man"
                                             />
                                             <div
@@ -546,7 +557,7 @@
                                         <div class="card__wrapper">
                                             <img
                                                 src="../img/main/card-item_man.png"
-                                                width="374"
+                                                width="372"
                                                 alt="young man"
                                             />
                                             <div
@@ -643,7 +654,7 @@
                                         <div class="card__wrapper">
                                             <img
                                                 src="../img/main/card-item_man.png"
-                                                width="374"
+                                                width="372"
                                                 alt="young man"
                                             />
                                             <div
@@ -740,7 +751,104 @@
                                         <div class="card__wrapper">
                                             <img
                                                 src="../img/main/card-item_man.png"
-                                                width="374"
+                                                width="372"
+                                                alt="young man"
+                                            />
+                                            <div
+                                                class="card__information information"
+                                            >
+                                                <p class="information__text">
+                                                    Корпорация событий
+                                                    «Марамель»
+                                                </p>
+                                                <p class="information__name">
+                                                    Александр Александров
+                                                </p>
+                                                <p
+                                                    class="information__description"
+                                                >
+                                                    Сбор заявок на 4-х дневный
+                                                    марафон о том, как правильно
+                                                    инвестировать.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <ul class="information__list">
+                                            <li
+                                                class="information__item item-resource"
+                                            >
+                                                <p
+                                                    class="item-resource__description"
+                                                >
+                                                    Бюджет
+                                                </p>
+                                                <p
+                                                    class="item-resource__number"
+                                                >
+                                                    9 999 999 ₽
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="information__item item-time"
+                                            >
+                                                <p
+                                                    class="item-time__description"
+                                                >
+                                                    Срок работы
+                                                </p>
+                                                <p class="item-time__result">
+                                                    1 год 9 месяцев
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="information__skill skill">
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Стоимость заявки
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Кол-во заявок
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Ниша
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка А
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка Б
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__wrapper">
+                                            <img
+                                                src="../img/main/card-item_man.png"
+                                                width="372"
                                                 alt="young man"
                                             />
                                             <div
@@ -834,7 +942,600 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <button class="price__button button red">
+                                <div
+                                    class="price__list-wrapper"
+                                    data-list="sites"
+                                >
+                                    <div class="card">
+                                        <div class="card__wrapper">
+                                            <img
+                                                src="../img/main/card-item_man.png"
+                                                width="372"
+                                                alt="young man"
+                                            />
+                                            <div
+                                                class="card__information information"
+                                            >
+                                                <p class="information__text">
+                                                    Корпорация событий
+                                                    «Марамель»
+                                                </p>
+                                                <p class="information__name">
+                                                    Александр Александров
+                                                </p>
+                                                <p
+                                                    class="information__description"
+                                                >
+                                                    Сбор заявок на 4-х дневный
+                                                    марафон о том, как правильно
+                                                    инвестировать.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <ul class="information__list">
+                                            <li
+                                                class="information__item item-resource"
+                                            >
+                                                <p
+                                                    class="item-resource__description"
+                                                >
+                                                    Бюджет
+                                                </p>
+                                                <p
+                                                    class="item-resource__number"
+                                                >
+                                                    9 999 999 ₽
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="information__item item-time"
+                                            >
+                                                <p
+                                                    class="item-time__description"
+                                                >
+                                                    Срок работы
+                                                </p>
+                                                <p class="item-time__result">
+                                                    1 год 9 месяцев
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="information__skill skill">
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Стоимость заявки
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Кол-во заявок
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Ниша
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка А
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка Б
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__wrapper">
+                                            <img
+                                                src="../img/main/card-item_man.png"
+                                                width="372"
+                                                alt="young man"
+                                            />
+                                            <div
+                                                class="card__information information"
+                                            >
+                                                <p class="information__text">
+                                                    Корпорация событий
+                                                    «Марамель»
+                                                </p>
+                                                <p class="information__name">
+                                                    Александр Александров
+                                                </p>
+                                                <p
+                                                    class="information__description"
+                                                >
+                                                    Сбор заявок на 4-х дневный
+                                                    марафон о том, как правильно
+                                                    инвестировать.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <ul class="information__list">
+                                            <li
+                                                class="information__item item-resource"
+                                            >
+                                                <p
+                                                    class="item-resource__description"
+                                                >
+                                                    Бюджет
+                                                </p>
+                                                <p
+                                                    class="item-resource__number"
+                                                >
+                                                    9 999 999 ₽
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="information__item item-time"
+                                            >
+                                                <p
+                                                    class="item-time__description"
+                                                >
+                                                    Срок работы
+                                                </p>
+                                                <p class="item-time__result">
+                                                    1 год 9 месяцев
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="information__skill skill">
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Стоимость заявки
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Кол-во заявок
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Ниша
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка А
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка Б
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div
+                                    class="price__list-wrapper"
+                                    data-list="services"
+                                >
+                                    <div class="card">
+                                        <div class="card__wrapper">
+                                            <img
+                                                src="../img/main/card-item_man.png"
+                                                width="372"
+                                                alt="young man"
+                                            />
+                                            <div
+                                                class="card__information information"
+                                            >
+                                                <p class="information__text">
+                                                    Корпорация событий
+                                                    «Марамель»
+                                                </p>
+                                                <p class="information__name">
+                                                    Александр Александров
+                                                </p>
+                                                <p
+                                                    class="information__description"
+                                                >
+                                                    Сбор заявок на 4-х дневный
+                                                    марафон о том, как правильно
+                                                    инвестировать.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <ul class="information__list">
+                                            <li
+                                                class="information__item item-resource"
+                                            >
+                                                <p
+                                                    class="item-resource__description"
+                                                >
+                                                    Бюджет
+                                                </p>
+                                                <p
+                                                    class="item-resource__number"
+                                                >
+                                                    9 999 999 ₽
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="information__item item-time"
+                                            >
+                                                <p
+                                                    class="item-time__description"
+                                                >
+                                                    Срок работы
+                                                </p>
+                                                <p class="item-time__result">
+                                                    1 год 9 месяцев
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="information__skill skill">
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Стоимость заявки
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Кол-во заявок
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Ниша
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка А
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка Б
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__wrapper">
+                                            <img
+                                                src="../img/main/card-item_man.png"
+                                                width="372"
+                                                alt="young man"
+                                            />
+                                            <div
+                                                class="card__information information"
+                                            >
+                                                <p class="information__text">
+                                                    Корпорация событий
+                                                    «Марамель»
+                                                </p>
+                                                <p class="information__name">
+                                                    Александр Александров
+                                                </p>
+                                                <p
+                                                    class="information__description"
+                                                >
+                                                    Сбор заявок на 4-х дневный
+                                                    марафон о том, как правильно
+                                                    инвестировать.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <ul class="information__list">
+                                            <li
+                                                class="information__item item-resource"
+                                            >
+                                                <p
+                                                    class="item-resource__description"
+                                                >
+                                                    Бюджет
+                                                </p>
+                                                <p
+                                                    class="item-resource__number"
+                                                >
+                                                    9 999 999 ₽
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="information__item item-time"
+                                            >
+                                                <p
+                                                    class="item-time__description"
+                                                >
+                                                    Срок работы
+                                                </p>
+                                                <p class="item-time__result">
+                                                    1 год 9 месяцев
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="information__skill skill">
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Стоимость заявки
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Кол-во заявок
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Ниша
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка А
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка Б
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__wrapper">
+                                            <img
+                                                src="../img/main/card-item_man.png"
+                                                width="372"
+                                                alt="young man"
+                                            />
+                                            <div
+                                                class="card__information information"
+                                            >
+                                                <p class="information__text">
+                                                    Корпорация событий
+                                                    «Марамель»
+                                                </p>
+                                                <p class="information__name">
+                                                    Александр Александров
+                                                </p>
+                                                <p
+                                                    class="information__description"
+                                                >
+                                                    Сбор заявок на 4-х дневный
+                                                    марафон о том, как правильно
+                                                    инвестировать.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <ul class="information__list">
+                                            <li
+                                                class="information__item item-resource"
+                                            >
+                                                <p
+                                                    class="item-resource__description"
+                                                >
+                                                    Бюджет
+                                                </p>
+                                                <p
+                                                    class="item-resource__number"
+                                                >
+                                                    9 999 999 ₽
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="information__item item-time"
+                                            >
+                                                <p
+                                                    class="item-time__description"
+                                                >
+                                                    Срок работы
+                                                </p>
+                                                <p class="item-time__result">
+                                                    1 год 9 месяцев
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="information__skill skill">
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Стоимость заявки
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Кол-во заявок
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Ниша
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка А
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка Б
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__wrapper">
+                                            <img
+                                                src="../img/main/card-item_man.png"
+                                                width="372"
+                                                alt="young man"
+                                            />
+                                            <div
+                                                class="card__information information"
+                                            >
+                                                <p class="information__text">
+                                                    Корпорация событий
+                                                    «Марамель»
+                                                </p>
+                                                <p class="information__name">
+                                                    Александр Александров
+                                                </p>
+                                                <p
+                                                    class="information__description"
+                                                >
+                                                    Сбор заявок на 4-х дневный
+                                                    марафон о том, как правильно
+                                                    инвестировать.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <ul class="information__list">
+                                            <li
+                                                class="information__item item-resource"
+                                            >
+                                                <p
+                                                    class="item-resource__description"
+                                                >
+                                                    Бюджет
+                                                </p>
+                                                <p
+                                                    class="item-resource__number"
+                                                >
+                                                    9 999 999 ₽
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="information__item item-time"
+                                            >
+                                                <p
+                                                    class="item-time__description"
+                                                >
+                                                    Срок работы
+                                                </p>
+                                                <p class="item-time__result">
+                                                    1 год 9 месяцев
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="information__skill skill">
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Стоимость заявки
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Кол-во заявок
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    9 999 999
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Ниша
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка А
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                            <li class="skill__item">
+                                                <p class="skill__red-text">
+                                                    Точка Б
+                                                </p>
+                                                <p class="skill__black-text">
+                                                    Инвестиции
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- TODO это должно быть внутри списка с картами -->
+                                <button class="price__button">
                                     Показать больше кейсов
                                 </button>
                             </div>
@@ -906,7 +1607,7 @@
                             Оставьте заявку и убедитесь в этом сами.
                             <span class="request__text-lines"></span>
                         </p>
-                        <a href="#" class="request__link button red">Обсудить проект</a>
+                        <a href="#" class="request__link button modal-btn red">Обсудить проект</a>
                     </div>
                 </div>
             </section>
@@ -1033,7 +1734,7 @@
                 </div>
             </div>
         </footer>
-        <!--
+
         <div class="modal-overlay">
             <div class="modal-callback" id="modal-form">
                 <form class="modal-callback__box">
@@ -1074,8 +1775,8 @@
                     </p>
                 </form>
             </div>
-        -->
-        <!--
+
+
             <div class="modal-message">
                 <div class="loader">Отправка...</div>
                 <p class="modal-message__title">Успех!</p>
@@ -1083,7 +1784,17 @@
                 <button class="modal-callback__close" type="button" title="Закрыть окно"></button>
             </div>
         </div>
-        -->
+
         <script src="js/index.js"></script>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script src="js/slick.js" type="module"></script>
+        <script src="js/index.js" type="module"></script>
     </body>
 </html>
