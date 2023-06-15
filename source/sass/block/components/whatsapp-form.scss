@@ -1,4 +1,5 @@
 .whatsapp-form {
+    overflow: hidden;
     background: #1d2931;
 
     &__wrapper {
@@ -118,7 +119,8 @@
         position: relative;
         width: 374px;
         height: 65px;
-        background: url("../img/main/whatsapp_red.svg");
+        background-image: url("../img/main/whatsapp_red.svg");
+        background-size: contain;
         background-color: transparent;
         border: none;
         border-radius: 33px;
@@ -208,7 +210,7 @@
             width: 328px;
             height: 55px;
             background-image: url("../img/main/whatsapp_button_tablet.svg");
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
             margin-bottom: 45px;
 
@@ -266,7 +268,7 @@
         &__button {
             @media (max-width: $mobile-width) {
                 background-image: url("../img/main/whatsapp_red.svg");
-                background-size: cover;
+                background-size: contain;
                 background-repeat: no-repeat;
                 width: 300px;
                 height: 45px;

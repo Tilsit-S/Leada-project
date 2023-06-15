@@ -1,4 +1,5 @@
 .request {
+    overflow: hidden;
     padding-top: 70px;
     padding-bottom: 70px;
 
@@ -42,8 +43,12 @@
         }
 
         &::before {
+            display: block;
             position: absolute;
-            content: url("../img/main/form_redline.svg");
+            content: '';
+            background-image: url("../img/main/form_redline.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
             width: 642px;
             height: 34px;
             top: 12px;
@@ -51,8 +56,12 @@
         }
 
         &::after {
+            display: block;
             position: absolute;
-            content: url("../img/main/form_redline.svg");
+            content: '';
+            background-image: url("../img/main/form_redline.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
             width: 642px;
             height: 34px;
             top: 12px;
@@ -62,10 +71,12 @@
 
         @media (max-width: 885px) {
             &::before {
+                display: block;
                 position: absolute;
-                content: " ";
+                content: '';
                 background-image: url("../img/main/form_redline_tablet.svg");
-                background-size: cover;
+                background-size: contain;
+                background-repeat: no-repeat;
                 width: 162px;
                 height: 34px;
                 top: 10px;
@@ -73,10 +84,12 @@
             }
 
             &::after {
+                display: block;
                 position: absolute;
-                content: " ";
+                content: '';
                 background-image: url("../img/main/form_redline_tablet.svg");
-                background-size: cover;
+                background-size: contain;
+                background-repeat: no-repeat;
                 width: 162px;
                 height: 34px;
                 top: 10px;

@@ -1,4 +1,5 @@
 .launch {
+    overflow: hidden;
     &__content {
         position: relative;
         max-width: 781px;
@@ -137,28 +138,14 @@
     }
 
     &__button-whatsapp {
-        position: relative;
+        background-image: url("../img/main/whatsapp-button.png");
+        background-size: contain;
+        background-repeat: no-repeat;
         width: 273px;
         height: 65px;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-        border: 2px solid #1D2931;
-        background-color: #ffffff;
-        border-radius: 33px;
-        padding: 22px 0 22px 57px;
 
-        &::before {
-            position: absolute;
-            top: 12px;
-            left: 62px;
-            content: " ";
-            background-image: url("../img/main/WhatsAppLeada.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 144px;
-            height: 37px;
+        &:hover {
+            filter: invert(1);
         }
     }
 }

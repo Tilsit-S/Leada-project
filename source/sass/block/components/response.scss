@@ -24,7 +24,8 @@
             position: absolute;
             content: " ";
             background-image: url("../img/main/response_redline.svg");
-            background-size: 1248px 34px;
+            background-size: contain;
+            background-repeat: no-repeat;
             width: 1248px;
             height: 34px;
             top: 1px;
@@ -78,7 +79,8 @@
                 position: absolute;
                 content: " ";
                 background-image: url("../img/main/response_redline.svg");
-                background-size: 1248px 34px;
+                background-size: contain;
+                background-repeat: no-repeat;
                 width: 1248px;
                 height: 34px;
                 top: 4px;
@@ -120,7 +122,8 @@
                 position: absolute;
                 content: " ";
                 background-image: url("../img/main/response_redline.svg");
-                background-size: 1248px 34px;
+                background-size: contain;
+                background-repeat: no-repeat;
                 width: 1248px;
                 height: 34px;
                 top: -6px;
