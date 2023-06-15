@@ -57,13 +57,13 @@
 
         &__telegram svg path {
             &:hover {
-                fill: #1D2931;
+                fill: #1d2931;
             }
         }
-        
+
         &__whatsapp svg path {
             &:hover {
-                fill: #1D2931;
+                fill: #1d2931;
             }
         }
 
@@ -183,14 +183,20 @@
         }
 
         .pop-up {
+            display: none;
+            z-index: 4;
+
+            &.show {
+                display: block;
+            }
+
             @media (max-width: 500px) {
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;width: 420px;
-            padding: 45px 40px 22px 26px;
-            background: #1d2931;
-            z-index: 2;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 420px;
+                padding: 45px 40px 22px 26px;
+                background: #1d2931;
             }
 
             @media (max-width: 420px) {
@@ -204,7 +210,6 @@
             @media (max-width: 350px) {
                 width: 313px;
             }
-
 
             a {
                 color: #ffffff;
@@ -237,7 +242,7 @@
                 padding: 0;
                 border: none;
                 background-color: transparent;
-        
+
                 &::after,
                 &::before {
                     position: absolute;
@@ -250,22 +255,22 @@
                     border-radius: 8px;
                     background-color: white;
                 }
-        
+
                 &::after {
                     transform: rotate(-45deg);
                 }
-        
+
                 &::before {
                     transform: rotate(45deg);
                 }
             }
-    
+
             &__wrapper {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
             }
-    
+
             &__list {
                 display: flex;
                 flex-direction: column;
@@ -277,12 +282,10 @@
                 display: flex;
             }
 
-
             .visually-hidden {
                 position: absolute;
                 overflow: hidden;
             }
-    
 
             &__sublist {
                 display: none;
@@ -302,18 +305,18 @@
                     margin-right: 4%;
                 }
             }
-    
+
             &__item-link {
                 font-size: 18px;
                 line-height: 24px;
                 color: #ffffff;
             }
-    
+
             &__link {
                 display: flex;
                 flex-direction: row;
                 padding-top: 22px;
-    
+
                 a:first-child {
                     margin-right: 10px;
                 }
@@ -371,7 +374,7 @@
                     padding: 0;
                     border: none;
                     background-color: transparent;
-            
+
                     &::after,
                     &::before {
                         position: absolute;
@@ -386,25 +389,25 @@
 
                         &:hover,
                         &:active {
-                            background-color: #F15F79;
+                            background-color: #f15f79;
                         }
                     }
-            
+
                     &::after {
                         transform: rotate(-45deg);
                     }
-            
+
                     &::before {
                         transform: rotate(45deg);
                     }
                 }
-        
+
                 &__wrapper {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                 }
-        
+
                 &__list {
                     display: flex;
                     flex-direction: column;
@@ -416,12 +419,10 @@
                     display: flex;
                 }
 
-
                 .visually-hidden {
                     position: absolute;
                     overflow: hidden;
                 }
-        
 
                 &__sublist {
                     display: none;
@@ -436,23 +437,23 @@
                     display: inline-block;
                     width: 40%;
                     margin-bottom: 9px;
-    
+
                     &:nth-child(odd) {
                         margin-right: 4%;
                     }
                 }
-        
+
                 &__item-link {
                     font-size: 18px;
                     line-height: 24px;
                     color: #ffffff;
                 }
-        
+
                 &__link {
                     display: flex;
                     flex-direction: row;
                     padding-top: 22px;
-        
+
                     a:first-child {
                         margin-right: 10px;
                     }
@@ -461,8 +462,3 @@
         }
     }
 }
-
-
-
-
-

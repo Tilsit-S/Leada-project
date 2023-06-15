@@ -1,8 +1,6 @@
 .modal-callback {
     position: absolute;
-    // display: none;
-    // TODO remove after done
-    display: block;
+    display: none;
     left: 50%;
     top: 174px;
     width: 464px;
@@ -24,6 +22,7 @@
         padding: 0;
         border: none;
         background-color: transparent;
+        cursor: pointer;
 
         &::after,
         &::before {
@@ -174,7 +173,6 @@
 @media (max-width: $tablet-width) {
     .modal-callback {
         position: absolute;
-        display: block;
         left: 50%;
         top: 174px;
         width: 464px;
@@ -201,7 +199,7 @@
                 top: -45px;
                 right: 135px;
             }
-    
+
             &::after,
             &::before {
                 position: absolute;
@@ -214,11 +212,11 @@
                 border-radius: 8px;
                 background-color: white;
             }
-    
+
             &::after {
                 transform: rotate(-45deg);
             }
-    
+
             &::before {
                 transform: rotate(45deg);
             }
@@ -379,7 +377,7 @@
             padding: 0;
             border: none;
             background-color: transparent;
-    
+
             &::after,
             &::before {
                 position: absolute;
@@ -392,11 +390,11 @@
                 border-radius: 8px;
                 background-color: white;
             }
-    
+
             &::after {
                 transform: rotate(-45deg);
             }
-    
+
             &::before {
                 transform: rotate(45deg);
             }
