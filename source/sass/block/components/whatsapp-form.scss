@@ -10,6 +10,7 @@
     &__content {
         position: relative;
         max-width: 780px;
+        padding: 0 0 1px 4px;
         
         @media (max-width: 1200px) {
             max-width: 635px;
@@ -31,7 +32,7 @@
             width: 326px;
             height: 397px;
             top: 43px;
-            left: -403px;
+            left: -401px;
 
             @media (max-width: 1200px) {
                 width: 308px;
@@ -53,8 +54,8 @@
             content: " ";
             background-image: url("../img/main/whatsapp_whiteline.svg");
             background-size: cover;
-            bottom: 76px;
-            right: -369px;
+            bottom: 78px;
+            right: -371px;
             width: 713px;
             height: 34px;
 

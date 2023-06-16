@@ -5,7 +5,7 @@
     &__content {
         position: relative;
         max-width: 660px;
-        padding: 94px 0 0 36px;
+        padding: 94px 0 0 37px;
 
         &::before {
             position: absolute;
@@ -68,15 +68,15 @@
             width: 642px;
             height: 34px;
             background-repeat: no-repeat;
-            top: -101px;
-            left: -388px;
+            top: -100px;
+            left: -387px;
         }
     
         & p {
             font-weight: 500;
             font-size: 25px;
             line-height: 30px;
-            padding-left: 4px;
+            padding-left: 7px;
             color: #ffffff;
 
             @media (max-width: 1000px) {

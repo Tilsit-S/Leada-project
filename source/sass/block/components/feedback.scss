@@ -1,7 +1,7 @@
 .feedback {
     overflow: hidden;
     &__wrapper {
-        padding-top: 71px;
+        padding-top: 70px;
         padding-bottom: 70px;
     }
 
@@ -18,7 +18,7 @@
         text-transform: uppercase;
         margin: 0 auto;
         padding-bottom: 30px;
-        padding-left: 17px;
+        padding-left: 20px;
 
         @media (max-width: 1200px) {
             font-size: 43px;
@@ -33,13 +33,13 @@
     }
 
     &__text {
-        max-width: 760px;
+        max-width: 765px;
         font-weight: 500;
         font-size: 25px;
         line-height: 30px;
         text-align: center;
         margin: 0 auto;
-        padding-left: 16px;
+        padding-left: 21px;
 
         @media (max-width: 1200px) {
             font-size: 24px;
@@ -62,7 +62,7 @@
     &__item {
         position: relative;
         max-width: 393px;
-        padding-left: 57px;
+        padding-left: 59px;
 
         @media (max-width: 1075px) {
             padding-left: 38px;
@@ -83,7 +83,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             top: 0;
-            right: -30px;
+            right: -32px;
             width: 34px;
             height: 194px;
 
@@ -103,7 +103,7 @@
         &:nth-child(1)::before {
             position: absolute;
             top: 0;
-            left: 180px;
+            left: 183px;
             content: "01";
             font-weight: 800;
             font-size: 45px;
@@ -129,7 +129,7 @@
         &:nth-child(2)::after {
             position: absolute;
             top: 0px;
-            left: 177px;
+            left: 179px;
             content: "02";
             font-weight: 800;
             font-size: 45px;
@@ -157,7 +157,7 @@
             width: 34px;
             height: 194px;
             top: 0;
-            right: -31px;
+            right: -33px;
             transform: rotate(180deg);
 
             @media (max-width: 1200px) {
@@ -280,7 +280,7 @@
             text-align: center;
             text-transform: uppercase;
             margin-bottom: 29px;
-            padding-left: 17px;
+            padding-left: 20px;
 
             @media (max-width: 1800px) {
                 font-size: 43px;
@@ -307,7 +307,7 @@
             line-height: 30px;
             text-align: center;
             padding-bottom: 51px;
-            padding-left: 17px;
+            padding-left: 21px;
 
             @media (max-width: 1000px) {
                 max-width: 600px;
@@ -320,8 +320,8 @@
                 background-size: cover;
                 width: 642px;
                 height: 34px;
-                top: 11px;
-                left: -627px;
+                top: 12px;
+                left: -625px;
             }
 
             &::after {
@@ -332,8 +332,8 @@
                 transform: matrix(-1, 0, 0, 1, 0, 0);
                 width: 642px;
                 height: 34px;
-                top: 11px;
-                right: -643px;
+                top: 12px;
+                right: -645px;
             }
         }
 
@@ -341,7 +341,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding: 30px 0 24px 17px;
+            padding: 30px 0 24px 19px;
 
             @media (max-width: 965px) {
                 flex-wrap: wrap;
@@ -491,7 +491,7 @@
             &::before {
                 position: absolute;
                 content: "Мы перезвоним вам в течение 1 часа";
-                bottom: -27px;
+                bottom: -24px;
                 right: 68px;
                 font-weight: 500;
                 font-size: 12px;
