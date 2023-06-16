@@ -118,3 +118,125 @@
     }
 }
 
+@media (max-width: $tablet-width) {
+    .card-item {
+        overflow: hidden;
+        max-width: 326px;
+        border: 1px solid #1d2931;
+        border-radius: 33px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+            height: 197px;
+        }
+
+        &__date {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: #ffffff;
+            margin-bottom: 4px;
+            padding-right: 25px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-bottom: 20px;
+        }
+
+        &__description {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: right;
+            margin-bottom: 3px;
+            color: #FFFFFF;
+        }
+
+        &__item-resource {
+            width: 50%;
+            background: #f15f79;
+            color: #ffffff;
+            padding: 6px 0 0 20px;
+        }
+
+        &__information {
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 0 19px;
+            margin-bottom: 12px;
+            color: #1D2931;
+        }
+
+        &__text {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 0 19px;
+            margin-bottom: 18px;
+            color: #1D2931;
+        }
+
+        &__number {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__item-time {
+            width: 50%;
+            background: #F15F79;
+            color: #ffffff;
+            padding: 5px 17px 6px 0;
+            text-align: end;
+        }
+
+        &__result {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &_active {
+            max-width: 374px;
+            border: 1px solid #F15F79;
+            border-radius: 33px;
+
+            &__wrapper {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                
+                &::before {
+                    position: absolute;
+                    display: block;
+                    content: " ";
+                    background-image: url("../img/blog/Active.png");
+                    background-size: contain;
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        
+            &__information {
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 22px;
+                padding: 0 21px;
+                margin-bottom: 22px;
+                color: #F15F79;
+            }
+        }
+    }
+}
