@@ -153,26 +153,22 @@
 @media (max-width: $tablet-width) {
     .launch {
         &__content {
-            @media (max-width: $tablet-width) {
-                position: relative;
-                max-width: 500px;
-                padding-top: 17px;
-                padding-left: 4px;
-                padding-bottom: 40px;
-            }
+            position: relative;
+            max-width: 500px;
+            padding-top: 17px;
+            padding-left: 4px;
+            padding-bottom: 40px;
             
             &::before {
-                @media (max-width: $tablet-width) {
-                    position: absolute;
-                    content: " ";
-                    background-image: url("../img/main/main_banner_tablet.png");
-                    width: 469px;
-                    height: 384px;
-                    background-repeat: no-repeat;
-                    top: 76px;
-                    right: -226px;
-                    z-index: -3;
-                }
+                position: absolute;
+                content: " ";
+                background-image: url("../img/main/main_banner_tablet.png");
+                width: 469px;
+                height: 384px;
+                background-repeat: no-repeat;
+                top: 76px;
+                right: -226px;
+                z-index: -3;
 
                 @media (max-width: 517px) {
                     top: 100px;
@@ -187,12 +183,10 @@
         }
 
         &__slogan {
-            @media (max-width: $tablet-width) {
-                font-weight: 800;
-                font-size: 29px;
-                line-height: 35px;
-                text-transform: uppercase;
-            }
+            font-weight: 800;
+            font-size: 29px;
+            line-height: 35px;
+            text-transform: uppercase;
 
             @media (max-width: 517px) {
                 font-size: 27px;
@@ -216,18 +210,14 @@
         }
 
         &__description {
-            @media (max-width: $tablet-width) {
-                margin: 0 0 132px;
-            }
+            margin: 0 0 132px;
         }
 
         &__description p {
-            @media (max-width: $tablet-width) {
-                max-width: 350px;
-                font-weight: 600;
-                font-size: 23px;
-                line-height: 28px;
-            }
+            max-width: 350px;
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 28px;
 
             @media (max-width: 517px) {
                 font-size: 22px;
@@ -248,30 +238,28 @@
         }
 
         &__description::before {
-            @media (max-width: $tablet-width) {
-                position: absolute;
-                content: " ";
-                background-image: url("../img/main/launch_backline_tablet.png");
-                background-size: cover;
-                background-repeat: no-repeat;
-                left: -46px;
-                top: -11px;
-                width: 432px;
-                height: 104px;
-                z-index: -1;
+            position: absolute;
+            content: " ";
+            background-image: url("../img/main/launch_backline_tablet.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            left: -46px;
+            top: -11px;
+            width: 432px;
+            height: 104px;
+            z-index: -1;
 
-                @media (max-width: 450px) {
-                    left: -82px;
-                    top: -15px;
-                }
+            @media (max-width: 450px) {
+                left: -82px;
+                top: -15px;
+            }
 
-                @media (max-width: 370px) {
-                    left: -107px;
-                }
+            @media (max-width: 370px) {
+                left: -107px;
+            }
 
-                @media (max-width: 340px) {
-                    left: -120px;
-                }
+            @media (max-width: 340px) {
+                left: -120px;
             }
         }
 
@@ -283,12 +271,10 @@
         }
 
         &__button-app {
-            @media (max-width: $tablet-width) {
-                width: 212px;
-                height: 55px;
-                padding: 0 30px;
-                margin-right: 20px;
-            }
+            width: 212px;
+            height: 55px;
+            padding: 0 30px;
+            margin-right: 20px;
 
             @media (max-width: 450px) {
                 width: 100%;
@@ -297,43 +283,10 @@
         }
 
         &__button-whatsapp {
-            @media (max-width: $tablet-width) {
+            background-size: 212px 55px;
 
-                @media (max-width: 450px) {
-                    width: 100%;
-                }
-            }
-
-            &::before {
-                @media (max-width: $tablet-width) {
-                    position: absolute;
-                    content: " ";
-                    background-image: url("../img/main/WhatsAppLeada.svg");
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    width: 212px;
-                    height: 55px;
-                }
-
-                @media (max-width: 450px) {
-                    left: 130px;
-                }
-
-                @media (max-width: 390px) {
-                    left: 110px;
-                }
-
-                @media (max-width: 370px) {
-                    left: 105px;
-                }
-
-                @media (max-width: 350px) {
-                    left: 100px;
-                }
-
-                @media (max-width: 340px) {
-                    left: 95px;
-                }
+            @media (max-width: 450px) {
+                width: 100%;
             }
         }
     }
@@ -342,114 +295,82 @@
 @media (max-width: $mobile-width) {
     .launch {
         &__content {
-            @media (max-width: $mobile-width) {
-                padding-top: 11px;
-                padding-left: 0;
-                padding-bottom: 20px;
-            }
+            padding-top: 11px;
+            padding-left: 0;
+            padding-bottom: 20px;
             
             &::before {
-                @media (max-width: $mobile-width) {
-                    position: absolute;
-                    content: " ";
-                    background-image: url("../img/main/main_banner_tablet.png");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    width: 319px;
-                    height: 286px;
-                    top: 98px;
-                    right: 3px;
-                    z-index: -3;
-                }
+                position: absolute;
+                content: " ";
+                background-image: url("../img/main/main_banner_tablet.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 319px;
+                height: 286px;
+                top: 98px;
+                right: 3px;
+                z-index: -3;
             }
         }
 
         &__slogan {
-            @media (max-width: $mobile-width) {
-                font-weight: 800;
-                font-size: 20px;
-                line-height: 24px;
-                text-transform: uppercase;
-                margin-bottom: 23px;
-            }
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            margin-bottom: 23px;
         }
 
         &__description {
-            @media (max-width: $mobile-width) {
-                margin: 0 0 157px;
-            }
+            margin: 0 0 157px;
         }
 
         &__description p {
-            @media (max-width: $mobile-width) {
-                max-width: 250px;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 20px;
-            }
+            max-width: 250px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
         }
 
         &__description::before {
-            @media (max-width: $mobile-width) {
-                position: absolute;
-                content: " ";
-                background-image: url("../img/main/launch_backline_tablet.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-                left: -45px;
-                top: -11px;
-                width: 345px;
-                height: 80px;
-            }
+            position: absolute;
+            content: " ";
+            background-image: url("../img/main/launch_backline_tablet.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: -45px;
+            top: -11px;
+            width: 345px;
+            height: 80px;
         }
 
         &__button {
-            @media (max-width: $mobile-width) {
-                display: flex;
-                flex-direction: column;
-            }
+            display: flex;
+            flex-direction: column;
         }
 
         &__button-app {
-            @media (max-width: $mobile-width) {
-                width: 100%;
-                height: 45px;
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 17px;
-                text-align: center;
-                padding: 15px 88px;
-                margin: 0 0 10px 0;
-                color: #ffffff;
-            }
+            width: 100%;
+            height: 45px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            padding: 15px 88px;
+            margin: 0 0 10px 0;
+            color: #ffffff;
         }
 
         &__button-whatsapp {
-            @media (max-width: $mobile-width) {
-                width: 300px;
-                height: 45px;
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 17px;
-                text-align: center;
-                border: 2px solid #1d2931;
-                border-radius: 33px;
-                padding: 13px 0 14px 49px;
-            }
-
-            &::before {
-                @media (max-width: $mobile-width) {
-                    position: absolute;
-                    content: " ";
-                    background-image: url("../img/main/WhatsAppLeada.svg");
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    top: 5px;
-                    left: 85px;
-                    width: 29px;
-                    height: 30px;
-                }
-            }
+            width: 300px;
+            height: 45px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            border: 2px solid #1d2931;
+            border-radius: 33px;
+            padding: 13px 0 14px 49px;
         }
     }
 }

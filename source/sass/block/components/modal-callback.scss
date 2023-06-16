@@ -116,6 +116,10 @@
         border: 1px solid #1d2931;
         border-radius: 33px;
         margin-bottom: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__phone {
@@ -125,6 +129,19 @@
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 10px;
+        
+
+        &::before {
+            position: absolute;
+            top: -113px;
+            left: 154px;
+            content: "Такой номер не зарегистрирован";
+            width: 220px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #f15f79;
+        }
     }
 
     &__user-phone {
@@ -133,6 +150,10 @@
         border: 1px solid #f15f79;
         border-radius: 33px;
         margin-bottom: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__button {
@@ -148,17 +169,6 @@
         text-align: center;
         color: #ffffff;
         margin-bottom: 9px;
-
-        &::before {
-            position: absolute;
-            top: -113px;
-            left: 154px;
-            content: "Такой номер не зарегистрирован";
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            color: #f15f79;
-        }
     }
 
     &__privacy {
