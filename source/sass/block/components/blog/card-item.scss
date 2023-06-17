@@ -121,7 +121,7 @@
 @media (max-width: $tablet-width) {
     .card-item {
         overflow: hidden;
-        max-width: 326px;
+        max-width: 328px;
         border: 1px solid #1d2931;
         border-radius: 33px;
 
@@ -206,7 +206,7 @@
         }
 
         &_active {
-            max-width: 374px;
+            max-width: 328px;
             border: 1px solid #F15F79;
             border-radius: 33px;
 
@@ -214,6 +214,10 @@
                 position: relative;
                 display: flex;
                 flex-direction: column;
+
+                img {
+                    width: 100%;
+                }
                 
                 &::before {
                     position: absolute;
@@ -262,14 +266,14 @@
             font-size: 12px;
             line-height: 15px;
             margin-bottom: 4px;
-            padding-right: 25px;
+            padding-right: 0;
         }
 
         &__list {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            margin-bottom: 20px;
+            margin-bottom: 11px;
         }
 
         &__description {
@@ -316,7 +320,7 @@
             width: 50%;
             background: #F15F79;
             color: #ffffff;
-            padding: 5px 17px 6px 0;
+            padding: 5px 17px 3px 0;
             text-align: end;
         }
 
@@ -326,7 +330,7 @@
             line-height: 17px;
         }
 
-        &_active {
+        .active {
             max-width: 374px;
             border: 1px solid #F15F79;
             border-radius: 33px;
@@ -352,11 +356,17 @@
         
             &__information {
                 font-weight: 800;
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 16px;
+                line-height: 20px;
                 padding: 0 21px;
-                margin-bottom: 22px;
+                margin-bottom: 11px;
                 color: #F15F79;
+            }
+
+            &__text {
+                font-size: 12px;
+                line-height: 15px;
+                margin-bottom: 10px;
             }
         }
     }
