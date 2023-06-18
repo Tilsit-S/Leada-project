@@ -126,6 +126,10 @@
         border: none;
         border-radius: 33px;
         margin-bottom: 64px;
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 }
 
