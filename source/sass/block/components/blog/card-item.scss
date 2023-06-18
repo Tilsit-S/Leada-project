@@ -4,6 +4,14 @@
     border: 1px solid #1d2931;
     border-radius: 33px;
 
+    @media (max-width: 890px) {
+        max-width: 328px;
+    }
+
+    @media (max-width: 795px) {
+        max-width: 315px;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -87,6 +95,18 @@
         max-width: 374px;
         border: 1px solid #F15F79;
         border-radius: 33px;
+
+        img {
+            width: 100%;
+        }
+
+        @media (max-width: 890px) {
+            max-width: 328px;
+        }
+
+        @media (max-width: 795px) {
+            max-width: 315px;
+        }
 
         &__wrapper {
             position: relative;
@@ -330,27 +350,19 @@
             line-height: 17px;
         }
 
-        .active {
+        &_active {
             max-width: 374px;
-            border: 1px solid #F15F79;
+            border: 1px solid #1D2931;
             border-radius: 33px;
 
             &__wrapper {
                 position: relative;
                 display: flex;
                 flex-direction: column;
+                height: 435px;
                 
                 &::before {
-                    position: absolute;
-                    display: block;
-                    content: " ";
-                    background-image: url("../img/blog/Active.png");
-                    background-size: contain;
-                    width: 100%;
-                    height: 100%;
-                    background-repeat: no-repeat;
-                    top: 0;
-                    left: 0;
+                    display: none;
                 }
             }
         
@@ -360,7 +372,7 @@
                 line-height: 20px;
                 padding: 0 21px;
                 margin-bottom: 11px;
-                color: #F15F79;
+                color: #1D2931;
             }
 
             &__text {
