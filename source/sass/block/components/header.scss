@@ -1,5 +1,6 @@
 .header {
     position: relative;
+
     &::before {
         display: block;
         content: " ";
@@ -94,7 +95,6 @@
         }
 
         &__whatsapp svg path {
-
             &:hover {
                 fill: #1d2931;
             }
@@ -145,7 +145,7 @@
             display: none;
         }
 
-        &__pop-up {
+        .pop-up {
             display: none;
         }
     }
@@ -204,10 +204,6 @@
                 @media (max-width: $mobile-adaptive-width) {
                     display: block;
                 }
-            }
-
-            &__pop-up {
-                display: none;
             }
         }
 
@@ -363,14 +359,13 @@
             justify-content: space-between;
 
             .pop-up {
-                display: block;
                 position: absolute;
                 top: 0;
                 right: 0;
                 width: 283px;
                 padding: 45px 40px 22px 26px;
                 background: #1d2931;
-                z-index: 2;
+                z-index: 4;
 
                 a {
                     color: #ffffff;
