@@ -15,6 +15,14 @@
         padding: 28px 0;
         align-items: center;
 
+        @media (max-width: 1200px) {
+            padding: 24px 0;
+        }
+
+        @media (max-width: 860px) {
+            padding: 20px 0;
+        }
+
         &__logo {
             margin-right: -30px;
 
@@ -55,6 +63,30 @@
             }
         }
 
+        &__whatsapp {
+            margin-right: 10px;
+
+            @media (max-width: 860px) {
+                margin-right: 5px;
+            }
+
+            @media (max-width: 860px) {
+                svg {
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+        }
+
+        &__telegram {
+            @media (max-width: 860px) {
+                svg {
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+        }
+
         &__telegram svg path {
             &:hover {
                 fill: #1d2931;
@@ -62,6 +94,7 @@
         }
 
         &__whatsapp svg path {
+
             &:hover {
                 fill: #1d2931;
             }
@@ -106,10 +139,6 @@
             }
         }
 
-        &__whatsapp {
-            margin-right: 10px;
-        }
-
         &__button {
             border: none;
             background: none;
@@ -133,7 +162,7 @@
             padding-left: 0;
 
             &__list {
-                margin-left: 30px;
+                margin: 0 10px 0 30px;
                 max-width: 463px;
                 padding: 0;
 

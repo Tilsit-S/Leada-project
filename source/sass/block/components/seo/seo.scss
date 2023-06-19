@@ -716,6 +716,11 @@
             gap: 0 20px;
             margin-bottom: 21px;
 
+            @media (max-width: 695px) {
+                justify-content: center;
+                gap: 10px 20px;
+            }
+
             li:nth-child(3) {
                 display: none;
             }
