@@ -92,15 +92,18 @@
             }
         }
 
-        &__telegram svg path {
+        &__telegram,
+        &__whatsapp {
             &:hover {
-                fill: #1d2931;
+                svg path {
+                    fill: #1d2931;
+                }
             }
-        }
 
-        &__whatsapp svg path {
-            &:hover {
-                fill: #1d2931;
+            &:active {
+                svg {
+                    opacity: 0.8;
+                }
             }
         }
 
