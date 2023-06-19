@@ -69,10 +69,12 @@ ul {
 
         &:hover {
             background-color: #E63C5A;
+            transition: 0.5s;
         }
     
         &:active {
             opacity: 0.8;
+            transition: 0.5s;
         }
     }
 
@@ -81,7 +83,8 @@ ul {
 
         &:hover {
             background-color: #F15F79;
-            border: #F15F79;
+            border: none;
+            transition: 0.5s;
         }
     
         &:active {
@@ -93,9 +96,14 @@ ul {
 .link {
     &:hover {
         opacity: 0.8;
+        transition: 0.5s;
     }
 }
 
 input {
     cursor: pointer;
+
+    &:hover {
+        border: 1px solid #f15f79;
+    }
 }

@@ -168,6 +168,7 @@
 
         &:hover {
             filter: invert(1);
+            transition: 0.5s;
         }
     }
 }
@@ -403,6 +404,19 @@
             border: 2px solid #1d2931;
             border-radius: 33px;
             padding: 13px 0 14px 49px;
+            
+            a {
+                font-size: 14px;
+                line-height: 17px;
+                
+                &::before {
+                    top: -6px;
+                    left: -49px;
+                    background-size: 29px 29px;
+                    width: 29px;
+                    height: 29px;
+                }
+            }
         }
     }
 }

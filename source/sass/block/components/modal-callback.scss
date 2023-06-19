@@ -1,4 +1,5 @@
 .modal-callback {
+    overflow: hidden;
     position: absolute;
     display: none;
     left: 50%;
@@ -172,7 +173,7 @@
         border-radius: 33px;
         font-weight: 600;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1px;
         text-align: center;
         color: #ffffff;
         margin-bottom: 9px;
@@ -299,9 +300,8 @@
             border-radius: 20px;
             font-size: 12px;
             line-height: 15px;
-            padding: 10px;
+            padding: 0 0 30px 10px;
             height: 65px;
-            color: #7d92a1;
             margin-bottom: 10px;
         }
 
@@ -429,7 +429,7 @@
                 width: 273px;
                 height: 15px;
                 top: 38px;
-                left: -280px;
+                left: -245px;
             }
 
             &::after {
@@ -458,7 +458,7 @@
             border-radius: 20px;
             font-size: 12px;
             line-height: 15px;
-            padding: 10px;
+            padding: 0 0 30px 10px;
             height: 60px;
             color: #7d92a1;
             margin-bottom: 10px;
