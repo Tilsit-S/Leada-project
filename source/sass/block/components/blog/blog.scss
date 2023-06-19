@@ -203,10 +203,6 @@
             background-size: cover;
             background-repeat: no-repeat;
             transform: rotate(180deg);
-
-            path {
-                fill: #F15F79;
-            }
         }
     }
 }
@@ -360,9 +356,14 @@
                     font-size: 100%;
                     width: auto;
                     border-radius: 3px;
-    
-                    a:hover, a:active {
-                        color: #F15F79;
+
+                    a {
+                        color: #1D2931;
+
+                        &:hover,
+                        &:active {
+                            color: #F15F79;
+                        }
                     }
     
                     &.current {
@@ -391,10 +392,6 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 transform: rotate(180deg);
-    
-                path {
-                    fill: #F15F79;
-                }
             }
         }
     }
@@ -519,7 +516,6 @@
                     }
     
                     &.current {
-                    
                         a {
                             color: #F15F79;
                         }
