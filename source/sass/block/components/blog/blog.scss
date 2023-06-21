@@ -18,12 +18,9 @@
     }
 
     &__title {
+        @include second-title;
         position: relative;
-        font-weight: 800;
-        font-size: 43px;
-        line-height: 52px;
         text-align: center;
-        text-transform: uppercase;
         color: $black;
         margin-bottom: 40px;
 

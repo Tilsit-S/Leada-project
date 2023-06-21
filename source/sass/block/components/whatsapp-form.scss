@@ -71,13 +71,10 @@
     }
 
     &__title {
+        @include main-title;
         padding-top: 70px;
         margin-bottom: 29px;
         max-width: 505px;
-        font-weight: 800;
-        font-size: 45px;
-        line-height: 55px;
-        text-transform: uppercase;
         color: #ffffff;
 
         @media (max-width: 1200px) {

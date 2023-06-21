@@ -10,12 +10,9 @@
     }
 
     &__title {
+        @include main-title;
         max-width: 610px;
-        font-weight: 700;
-        font-size: 45px;
-        line-height: 55px;
         text-align: center;
-        text-transform: uppercase;
         margin: 0 auto;
         padding-bottom: 30px;
         padding-left: 20px;
@@ -275,11 +272,8 @@
 
     .form {
         &__title {
-            font-weight: 800;
-            font-size: 45px;
-            line-height: 55px;
+            @include main-title;
             text-align: center;
-            text-transform: uppercase;
             margin-bottom: 29px;
             padding-left: 20px;
 

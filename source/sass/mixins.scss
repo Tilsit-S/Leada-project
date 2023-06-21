@@ -36,3 +36,17 @@
         }
     }
 }
+
+@mixin main-title {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+
+@mixin second-title {
+    font-weight: 800;
+    font-size: 43px;
+    line-height: 52px;
+    text-transform: uppercase;
+}

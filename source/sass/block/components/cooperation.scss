@@ -24,12 +24,9 @@
     }
 
     &__text {
+        @include main-title;
         position: relative;
         max-width: 665px;
-        font-weight: 800;
-        font-size: 45px;
-        line-height: 55px;
-        text-transform: uppercase;
         color: $black;
         margin-bottom: 55px;
         padding-left: 1px;

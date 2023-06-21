@@ -35,10 +35,7 @@
     }
 
     &__title {
-        font-weight: 800;
-        font-size: 43px;
-        line-height: 52px;
-        text-transform: uppercase;
+        @include second-title;
         color: $black;
         margin-bottom: 29px;
 

@@ -5,11 +5,8 @@
     background: $black;
 
     &__title {
+        @include main-title;
         position: relative;
-        font-weight: 800;
-        font-size: 45px;
-        line-height: 55px;
-        text-transform: uppercase;
         color: #ffffff;
         padding-left: 19px;
         margin-bottom: 49px;

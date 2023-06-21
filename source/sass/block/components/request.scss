@@ -12,12 +12,9 @@
     }
 
     &__title {
+        @include main-title;
         max-width: 856px;
-        font-weight: 800;
-        font-size: 45px;
-        line-height: 55px;
         text-align: center;
-        text-transform: uppercase;
         text-align: center;
         margin-bottom: 50px;
 

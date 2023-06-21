@@ -91,11 +91,8 @@
 
     .price {
         &__title {
-            font-weight: 800;
-            font-size: 45px;
-            line-height: 55px;
+            @include main-title;
             text-align: center;
-            text-transform: uppercase;
             color: $black;
             margin-bottom: 30px;
         }
