@@ -1,6 +1,6 @@
 .page-footer {
     padding-bottom: 2px;
-    background: #1d2931;
+    background: $black;
 
     .footer {
         &__navigation {
@@ -72,7 +72,7 @@
                 }
 
                 a {
-                    color: #ffffff;
+                    color: $white;
                 }
             }
         }
@@ -80,7 +80,7 @@
         &__item-link {
             font-size: 18px;
             line-height: 24px;
-            color: #ffffff;
+            color: $white;
 
             @media (max-width: 1230px) {
                 font-size: 16px;
@@ -98,7 +98,7 @@
             font-size: 14px;
             line-height: 17px;
             font-weight: 500;
-            color: #ffffff;
+            color: $white;
             text-decoration: underline;
 
             @media (max-width: 1230px) {

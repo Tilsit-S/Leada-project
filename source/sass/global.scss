@@ -65,10 +65,10 @@ ul {
     cursor: pointer;
 
     &.red {
-        background-color: #F15F79;
+        background-color: $red;
 
         &:hover {
-            background-color: #E63C5A;
+            background-color: $tint-red;
             transition: 0.5s;
         }
     
@@ -82,7 +82,7 @@ ul {
         background-color: #1D2931;
 
         &:hover {
-            background-color: #F15F79;
+            background-color: $red;
             border: none;
             transition: 0.5s;
         }
@@ -104,6 +104,6 @@ input {
     cursor: pointer;
 
     &:hover {
-        border: 1px solid #f15f79;
+        border: 1px solid $red;
     }
 }

@@ -96,7 +96,7 @@
         &__whatsapp {
             &:hover {
                 svg path {
-                    fill: #1d2931;
+                    fill: $black;
                 }
             }
 
@@ -128,7 +128,7 @@
             font-weight: 600;
             font-size: 18px;
             line-height: 24px;
-            color: #1d2931;
+            color: $black;
 
             @media (max-width: $fixed-width) {
                 font-size: 16px;
@@ -228,7 +228,7 @@
                 right: 0;
                 width: 420px;
                 padding: 45px 40px 22px 26px;
-                background: #1d2931;
+                background: $black;
             }
 
             @media (max-width: 420px) {
@@ -244,7 +244,7 @@
             }
 
             a {
-                color: #ffffff;
+                color: $white;
             }
 
             .pop-up__sublist-button {
@@ -289,7 +289,7 @@
                     
                     &:active,
                     &:hover {
-                        background-color: #f15f79;
+                        background-color: $red;
                     }
                 }
 
@@ -346,7 +346,7 @@
             &__item-link {
                 font-size: 18px;
                 line-height: 24px;
-                color: #ffffff;
+                color: $white;
             }
 
             &__link {
@@ -376,11 +376,11 @@
                 right: 0;
                 width: 283px;
                 padding: 45px 40px 22px 26px;
-                background: #1d2931;
+                background: $black;
                 z-index: 4;
 
                 a {
-                    color: #ffffff;
+                    color: $white;
                 }
 
                 .pop-up__sublist-button {
@@ -477,7 +477,7 @@
                 &__item-link {
                     font-size: 18px;
                     line-height: 24px;
-                    color: #ffffff;
+                    color: $white;
                 }
 
                 &__link {

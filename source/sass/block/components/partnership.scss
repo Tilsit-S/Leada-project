@@ -51,7 +51,7 @@
         font-weight: 600;
         font-size: 38px;
         line-height: 46px;
-        color: #FFFFFF;
+        color: $white;
         padding-top: 72px;
 
         @media (max-width: 1200px) {
@@ -71,7 +71,7 @@
         font-size: 45px;
         line-height: 55px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: $white;
         margin-top: 48px;
 
         @media (max-width: 1200px) {
@@ -91,8 +91,8 @@
         line-height: 20px;
         text-align: center;
         border: 0;
-        color: #fff;
-        background-color: #f15f79;
+        color: $white;
+        background-color: $red;
         padding: 22px 115px;
         margin-top: 50px;
         border-radius: 33px;
