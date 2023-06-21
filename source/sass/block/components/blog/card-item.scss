@@ -1,7 +1,7 @@
 .card-item {
     overflow: hidden;
     max-width: 374px;
-    border: 1px solid #1d2931;
+    border: 1px solid $black;
     border-radius: 33px;
 
     @media (max-width: 890px) {
@@ -25,7 +25,7 @@
         font-weight: 600;
         font-size: 12px;
         line-height: 15px;
-        color: #ffffff;
+        color: $white;
         margin-bottom: 4px;
         padding-right: 25px;
     }
@@ -43,13 +43,13 @@
         line-height: 15px;
         text-align: right;
         margin-bottom: 3px;
-        color: #FFFFFF;
+        color: $white;
     }
 
     &__item-resource {
         width: 50%;
-        background: #f15f79;
-        color: #ffffff;
+        background: $red;
+        color: $white;
         padding: 8px 0 0 20px;
     }
 
@@ -59,7 +59,7 @@
         line-height: 22px;
         padding: 0 21px;
         margin-bottom: 22px;
-        color: #1D2931;
+        color: $black;
     }
 
     &__text {
@@ -68,7 +68,7 @@
         line-height: 17px;
         padding: 0 21px;
         margin-bottom: 18px;
-        color: #1D2931;
+        color: $black;
     }
 
     &__number {
@@ -79,8 +79,8 @@
 
     &__item-time {
         width: 50%;
-        background: #F15F79;
-        color: #ffffff;
+        background: $red;
+        color: $white;
         padding: 9px 20px 9px 0;
         text-align: end;
     }
@@ -93,7 +93,7 @@
 
     &_active {
         max-width: 374px;
-        border: 1px solid #F15F79;
+        border: 1px solid $red;
         border-radius: 33px;
 
         img {
@@ -133,7 +133,7 @@
             line-height: 22px;
             padding: 0 21px;
             margin-bottom: 22px;
-            color: #F15F79;
+            color: $red;
         }
     }
 }
@@ -142,7 +142,7 @@
     .card-item {
         overflow: hidden;
         max-width: 328px;
-        border: 1px solid #1d2931;
+        border: 1px solid $black;
         border-radius: 33px;
 
         &__wrapper {
@@ -159,7 +159,7 @@
             font-weight: 600;
             font-size: 12px;
             line-height: 15px;
-            color: #ffffff;
+            color: $white;
             margin-bottom: 4px;
             padding-right: 25px;
         }
@@ -177,13 +177,13 @@
             line-height: 15px;
             text-align: right;
             margin-bottom: 3px;
-            color: #FFFFFF;
+            color: $white;
         }
 
         &__item-resource {
             width: 50%;
-            background: #f15f79;
-            color: #ffffff;
+            background: $red;
+            color: $white;
             padding: 6px 0 0 20px;
         }
 
@@ -193,7 +193,7 @@
             line-height: 20px;
             padding: 0 19px;
             margin-bottom: 12px;
-            color: #1D2931;
+            color: $black;
         }
 
         &__text {
@@ -202,7 +202,7 @@
             line-height: 15px;
             padding: 0 19px;
             margin-bottom: 18px;
-            color: #1D2931;
+            color: $black;
         }
 
         &__number {
@@ -213,8 +213,8 @@
 
         &__item-time {
             width: 50%;
-            background: #F15F79;
-            color: #ffffff;
+            background: $red;
+            color: $white;
             padding: 5px 17px 6px 0;
             text-align: end;
         }
@@ -227,7 +227,7 @@
 
         &_active {
             max-width: 328px;
-            border: 1px solid #F15F79;
+            border: 1px solid $red;
             border-radius: 33px;
 
             &__wrapper {
@@ -259,7 +259,7 @@
                 line-height: 22px;
                 padding: 0 21px;
                 margin-bottom: 22px;
-                color: #F15F79;
+                color: $red;
             }
         }
     }
@@ -269,7 +269,7 @@
     .card-item {
         overflow: hidden;
         max-width: 326px;
-        border: 1px solid #1d2931;
+        border: 1px solid $black;
         border-radius: 33px;
 
         &__wrapper {
@@ -302,13 +302,13 @@
             line-height: 15px;
             text-align: right;
             margin-bottom: 3px;
-            color: #FFFFFF;
+            color: $white;
         }
 
         &__item-resource {
             width: 50%;
-            background: #f15f79;
-            color: #ffffff;
+            background: $red;
+            color: $white;
             padding: 6px 0 0 20px;
         }
 
@@ -318,7 +318,7 @@
             line-height: 20px;
             padding: 0 19px;
             margin-bottom: 12px;
-            color: #1D2931;
+            color: $black;
         }
 
         &__text {
@@ -327,7 +327,7 @@
             line-height: 15px;
             padding: 0 19px;
             margin-bottom: 18px;
-            color: #1D2931;
+            color: $black;
         }
 
         &__number {
@@ -338,8 +338,8 @@
 
         &__item-time {
             width: 50%;
-            background: #F15F79;
-            color: #ffffff;
+            background: $red;
+            color: $white;
             padding: 5px 17px 3px 0;
             text-align: end;
         }
@@ -352,7 +352,7 @@
 
         &_active {
             max-width: 374px;
-            border: 1px solid #1D2931;
+            border: 1px solid $black;
             border-radius: 33px;
 
             &__wrapper {
@@ -372,7 +372,7 @@
                 line-height: 20px;
                 padding: 0 21px;
                 margin-bottom: 11px;
-                color: #1D2931;
+                color: $black;
             }
 
             &__text {
