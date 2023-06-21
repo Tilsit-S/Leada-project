@@ -259,10 +259,10 @@
                 background-color: transparent;
                 width: 13px;
                 height: 7px;
+            }
 
-                &:active {
-                    transform: rotate(180deg);
-                }
+            &__placeholder-input:checked ~ .pop-up__sublist-button {
+                transform: rotate(180deg);
             }
 
             .pop-up__burger-button-close {

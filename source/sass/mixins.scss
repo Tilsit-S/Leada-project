@@ -42,6 +42,13 @@
     font-size: 45px;
     line-height: 55px;
     text-transform: uppercase;
+
+    @media (max-width: $tablet-width) {
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
 }
 
 @mixin second-title {
