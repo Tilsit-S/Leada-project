@@ -151,9 +151,8 @@
         }
 
         &__text {
+            @include description;
             max-width: 201px;
-            font-size: 16px;
-            line-height: 20px;
             margin-bottom: 18px;
 
             &::before {

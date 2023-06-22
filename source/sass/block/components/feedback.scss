@@ -791,9 +791,8 @@
         }
 
         &__text {
+            @include description;
             max-width: 290px;
-            font-size: 16px;
-            line-height: 20px;
         }
 
         &__description {
@@ -907,9 +906,8 @@
             }
 
             &__description {
+                @include description;
                 max-width: 300px;
-                font-size: 16px;
-                line-height: 20px;
                 padding-bottom: 18px;
 
                 &::after {

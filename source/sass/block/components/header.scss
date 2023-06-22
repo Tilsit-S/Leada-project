@@ -222,8 +222,16 @@
                 display: block;
             }
 
-            @media (max-width: 500px) {
+            @media (max-width: 767px) {
                 position: absolute;
+                top: 0;
+                right: 0;
+                width: 530px;
+                padding: 45px 40px 22px 26px;
+                background: $black;
+            }
+
+            @media (max-width: 550px) {
                 top: 0;
                 right: 0;
                 width: 420px;

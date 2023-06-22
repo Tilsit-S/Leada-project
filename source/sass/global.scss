@@ -103,6 +103,7 @@ ul {
 
 input {
     cursor: pointer;
+    outline: none;
 
     &:hover {
         border: 1px solid $red;
