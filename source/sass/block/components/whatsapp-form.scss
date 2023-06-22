@@ -133,9 +133,7 @@
 @media (max-width: $tablet-width) {
     .whatsapp-form {
         &__content {
-            @media (max-width: $tablet-width) {
-                max-width: 420px;
-            }
+            max-width: 420px;
 
             @media (max-width: 700px) {
                 max-width: 500px;
@@ -144,12 +142,10 @@
             }
 
             &::before {
-                @media (max-width: $tablet-width) {
-                    width: 275px;
-                    height: 335px;
-                    top: 50px;
-                    left: -287px;
-                }
+                width: 275px;
+                height: 335px;
+                top: 50px;
+                left: -287px;
 
                 @media (max-width: 700px) {
                     width: 275px;
@@ -166,12 +162,10 @@
         }
 
         &__title {
-            @media (max-width: $tablet-width) {
-                font-size: 35px;
-                line-height: 43px;
-                padding-top: 50px;
-                margin-bottom: 31px;
-            }
+            font-size: 35px;
+            line-height: 43px;
+            padding-top: 50px;
+            margin-bottom: 31px;
 
             @media (max-width: 520px) {
                 font-size: 30px;
@@ -191,10 +185,8 @@
         }
 
         &__text {
-            @media (max-width: $tablet-width) {
-                font-size: 22px;
-                line-height: 27px;
-            }
+            font-size: 22px;
+            line-height: 27px;
 
             @media (max-width: 520px) {
                 font-size: 20px;
@@ -223,9 +215,7 @@
             }
 
             &::after {
-                @media (max-width: $tablet-width) {
-                    display: none;
-                }
+                display: none;
             }
         }
     }
@@ -238,43 +228,35 @@
             padding-bottom: 0;
 
             &::before {
-                @media (max-width: $mobile-width) {
-                    width: 226px;
-                    height: 275px;
-                    top: 290px;
-                    left: 44px;
-                    opacity: 1;
-                }
+                width: 226px;
+                height: 275px;
+                top: 290px;
+                left: 44px;
+                opacity: 1;
             }
         }
 
         &__title {
-            @media (max-width: $mobile-width) {
-                font-size: 22px;
-                line-height: 27px;
-                padding-top: 39px;
-                margin-bottom: 23px;
-                text-align: center;
-            }
+            font-size: 22px;
+            line-height: 27px;
+            padding-top: 39px;
+            margin-bottom: 23px;
+            text-align: center;
         }
 
         &__text {
-            @media (max-width: $mobile-width) {
-                @include description;
-                margin-bottom: 17px;
-                text-align: center;
-            }
+            @include description;
+            margin-bottom: 17px;
+            text-align: center;
         }
 
         &__button {
-            @media (max-width: $mobile-width) {
-                background-image: url("../img/main/whatsapp_red.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 300px;
-                height: 45px;
-                margin-bottom: 290px;
-            }
+            background-image: url("../img/main/whatsapp_red.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 45px;
+            margin-bottom: 290px;
         }
     }
 }

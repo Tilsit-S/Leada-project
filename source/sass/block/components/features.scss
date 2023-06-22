@@ -94,129 +94,117 @@
 @media (max-width: $tablet-width) {
     .features {
         &__content {
-            @media (max-width: $tablet-width) {
-                position: relative;
-                max-width: 452px;
-                padding-top: 50px;
-                padding-left: 0px;
+            position: relative;
+            max-width: 452px;
+            padding-top: 50px;
+            padding-left: 0px;
 
-                @media (max-width: 450px) {
-                    padding-top: 35px;
-                }
+            @media (max-width: 450px) {
+                padding-top: 35px;
             }
         
             &::before {
-                @media (max-width: $tablet-width) {
-                    position: absolute;
-                    content: " ";
-                    background-image: url("../img/main/features_banner_tablet.png");
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    width: 405px;
-                    height: 431px;
+                position: absolute;
+                content: " ";
+                background-image: url("../img/main/features_banner_tablet.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 405px;
+                height: 431px;
+                top: 34px;
+                left: 323px;
+
+                @media (max-width: 500px) {
+                    width: 363px;
+                    height: 385px;
                     top: 34px;
-                    left: 323px;
+                    left: 290px;
+                }
 
-                    @media (max-width: 500px) {
-                        width: 363px;
-                        height: 385px;
-                        top: 34px;
-                        left: 290px;
-                    }
-
-                    @media (max-width: 450px) {
-                        width: 268px;
-                        height: 269px;
-                        top: 119px;
-                        left: 166px;
-                    }
+                @media (max-width: 450px) {
+                    width: 268px;
+                    height: 269px;
+                    top: 119px;
+                    left: 166px;
                 }
             }
         }
 
         &__slogan {
-            @media (max-width: $tablet-width) {
-                font-weight: 800;
-                font-size: 40px;
-                line-height: 49px;
-                text-transform: uppercase;
-                margin-bottom: 138px;
-                padding-left: 0;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 49px;
+            text-transform: uppercase;
+            margin-bottom: 138px;
+            padding-left: 0;
 
-                @media (max-width: 500px) {
-                    max-width: 400px;
-                    font-size: 37px;
-                    line-height: 46px;
-                }
+            @media (max-width: 500px) {
+                max-width: 400px;
+                font-size: 37px;
+                line-height: 46px;
+            }
 
-                @media (max-width: 450px) {
-                    margin-bottom: 153px;
-                }
+            @media (max-width: 450px) {
+                margin-bottom: 153px;
+            }
 
-                @media (max-width: 400px) {
-                    font-size: 34px;
-                }
+            @media (max-width: 400px) {
+                font-size: 34px;
+            }
 
-                @media (max-width: 380px) {
-                    font-size: 32px;
-                }
+            @media (max-width: 380px) {
+                font-size: 32px;
+            }
 
-                @media (max-width: 350px) {
-                    font-size: 27px;
-                    margin-bottom: 177px;
-                }
+            @media (max-width: 350px) {
+                font-size: 27px;
+                margin-bottom: 177px;
             }
         }
 
         &__description {
-            @media (max-width: $tablet-width) {
-                padding-bottom: 49px;
+            padding-bottom: 49px;
 
-                @media (max-width: 350px) {
-                    padding-bottom: 25px;
-                }
+            @media (max-width: 350px) {
+                padding-bottom: 25px;
             }
         
             &::before {
-                @media (max-width: $tablet-width) {
-                    position: absolute;
-                    content: " ";
-                    background-image: url("../img/main/features_red-line_desktop1.svg");
-                    background-size: cover;
-                    width: 258px;
-                    height: 34px;
-                    top: -102px;
-                    left: -40px;
+                position: absolute;
+                content: " ";
+                background-image: url("../img/main/features_red-line_desktop1.svg");
+                background-size: cover;
+                width: 258px;
+                height: 34px;
+                top: -102px;
+                left: -40px;
 
-                    @media (max-width: 500px) {
-                        width: 248px;
-                        height: 33px;
-                    }
+                @media (max-width: 500px) {
+                    width: 248px;
+                    height: 33px;
                 }
             }
         
             & p {
-                @media (max-width: $tablet-width) {
-                    @include description;
-                    max-width: 356px;
+                @include description;
+                max-width: 356px;
 
-                    @media (max-width: 500px) {
-                        font-size: 21px;
-                        line-height: 25px;
-                    }
+                @media (max-width: 500px) {
+                    font-size: 21px;
+                    line-height: 25px;
+                }
 
-                    @media (max-width: 400px) {
-                        max-width: 340px;
-                        font-size: 20px;
-                        line-height: 24px;
-                        
-                    }
+                @media (max-width: 400px) {
+                    max-width: 340px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    
+                }
 
-                    @media (max-width: 350px) {
-                        max-width: 297px;
-                        font-size: 19px;
-                        line-height: 24px;
-                    }
+                @media (max-width: 350px) {
+                    max-width: 297px;
+                    font-size: 19px;
+                    line-height: 24px;
                 }
             }
         }
@@ -227,61 +215,49 @@
 @media (max-width: $mobile-width) {
     .features {
         &__content {
-            @media (max-width: $mobile-width) {
-                padding-top: 40px;
-            }
+            padding-top: 40px;
 
             &::before {
-                @media (max-width: $mobile-width) {
-                    position: absolute;
-                    content: " ";
-                    background-image: url("../img/main/features_banner_desktop.png");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    width: 206px;
-                    height: 190px;
-                    top: 105px;
-                    left: 111px;
-                }
+                position: absolute;
+                content: " ";
+                background-image: url("../img/main/features_banner_desktop.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 206px;
+                height: 190px;
+                top: 105px;
+                left: 111px;
             }
         }
 
         &__slogan {
-            @media (max-width: $mobile-width) {
-                max-width: 260px;
-                font-size: 24px;
-                line-height: 29px;
-                margin-bottom: 166px;
-            }
+            max-width: 260px;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 166px;
         }
 
         &__description {
-            @media (max-width: $mobile-width) {
-                max-width: 260px;
-                font-size: 16px;
-                line-height: 20px;
-                padding-bottom: 39px;
-            }
+            max-width: 260px;
+            font-size: 16px;
+            line-height: 20px;
+            padding-bottom: 39px;
         
             &::before {
-                @media (max-width: $mobile-width) {
-                    position: absolute;
-                    content: " ";
-                    background-image: url("../img/main/features_red-line_desktop1.svg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    width: 123px;
-                    height: 15px;
-                    top: -127px;
-                    left: -6px;
-                }
+                position: absolute;
+                content: " ";
+                background-image: url("../img/main/features_red-line_desktop1.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 123px;
+                height: 15px;
+                top: -127px;
+                left: -6px;
             }
         
             & p {
-                @media (max-width: $mobile-width) {
-                    @include description;
-                    padding-left: 0;
-                }
+                @include description;
+                padding-left: 0;
             }
         }
     }

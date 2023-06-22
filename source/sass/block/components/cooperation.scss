@@ -162,16 +162,12 @@
 @media (max-width: $tablet-width) {
     .cooperation {
         &__content {
-            @media (max-width: $tablet-width) {
-                padding: 50px 0 30px 0;
-            }
+            padding: 50px 0 30px 0;
         }
 
         &__title {
-            @media (max-width: $tablet-width) {
-                font-size: 28px;
-                line-height: 34px;
-            }
+            font-size: 28px;
+            line-height: 34px;
 
             @media (max-width: 530px) {
                 font-size: 26px;
@@ -181,11 +177,9 @@
         }
 
         &__text {
-            @media (max-width: $tablet-width) {
-                @include main-title;
-                max-width: 535px;
-                margin-bottom: 31px;
-            }
+            @include main-title;
+            max-width: 535px;
+            margin-bottom: 31px;
 
             @media (max-width: 530px) {
                 font-size: 30px;
@@ -215,20 +209,16 @@
         }
 
         &__item {
-            @media (max-width: $tablet-width) {
-                width: 328px;
-                height: 267px;
+            width: 328px;
+            height: 267px;
 
-                @media (max-width: 700px) {
-                    width: 100%;
-                }
+            @media (max-width: 700px) {
+                width: 100%;
             }
 
             &:not(:last-child) {
-                @media (max-width: $tablet-width) {
-                    margin-right: 20px;
-                    margin-bottom: 20px;
-                }
+                margin-right: 20px;
+                margin-bottom: 20px;
 
                 @media (max-width: 700px) {
                     margin-right: 0;
@@ -236,32 +226,24 @@
             }
 
             &:nth-child(2n) {
-                @media (max-width: $tablet-width) {
-                    margin-right: 0;
-                }
+                margin-right: 0;
             }
 
             &::after {
-                @media (max-width: $tablet-width) {
-                    width: 134px;
-                    height: 124px;
-                }
+                width: 134px;
+                height: 124px;
             }
 
             & .item__text:nth-child(1) {
-                @media (max-width: $tablet-width) {
-                    padding: 86px 35px 0 30px;
-                }
+                padding: 86px 35px 0 30px;
             }
         }
 
         .item {
             &__text {
-                @media (max-width: $tablet-width) {
-                    font-size: 20px;
-                    line-height: 24px;
-                    padding: 86px 33px 0 30px;
-                }
+                font-size: 20px;
+                line-height: 24px;
+                padding: 86px 33px 0 30px;
             }
         }
     }
@@ -270,120 +252,88 @@
 @media (max-width: $mobile-width) {
     .cooperation {
         &__content {
-            @media (max-width: $mobile-width) {
-                padding: 41px 0 42px 0;
-            }
+            padding: 41px 0 42px 0;
         }
 
         &__title {
-            @media (max-width: $mobile-width) {
-                font-size: 20px;
-                line-height: 24px;
-                margin-bottom: 21px;
-                text-align: center;
-            }
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 21px;
+            text-align: center;
         }
 
         &__text {
-            @media (max-width: $mobile-width) {
-                font-size: 24px;
-                line-height: 29px;
-                text-align: center;
-                margin-bottom: 23px;
-            }
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            margin-bottom: 23px;
 
             &::after {
-                @media (max-width: $mobile-width) {
-                    content: " ";
-                    background-image: url("../img/main/coop_blackline.svg");
-                    background-size: cover;
-                    width: 75px;
-                    height: 15px;
-                    top: 72px;
-                    right: 232px;
-                    transform: scale(-1, 1);
-                }
+                content: " ";
+                background-image: url("../img/main/coop_blackline.svg");
+                background-size: cover;
+                width: 75px;
+                height: 15px;
+                top: 72px;
+                right: 232px;
+                transform: scale(-1, 1);
             }
         }
 
         &__item {
-            @media (max-width: $mobile-width) {
-                margin-right: 0;
-                height: 244px;
-            }
+            margin-right: 0;
+            height: 244px;
 
             &:not(:last-child) {
-                @media (max-width: $mobile-width) {
-                    margin-right: 0;
-                }
+                margin-right: 0;
             }
 
             &:nth-child(1) {
-                @media (max-width: $mobile-width) {
-                    padding-right: 55px;
-                }
+                padding-right: 55px;
             }
 
             &:nth-child(2n) {
-                @media (max-width: $mobile-width) {
-                    padding-right: 30px;
-                }
+                padding-right: 30px;
             }
 
             &::after {
-                @media (max-width: $mobile-width) {
-                    width: 114px;
-                    height: 106px;
-                }
+                width: 114px;
+                height: 106px;
             }
 
             &:nth-child(1):before {
-                @media (max-width: $mobile-width) {
-                    font-size: 35px;
-                    line-height: 43px;
-                }
+                font-size: 35px;
+                line-height: 43px;
             }
 
             &:nth-child(2):before {
-                @media (max-width: $mobile-width) {
-                    font-size: 35px;
-                    line-height: 43px;
-                }
+                font-size: 35px;
+                line-height: 43px;
             }
 
             &:nth-child(3):before {
-                @media (max-width: $mobile-width) {
-                    font-size: 35px;
-                    line-height: 43px;
-                }
+                font-size: 35px;
+                line-height: 43px;
             }
 
             &:nth-child(4):before {
-                @media (max-width: $mobile-width) {
-                    font-size: 35px;
-                    line-height: 43px;
-                }
+                font-size: 35px;
+                line-height: 43px;
             }
 
             & .item__text:nth-child(1) {
-                @media (max-width: $mobile-width) {
-                    padding: 75px 0 0 24px;
-                }
+                padding: 75px 0 0 24px;
             }
 
             & .item__text:nth-child(2) {
-                @media (max-width: $mobile-width) {
-                    padding: 75px 0 0 24px;
-                }
+                padding: 75px 0 0 24px;
             }
         }
 
         .item {
             &__text {
-                @media (max-width: $mobile-width) {
-                    font-size: 18px;
-                    line-height: 22px;
-                }
+                font-size: 18px;
+                line-height: 22px;
             }
         }
     }

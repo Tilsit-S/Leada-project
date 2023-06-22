@@ -326,6 +326,14 @@
     }
 }
 
+.seo__card-item:hover {
+    border: 1px solid $red;
+    
+    .card-item__information {
+        color: $red;
+    }
+}
+
 @media (max-width: $tablet-width) {
     .seo {
         &__wrapper {
