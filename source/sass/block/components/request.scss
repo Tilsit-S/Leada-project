@@ -25,11 +25,9 @@
     }
 
     &__text {
+        @include description;
         position: relative;
         max-width: 606px;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 30px;
         text-align: center;
         color: #1d2931;
         margin-bottom: 50px;
@@ -119,15 +117,13 @@
         }
 
         &__title {
-            font-size: 35px;
-            line-height: 43px;
+            @include main-title;
             margin-bottom: 30px;
         }
 
         &__text {
+            @include description;
             max-width: 340px;
-            font-size: 22px;
-            line-height: 27px;
             margin-bottom: 30px;
         }
 

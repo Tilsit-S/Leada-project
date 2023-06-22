@@ -157,8 +157,7 @@
         
         &__title {
             @media (max-width: $tablet-width) {
-                font-size: 35px;
-                line-height: 43px;
+                @include main-title;
                 margin-top: 30px;
                 margin-bottom: 0;
             }

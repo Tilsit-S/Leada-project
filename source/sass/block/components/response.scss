@@ -74,8 +74,7 @@
         padding-bottom: 62px;
 
         &__title {
-            font-size: 35px;
-            line-height: 43px;
+            @include main-title;
             padding: 0;
             margin-bottom: 31px;
 
@@ -118,8 +117,7 @@
         padding-bottom: 36px;
 
         &__title {
-            font-size: 22px;
-            line-height: 27px;
+            @include main-title;
             margin-bottom: 20px;
 
             &::before {

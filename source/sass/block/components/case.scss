@@ -262,8 +262,7 @@
 
         .price {
             &__title {
-                font-size: 35px;
-                line-height: 43px;
+                @include main-title;
             }
 
             &__list {
@@ -349,9 +348,8 @@
 
         .price {
             &__title {
+                @include main-title;
                 margin-bottom: 15px;
-                font-size: 22px;
-                line-height: 27px;
             }
 
             &__list {
