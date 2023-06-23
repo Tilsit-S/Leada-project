@@ -13,6 +13,7 @@
 
     &__title {
         @include main-title;
+        position: relative;
         max-width: 856px;
         text-align: center;
         text-align: center;
@@ -21,6 +22,26 @@
         @media (max-width: 1000px) {
             font-size: 38px;
             line-height: 48px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 225%;
+            height: 4px;
+            background-color: #f15f79;
+            top: 237px;
+            left: -279%;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 225%;
+            height: 4px;
+            background-color: #f15f79;
+            top: 237px;
+            right: -279%;
         }
     }
 

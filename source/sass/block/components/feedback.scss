@@ -273,6 +273,7 @@
     .form {
         &__title {
             @include main-title;
+            position: relative;
             text-align: center;
             margin-bottom: 29px;
             padding-left: 20px;
@@ -290,6 +291,26 @@
             @media (max-width: 1000px) {
                 font-size: 38px;
                 line-height: 47px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 150%;
+                height: 4px;
+                background-color: #f15f79;
+                top: 106px;
+                left: -177%;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 150%;
+                height: 4px;
+                background-color: #f15f79;
+                top: 106px;
+                right: -177%;
             }
         }
 

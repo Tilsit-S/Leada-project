@@ -118,6 +118,16 @@
         }
     }
 
+    &__description::after {
+        position: absolute;
+        content: "";
+        width: 150%;
+        height: 142px;
+        background-color: #f15f79;
+        top: -13px;
+        left: -230%;
+    }
+
     &__button {
         display: flex;
         flex-direction: row;

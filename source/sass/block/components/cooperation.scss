@@ -41,6 +41,16 @@
             line-height: 47px;
         }
 
+        &::before {
+            position: absolute;
+            content: "";
+            width: 150%;
+            height: 4px;
+            background-color: #1d2931;
+            top: 40px;
+            right: -279%;
+        }
+
         &::after {
             position: absolute;
             content: url("../img/main/coop_blackline.svg");

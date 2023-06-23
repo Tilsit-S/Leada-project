@@ -71,6 +71,16 @@
             top: -100px;
             left: -387px;
         }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 150%;
+            height: 5px;
+            background-color: #f15f79;
+            top: -90px;
+            left: -178%;
+        }
     
         & p {
             @include description;

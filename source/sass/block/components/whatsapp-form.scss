@@ -111,6 +111,16 @@
             font-size: 23px;
             line-height: 27px;
         }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 150%;
+            height: 5px;
+            background-color: $white;
+            bottom: 97px;
+            right: -176%;
+        }
     }
 
     &__button {
