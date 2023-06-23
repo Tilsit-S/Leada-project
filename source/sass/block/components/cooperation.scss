@@ -252,7 +252,7 @@
 @media (max-width: $mobile-width) {
     .cooperation {
         &__content {
-            padding: 41px 0 42px 0;
+            padding: 41px 0 40px 0;
         }
 
         &__title {
@@ -278,6 +278,10 @@
                 right: 232px;
                 transform: scale(-1, 1);
             }
+        }
+
+        &__list {
+            gap: 0;
         }
 
         &__item {

@@ -378,6 +378,21 @@
             flex-direction: row;
             justify-content: space-between;
 
+            &__logo {
+                & img {
+                    width: 67px;
+                    height: 34px;
+                }
+            }
+
+            &__button {
+
+                & img {
+                    width: 27px;
+                    height: 32px;
+                }
+            }
+
             .pop-up {
                 position: absolute;
                 top: 0;
