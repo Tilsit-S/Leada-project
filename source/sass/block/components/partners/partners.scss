@@ -56,6 +56,7 @@
     }
 
     &__description {
+        position: relative;
         font-weight: 600;
         font-size: 30px;
         line-height: 37px;
@@ -70,6 +71,16 @@
         @media (max-width: 1000px) {
             font-size: 25px;
             line-height: 31px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 320%;
+            height: 4px;
+            background-color: #f15f79;
+            top: 228px;
+            left: -404%;
         }
     }
 

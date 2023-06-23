@@ -364,6 +364,10 @@
                 justify-content: center;
                 gap: 20px;
             }
+
+            p {
+                margin-bottom: 10px;
+            }
         }
 
         &__user-name {
@@ -375,8 +379,8 @@
             border-radius: 33px;
 
             &:hover {
-                border-color: $red;
                 cursor: pointer;
+                opacity: 0.8;
             }
 
             @media (max-width: 1250px) {
@@ -419,11 +423,10 @@
             border: 1px solid $black;
             border-radius: 33px;
 
-            &:hover,
-            &:active {
+            &:hover {
                 cursor: pointer;
                 border: 1px solid;
-                border-color: $red;
+                opacity: 0.8;
             }
 
             @media (max-width: 1250px) {
@@ -739,6 +742,10 @@
                 @media (max-width: 700px) {
                     margin-right: 0;
                     justify-content: center;
+                }
+
+                p {
+                    text-align: center;
                 }
             }
 

@@ -145,10 +145,9 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
-        cursor: pointer;
 
         a {
-            color: $black;
+            cursor: default;
         }
     }
 
@@ -247,6 +246,31 @@
         }
     }
 
+    &__color-text {
+        position: relative;
+        display: block;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 180%;
+            height: 4px;
+            background-color: #f15f79;
+            top: -34px;
+            right: -215%;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 180%;
+            height: 4px;
+            background-color: #f15f79;
+            top: -34px;
+            left: -215%;
+        }
+    }
+
     &__slider {
         display: flex;
         flex-direction: row;
@@ -305,22 +329,20 @@
             display: block;
             width: 14px;
             height: 26px;
-            background-image: url("../img/seo/Vector.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
+
+            svg path:hover {
+                stroke: $red;
+            }
         }
 
         &__ion-right {
             display: block;
             width: 14px;
             height: 26px;
-            background-image: url("../img/seo/Vector.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
             transform: rotate(180deg);
 
-            path {
-                fill: $red;
+            svg path:hover {
+                stroke: $red;
             }
         }
     }
