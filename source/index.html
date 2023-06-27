@@ -60,15 +60,15 @@
                             alt="menu button"
                         />
                     </button>
-                    
+
                     <div class="navigation__pop-up pop-up">
                         <div class="pop-up__wrapper">
                             <button class="pop-up__burger-button-close burger-btn-close"></button>
                             <ul class="pop-up__list">
                                 <li class="pop-up__item">
-                                    
+
                                     <label for="placeholder" type="button" class="pop-up__item-link link">Услуги</label>
-                                    
+
                                     <input class="pop-up__placeholder-input visually-hidden" type="checkbox" id="placeholder"></input>
                                     <label for="placeholder" type="button" class="pop-up__sublist-button"></label>
                                     <ul class="pop-up__sublist">
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                     </div>
-                
+
                     <div class="navigation__link">
                         <a href="#" class="navigation__whatsapp">
                             <svg xmlns="http://www.w3.org/2000/svg" width="47" height="46" viewBox="0 0 47 46" fill="none">
@@ -1759,14 +1759,21 @@
                         <span class="launch__colortext">бесплатную</span>
                         консультацию от нашего эксперта:
                     </p>
-                    <input class="modal-callback__form" placeholder="Чем вы занимаетесь? Или ссылка на ваш сайт">
+                    <input class="modal-callback__form" placeholder="Чем вы занимаетесь? Или ссылка на ваш сайт" >
                     <input class="modal-callback__form" placeholder="Какие показатели вы хотите достичь (желаемый оборот)?">
                     <input class="modal-callback__form" placeholder="Есть ли у вас критерии желаемых клиентов?">
                     <input class="modal-callback__form" placeholder="Укажите ваши текущие показатели или текущую ситуацию?">
                     <input class="modal-callback__form" placeholder="Укажите конверсию вашего сайта (если знаете)">
                     <input class="modal-callback__form" placeholder="Укажите ваш средний чек (если знаете)">
-                    <label class="modal-callback__user" for="user-name">Ваше имя</label>
-                    <input type="text" class="modal-callback__user-name" id="user-name" placeholder="Ф.И.О.">
+
+                    <div class="input-wrapper error">
+                        <div class="input-wrapper__label">
+                            <label class="modal-callback__user" for="user-name">Ваше имя</label>
+                            <span>Такой номер не зарегистрирован</span>
+                        </div>
+                        <input type="text" class="modal-callback__user-name" id="user-name" placeholder="Ф.И.О." required>
+                    </div>
+
                     <label class="modal-callback__phone" for="tel">Ваш телефон</label>
                     <input type="tel" class="modal-callback__user-phone" id="tel" placeholder="+7 (___) ___-__-__">
                     <button class="modal-callback__button black button">

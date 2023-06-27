@@ -80,21 +80,21 @@ ul {
         &:hover {
             background-color: $tint-red;
         }
-    
+
         &:active {
             opacity: 0.6;
         }
     }
 
     &.black {
-        background-color: #1D2931;
+        background-color: #1d2931;
         transition: 0.3s ease-in-out;
 
         &:hover {
             background-color: $red;
             border: none;
         }
-    
+
         &:active {
             opacity: 0.8;
         }
@@ -117,6 +117,38 @@ input {
     outline: none;
 
     &:hover {
-        opacity: 0.6;
+        border-color: $input-hover-border;
+    }
+}
+
+.input-wrapper {
+    position: relative;
+
+    &__label {
+        display: flex;
+    }
+
+    label {
+        width: 40%;
+        margin-right: 5%;
+    }
+
+    span {
+        display: none;
+        width: 55%;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #f15f79;
+    }
+
+    &.error {
+        input {
+            border-color: $red;
+        }
+
+        span {
+            display: block;
+        }
     }
 }

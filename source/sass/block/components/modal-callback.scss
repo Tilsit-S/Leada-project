@@ -105,9 +105,9 @@
         padding: 0 0 40px 10px;
         margin-bottom: 20px;
         resize: none;
-        color: #1D2931;
+        color: #1d2931;
         border-radius: 20px;
-        border: 1px solid #1D2931;
+        border: 1px solid #1d2931;
 
         &::placeholder {
             font-size: 12px;
@@ -143,19 +143,6 @@
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 10px;
-        
-
-        &::before {
-            position: absolute;
-            top: -113px;
-            left: 154px;
-            content: "Такой номер не зарегистрирован";
-            width: 220px;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            color: #f15f79;
-        }
     }
 
     &__user-phone {
