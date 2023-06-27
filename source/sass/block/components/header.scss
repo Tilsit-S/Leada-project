@@ -1,7 +1,7 @@
 .header {
     position: relative;
 
-    &--not-main {
+    &__not-main {
         box-shadow: 0px 6px 12px rgba(105, 112, 117, 0.25);
     }
 
@@ -143,6 +143,10 @@
             @media (max-width: 860px) {
                 font-size: 13px;
                 line-height: 18px;
+            }
+
+            &:active {
+                opacity: 0.6;
             }
         }
 

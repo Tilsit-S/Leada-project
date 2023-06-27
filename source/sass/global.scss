@@ -32,6 +32,14 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: $black;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
 }
 
 h1,
@@ -67,25 +75,24 @@ ul {
 
     &.red {
         background-color: $red;
+        transition: 0.3s ease-in-out;
 
         &:hover {
             background-color: $tint-red;
-            transition: 0.5s;
         }
     
         &:active {
-            opacity: 0.8;
-            transition: 0.5s;
+            opacity: 0.6;
         }
     }
 
     &.black {
         background-color: #1D2931;
+        transition: 0.3s ease-in-out;
 
         &:hover {
             background-color: $red;
             border: none;
-            transition: 0.5s;
         }
     
         &:active {
@@ -97,8 +104,12 @@ ul {
 .link {
     &:hover {
         opacity: 0.8;
-        transition: 0.5s;
+        transition: 0.3s;
     }
+}
+
+label {
+    cursor: pointer;
 }
 
 input {
@@ -106,6 +117,6 @@ input {
     outline: none;
 
     &:hover {
-        border: 1px solid $red;
+        opacity: 0.6;
     }
 }

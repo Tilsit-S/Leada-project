@@ -330,8 +330,10 @@
             width: 14px;
             height: 26px;
 
-            svg path:hover {
-                stroke: $red;
+            &:hover {
+                svg path {
+                    stroke: $red;
+                }
             }
         }
 
@@ -341,8 +343,10 @@
             height: 26px;
             transform: rotate(180deg);
 
-            svg path:hover {
-                stroke: $red;
+            &:hover {
+                svg path {
+                    stroke: $red;
+                }
             }
         }
     }

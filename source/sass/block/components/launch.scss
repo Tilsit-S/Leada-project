@@ -156,6 +156,7 @@
         border: 2px solid $black;
         background-color: $white;
         border-radius: 31px;
+        transition: 0.5s ease-in-out;
 
         a {
             color: $black;
@@ -178,7 +179,10 @@
 
         &:hover {
             filter: invert(1);
-            transition: 0.5s;
+        }
+
+        &:active {
+            opacity: 0.5;
         }
     }
 }
