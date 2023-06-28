@@ -364,13 +364,14 @@
                 justify-content: center;
                 gap: 20px;
             }
-            div {
-                display: flex;
-                flex-direction: column;
-            }
 
             label {
                 margin-bottom: 10px;
+            }
+
+            span {
+                width: 60%;
+                margin: 5px 0 0 10px;
             }
         }
 
