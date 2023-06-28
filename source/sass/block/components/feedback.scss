@@ -364,14 +364,17 @@
                 justify-content: center;
                 gap: 20px;
             }
+            div {
+                display: flex;
+                flex-direction: column;
+            }
 
-            p {
+            label {
                 margin-bottom: 10px;
             }
         }
 
         &__user-name {
-            position: relative;
             width: 374px;
             padding: 22px 0 22px 20px;
             background: $white;
@@ -398,8 +401,7 @@
                 margin-bottom: 20px;
             }
 
-            &::before {
-                position: absolute;
+            label {
                 content: "Ваше имя";
                 top: -33px;
                 left: -1px;
@@ -483,7 +485,7 @@
             color: $white;
             border-radius: 33px;
             border: none;
-            margin-top: 20px;
+            margin-top: 28px;
 
             @media (max-width: 1250px) {
                 width: 350px;
@@ -778,7 +780,7 @@
 
             &__user-name,
             &__telephone {
-                margin-bottom: 20px;
+                margin-bottom: 0;
                 gap: 0;
             }
 
