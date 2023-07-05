@@ -116,6 +116,7 @@
     }
 
     &__link {
+        max-width: 374px;
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
@@ -123,7 +124,7 @@
         border: 0;
         color: $white;
         background-color: $red;
-        padding: 22px 115px;
+        padding: 22px 114px;
         border-radius: 33px;
     }
 }
