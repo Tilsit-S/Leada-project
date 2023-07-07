@@ -55,7 +55,7 @@
         line-height: 52px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 46px;
+        margin-bottom: 33px;
 
         @media (max-width: 1000px) {
             font-size: 40px;
@@ -74,14 +74,17 @@
 
     &__description {
         position: relative;
-        max-width: 457px;
+        max-width: 481px;
         font-weight: 600;
         font-size: 30px;
         line-height: 37px;
-        margin: 0 0 114px 0;
-    }
+        padding: 15px 0;
+        margin: 0 0 114px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: $red;
+        z-index: 1;
 
-    &__description p {
         color: $white;
         font-size: 30px;
         line-height: 37px;
@@ -98,34 +101,15 @@
         }
     }
 
-    &__description::before {
-        position: absolute;
-        content: " ";
-        background-image: url("../img/main/launch_backline.png");
-        background-repeat: no-repeat;
-        left: -369px;
-        top: -13px;
-        width: 900px;
-        height: 200px;
-        z-index: -1;
-
-        @media (max-width: 1000px) {
-            top: -19px;
-        }
-
-        @media (max-width: 860px) {
-            top: -25px;
-        }
-    }
-
     &__description::after {
         position: absolute;
         content: "";
         width: 330%;
-        height: 142px;
+        height: 100%;
         background-color: #f15f79;
-        top: -13px;
-        left: -370%;
+        top: 0px;
+        left: -330%;
+        z-index: 0;
     }
 
     &__button {
@@ -274,32 +258,6 @@
             }
         }
 
-        &__description::before {
-            position: absolute;
-            content: " ";
-            background-image: url("../img/main/launch_backline_tablet.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            left: -46px;
-            top: -11px;
-            width: 432px;
-            height: 104px;
-            z-index: -1;
-
-            @media (max-width: 450px) {
-                left: -82px;
-                top: -15px;
-            }
-
-            @media (max-width: 370px) {
-                left: -107px;
-            }
-
-            @media (max-width: 340px) {
-                left: -120px;
-            }
-        }
-
         &__button {
             @media (max-width: 450px) {
                 max-width: 400px;
@@ -377,18 +335,6 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
-        }
-
-        &__description::before {
-            position: absolute;
-            content: " ";
-            background-image: url("../img/main/launch_backline_tablet.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            left: -45px;
-            top: -11px;
-            width: 345px;
-            height: 80px;
         }
 
         &__button {
