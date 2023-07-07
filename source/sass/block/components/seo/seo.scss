@@ -620,6 +620,17 @@
             }
         }
 
+        &__color-text {
+    
+            &::before {
+                display: none;
+            }
+    
+            &::after {
+                display: none;
+            }
+        }
+
         .card-item {
             max-width: 328px;
             border: 1px solid $black;

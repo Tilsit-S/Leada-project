@@ -17,6 +17,12 @@
         flex-direction: column;
     }
 
+    &__img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     img {
         width: 100%;
     }
@@ -89,6 +95,12 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
+    }
+
+    a {
+        &:hover {
+            opacity: 1;
+        }
     }
 
     &:hover {
