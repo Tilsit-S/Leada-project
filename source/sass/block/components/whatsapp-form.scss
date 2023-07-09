@@ -143,7 +143,7 @@
 @media (max-width: $tablet-width) {
     .whatsapp-form {
         &__content {
-            max-width: 420px;
+            max-width: 410px;
 
             @media (max-width: 700px) {
                 max-width: 500px;
@@ -155,7 +155,7 @@
                 width: 275px;
                 height: 335px;
                 top: 50px;
-                left: -287px;
+                left: -291px;
 
                 @media (max-width: 700px) {
                     width: 275px;
@@ -197,6 +197,7 @@
         &__text {
             font-size: 22px;
             line-height: 27px;
+            margin-bottom: 30px;
 
             @media (max-width: 520px) {
                 font-size: 20px;

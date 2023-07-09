@@ -172,7 +172,7 @@
 @media (max-width: $tablet-width) {
     .cooperation {
         &__content {
-            padding: 50px 0 30px 0;
+            padding: 50px 0 51px 0;
         }
 
         &__title {
@@ -208,6 +208,8 @@
         }
 
         &__list {
+            gap: 20px 20px;
+
             @media (max-width: 1000px) {
                 justify-content: center;
             }
@@ -224,19 +226,6 @@
 
             @media (max-width: 700px) {
                 width: 100%;
-            }
-
-            &:not(:last-child) {
-                margin-right: 20px;
-                margin-bottom: 20px;
-
-                @media (max-width: 700px) {
-                    margin-right: 0;
-                }
-            }
-
-            &:nth-child(2n) {
-                margin-right: 0;
             }
 
             &::after {
@@ -291,7 +280,7 @@
         }
 
         &__list {
-            gap: 0;
+            //gap: 0;
         }
 
         &__item {

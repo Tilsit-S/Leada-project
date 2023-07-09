@@ -81,7 +81,7 @@
 @media (max-width: $tablet-width) {
     .response {
         padding-top: 49px;
-        padding-bottom: 62px;
+        padding-bottom: 50px;
 
         &__title {
             @include main-title;
@@ -104,8 +104,8 @@
         }
 
         &__list {
-            gap: 15px 16px;
-            padding-left: 5px;
+            gap: 20px 17px;
+            padding-left: 0;
         }
 
         &__item {

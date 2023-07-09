@@ -726,7 +726,7 @@
                 font-size: 22px;
                 line-height: 27px;
                 padding-left: 0;
-                padding-bottom: 32px;
+                padding-bottom: 0;
 
                 &::before {
                     top: 37px;
@@ -808,7 +808,7 @@
                 }
 
                 &::before {
-                    bottom: -29px;
+                    bottom: -26px;
                     right: 46px;
                 }
             }

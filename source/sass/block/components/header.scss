@@ -34,14 +34,7 @@
             svg {
                 width: 171px;
                 height: 62px;
-            }
-            
 
-            @media (max-width: $fixed-width) {
-                margin-right: 0;
-            }
-
-            & img {
                 @media (max-width: $fixed-width) {
                     padding-left: 0;
                     width: 126px;
@@ -113,7 +106,7 @@
         &__telegram,
         &__whatsapp {
             &:hover {
-                svg path {
+                & svg path {
                     fill: $black;
                 }
             }
@@ -189,6 +182,13 @@
         .navigation {
             padding-top: 9px;
             padding-left: 0;
+
+            &__logo {
+                svg {
+                    width: 78px;
+                    height: 31px;
+                }
+            }
 
             &__list {
                 margin: 0 10px 0 30px;
