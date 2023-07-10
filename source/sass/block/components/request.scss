@@ -180,15 +180,23 @@
             &::before {
                 width: 60px;
                 height: 15px;
-                top: 3px;
+                top: 44px;
                 left: -69px;
+
+                @media (max-width: $mobile-width) {
+                    top: 3px;
+                }
             }
 
             &::after {
                 width: 60px;
                 height: 15px;
-                top: 3px;
+                top: 44px;
                 left: 209px;
+                
+                @media (max-width: $mobile-width) {
+                    top: 3px;
+                }
             }
         }
 
@@ -203,7 +211,7 @@
                 height: 2px;
                 background-color: $red;
                 top: -33px;
-                left: -178%;
+                left: -183%;
             }
 
             &::after {
@@ -213,7 +221,7 @@
                 height: 2px;
                 background-color: $red;
                 top: -33px;
-                right: -178%;
+                right: -183%;
             }
         }
 

@@ -1,0 +1,285 @@
+.market-desc {
+    overflow: hidden;
+    &__wrapper {
+        position: relative;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        padding: 49px 0 50px 18px;
+        padding-bottom: 50px;
+    }
+    
+    &__info {
+        width: 404px;
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            background-image: url("../img/partners/redline.svg");
+            background-size: 743px 34px;
+            background-repeat: no-repeat;
+            bottom: 17px;
+            left: -344px;
+            width: 743px;
+            height: 34px;
+        }
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black;
+        margin-bottom: 70px;
+    }
+
+    &__title {
+        @include second-title;
+        color: $black;
+        margin-bottom: 29px;
+
+        @media (max-width: 1100px) {
+            font-size: 39px;
+            line-height: 49px;
+        }
+
+        @media (max-width: 1100px) {
+            font-size: 39px;
+            line-height: 49px;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 36px;
+            line-height: 46px;
+        }
+    }
+
+    &__description {
+        position: relative;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        color: $black;
+        margin-bottom: 70px;
+
+        @media (max-width: 1100px) {
+            font-size: 27px;
+            line-height: 33px;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 25px;
+            line-height: 31px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 320%;
+            height: 4px;
+            background-color: #f15f79;
+            top: 228px;
+            left: -404%;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 49px;
+        right: 85px;
+
+        @media (max-width: 1100px) {
+            width: 400px;
+            height: 380px;
+            right: 65px;
+        }
+
+        @media (max-width: 1000px) {
+            right: 0;
+        }
+
+
+        @media (max-width: 850px) {
+            width: 375px;
+            height: 336px;
+            right: -70px;
+        }
+
+
+        
+
+
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .market-desc {
+
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            padding: 31px 0 43px;
+        }
+        
+        &__info {
+            position: relative;
+            max-width: 404px;
+            margin-right: 50px;
+
+            &::before {
+                display: block;
+                position: absolute;
+                content: "";
+                background-image: url("../img/partners/redline.svg");
+                background-size: 743px 34px;
+                background-repeat: no-repeat;
+                bottom: -11px;
+                left: -466px;
+                width: 743px;
+                height: 34px;
+
+                @media (max-width: 400px) {
+                    background-size: 670px 29px;
+                    width: 670px;
+                    height: 29px;
+                }
+            }
+        }
+
+        img {
+            top: 30px;
+            left: 290px;
+            width: 386px;
+            height: 343px;
+
+            @media (max-width: 650px) {
+                top: 37px;
+                left: 290px;
+                width: 363px;
+                height: 322px;
+                z-index: -1;
+            }
+
+            @media (max-width: 520px) {
+                left: 60px;
+                opacity: 0.4;
+            }
+        }
+
+        &__link {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $black;
+            margin-bottom: 49px;
+        }
+
+        &__title {
+            width: 285px;
+            font-weight: 800;
+            font-size: 29px;
+            line-height: 35px;
+            text-transform: uppercase;
+            color: $black;
+            margin-bottom: 29px;
+
+            @media (max-width: 650px) {
+                font-size: 26px;
+                line-height: 32px;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 22px;
+                line-height: 28px;
+            }
+        }
+
+        &__description{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: $black;
+
+            @media (max-width: 650px) {
+                font-size: 22px;
+                line-height: 28px;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 19px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: $mobile-width) {
+    .market-desc {
+        position: relative;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            padding: 20px 0 54px 0;
+        }
+        
+        &__info {
+            position: relative;
+            max-width: 404px;
+            margin-right: 50px;
+
+            &::before {
+                display: block;
+                position: absolute;
+                content: "";
+                background-image: url("../img/partners/redline.svg");
+                background-size: 177px 15px;
+                background-repeat: no-repeat;
+                bottom: -34px;
+                left: -8px;
+                width: 177px;
+                height: 15px;
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 42px;
+            left: 42px;
+            width: 268px;
+            height: 239px;
+            opacity: 1;
+        }
+
+        &__link {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: $black;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            max-width: 133px;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: $black;
+            margin-bottom: 178px;
+        }
+
+        &__description {
+            width: 320px;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+    }
+
+    br {
+        display: none;
+    }
+}
