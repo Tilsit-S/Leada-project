@@ -1,0 +1,98 @@
+.market-strategy {
+    background-color: $black;
+
+    &__title {
+        @include main-title;
+        position: relative;
+        padding: 70px 0 50px 0;
+        text-align: center;
+        color: $white;
+
+        &::before {
+            position: absolute;
+            content: " ";
+            background-image: url("../img/main/whatsapp_whiteline.svg");
+            background-size: cover;
+            bottom: 55px;
+            left: -371px;
+            width: 713px;
+            height: 34px;
+            transform: matrix(-1,0,0,1,0,0);
+
+            @media (max-width: 1200px) {
+                bottom: 84px;
+                right: -500px;
+            }
+
+            @media (max-width: 1000px) {
+                display: none;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: " ";
+            background-image: url("../img/main/whatsapp_whiteline.svg");
+            background-size: cover;
+            bottom: 55px;
+            right: -371px;
+            width: 713px;
+            height: 34px;
+
+            @media (max-width: 1200px) {
+                bottom: 84px;
+                right: -500px;
+            }
+
+            @media (max-width: 1000px) {
+                display: none;
+            }
+        }
+    }
+
+    &__btn-list {
+        width: 1159px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    &__btn {
+        button {
+            display: block;
+            width: 49px;
+            height: 49px;
+            border-radius: 50%;
+            border: none;
+            font-weight: 500;
+            font-size: 25px;
+            color: $red;
+            cursor: pointer;
+            box-shadow: none;
+        }
+    }
+
+    &__btn_active {
+        border: 10px solid rgba(241, 95, 121, 0.5);
+        border-radius: 50%;
+
+        button {
+            background-color: $red;
+            border-color: $red;
+            color: $white;
+            cursor: default;
+        }
+    }
+
+    &__btn_viewed {
+        button {
+            background-color: $red;
+            border-color: $red;
+            color: $white;
+            cursor: default;
+        }
+    }
+}

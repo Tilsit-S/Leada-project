@@ -14,7 +14,7 @@
     &__item {
         position: relative;
         width: 374px;
-        height: 300px;
+        height: 278px;
         background: $black;
         border-radius: 33px;
         z-index: 10;
@@ -51,8 +51,8 @@
 
         &:nth-child(2) {
             svg {
-                margin: 20px 0 0 30px;
-                width: 54px;
+                margin: 19px 0 0 20px;
+                width: 84px;
                 height: 69px;
                 fill: $white;
                 opacity: 1;
@@ -113,8 +113,8 @@
         &::before {
             position: absolute;
             content: url("../img/main/coop_blackline.svg");
-            top: 75px;
-            right: -467px;
+            top: 71px;
+            right: -451px;
             width: 844px;
             height: 34px;
 
@@ -134,12 +134,30 @@
         }
     }
 
+    &__item:nth-child(2) {
+        p {
+            padding: 36px 60px 0 30px;
+        }
+    }
+
+    &__item:nth-child(3) {
+        p {
+            padding: 36px 130px 0 30px;
+        }
+    }
+
+    &__item:nth-child(6) {
+        p {
+            padding: 36px 15px 0 30px;
+        }
+    }
+
     &__text {
         font-weight: 600;
-        font-size: 23px;
+        font-size: 22px;
         line-height: 28px;
-        color: $white;
-        padding: 75px 30px 0 30px;
+        color: #fff;
+        padding: 36px 66px 0 30px;
         text-align: start;
     }
 }
