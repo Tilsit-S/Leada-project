@@ -56,11 +56,12 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 0 auto;
+        margin: 0 0 65px 0;
 
     }
 
     &__btn {
+        position: relative;
         button {
             display: block;
             width: 49px;
@@ -72,6 +73,18 @@
             color: $red;
             cursor: pointer;
             box-shadow: none;
+        }
+
+        &:not(:last-child) {
+            button::before {
+                position: absolute;
+                content: "";
+                width: 185px;
+                height: 4px;
+                background-color: $white;
+                top: 23px;
+                left: 48px;
+            }
         }
     }
 
@@ -94,5 +107,37 @@
             color: $white;
             cursor: default;
         }
+    }
+
+    &__dsc-title {
+        font-weight: 800;
+        font-size: 28px;
+        line-height: normal;
+        color: $white;
+
+        p {
+            font-size: 45px;
+        }
+    }
+
+    &__dsc-item {
+        position: relative;
+        font-size: 18px;
+        line-height: normal;
+        margin-bottom: 35px;
+        color: $white;
+    }
+
+    &__dsc-item::before {
+        position: absolute;
+        top: -5px;
+        left: -50px;
+        content: "";
+        display: block;
+        width: 37px;
+        height: 37px;
+        background-color: $red;
+        border: none  10px solid $red;
+        border-radius: 50%;
     }
 }
