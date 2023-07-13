@@ -1,5 +1,6 @@
 .market-strategy {
     background-color: $black;
+    padding-bottom: 70px;
 
     &__title {
         @include main-title;
@@ -56,7 +57,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 0 0 65px 0;
+        margin: 0 0 50px 0;
 
     }
 
@@ -84,6 +85,12 @@
                 background-color: $white;
                 top: 23px;
                 left: 48px;
+            }
+        }
+
+        &:nth-child(1) {
+            button:before {
+                background-color: $red;
             }
         }
     }
@@ -114,7 +121,9 @@
         font-size: 28px;
         line-height: normal;
         color: $white;
-        margin-bottom: 38px;
+        margin-bottom: 37px;
+        padding: 0 0 0 10px;
+        text-transform: uppercase;
 
         p {
             display: inline-block;
@@ -122,9 +131,16 @@
         }
     }
 
+    &__dsc-list {
+        //max-width: 553px;
+        padding-left: 124px;
+    }
+
     &__dsc-list-wrapper {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 379px;
     }
 
     &__dsc-item {
@@ -137,14 +153,26 @@
 
     &__dsc-item::before {
         position: absolute;
-        top: -5px;
-        left: -50px;
+        top: -6px;
+        left: -58px;
         content: "";
         display: block;
         width: 37px;
         height: 37px;
         background-color: $red;
-        border: 10px solid rgba(241,95,121,.5);
+        border: 7px solid green;
         border-radius: 50%;
+    }
+
+    &__dsc-link {
+        width: 475px;
+        margin: 0 auto;
+        padding: 10px 0;
+        font-size: 14px;
+        line-height: normal;
+        text-decoration-line: underline;
+        text-align: center;
+        color: $white;
+        border-radius: 15px;
     }
 }
