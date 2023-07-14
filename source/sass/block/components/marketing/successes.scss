@@ -1,6 +1,6 @@
 .successes {
     background-color: $red;
-    padding: 70px 0;
+    padding: 74px 0 70px 0;
 
     &__title {
         position: relative;
@@ -15,7 +15,7 @@
             content: " ";
             background-image: url("../img/main/whatsapp_whiteline.svg");
             background-size: cover;
-            bottom: -56px;
+            bottom: -54px;
             left: -441px;
             width: 713px;
             height: 34px;
@@ -42,7 +42,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 30px 30px;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
     }
 
     .item-card {
