@@ -1,6 +1,6 @@
 .market-strategy {
     background-color: $black;
-    padding-bottom: 70px;
+    padding-bottom: 49px;
 
     &__title {
         @include main-title;
@@ -14,8 +14,8 @@
             content: " ";
             background-image: url("../img/main/whatsapp_whiteline.svg");
             background-size: cover;
-            bottom: 55px;
-            left: -371px;
+            bottom: 60px;
+            left: -439px;
             width: 713px;
             height: 34px;
             transform: matrix(-1,0,0,1,0,0);
@@ -35,8 +35,8 @@
             content: " ";
             background-image: url("../img/main/whatsapp_whiteline.svg");
             background-size: cover;
-            bottom: 55px;
-            right: -371px;
+            bottom: 61px;
+            right: -422px;
             width: 713px;
             height: 34px;
 
@@ -136,11 +136,15 @@
         padding-left: 124px;
     }
 
+    img {
+        margin-bottom: 22px;
+    }
+
     &__dsc-list-wrapper {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        max-height: 379px;
+        max-height: 900px;
     }
 
     &__dsc-item {
@@ -174,5 +178,9 @@
         text-align: center;
         color: $white;
         border-radius: 15px;
+    }
+
+    .none {
+        display: none;
     }
 }
