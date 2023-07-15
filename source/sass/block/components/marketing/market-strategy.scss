@@ -1,4 +1,5 @@
 .market-strategy {
+    overflow: hidden;
     background-color: $black;
     padding-bottom: 49px;
 
@@ -24,10 +25,6 @@
                 bottom: 84px;
                 right: -500px;
             }
-
-            @media (max-width: 1000px) {
-                display: none;
-            }
         }
 
         &::after {
@@ -43,10 +40,6 @@
             @media (max-width: 1200px) {
                 bottom: 84px;
                 right: -500px;
-            }
-
-            @media (max-width: 1000px) {
-                display: none;
             }
         }
     }
@@ -157,15 +150,14 @@
 
     &__dsc-item::before {
         position: absolute;
-        top: -6px;
+        content: " ";
+        background-image: url(../img/desc/mark.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 43px;
+        height: 43px;
+        top: -2px;
         left: -58px;
-        content: "";
-        display: block;
-        width: 37px;
-        height: 37px;
-        background-color: $red;
-        border: 7px solid green;
-        border-radius: 50%;
     }
 
     &__dsc-link {
@@ -182,5 +174,200 @@
 
     .none {
         display: none;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .market-strategy {
+        overflow: hidden;
+        background-color: $black;
+        padding-bottom: 30px;
+    
+        &__title {
+            @include main-title;
+            position: relative;
+            padding: 50px 0 29px 0;
+            text-align: center;
+            color: $white;
+    
+            &::before {
+                position: absolute;
+                content: " ";
+                background-image: url("../img/main/whatsapp_whiteline.svg");
+                background-size: cover;
+                bottom: 33px;
+                left: -539px;
+                width: 713px;
+                height: 34px;
+                transform: matrix(-1,0,0,1,0,0);
+            }
+    
+            &::after {
+                position: absolute;
+                content: " ";
+                background-image: url("../img/main/whatsapp_whiteline.svg");
+                background-size: cover;
+                bottom: 33px;
+                right: -540px;
+                width: 713px;
+                height: 34px;
+            }
+        }
+    
+        &__btn-list {
+            width: 669px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 20px 0;
+    
+        }
+    
+        &__btn {
+            position: relative;
+            button {
+                display: block;
+                width: 39px;
+                height: 39px;
+                border-radius: 50%;
+                border: none;
+                font-weight: 500;
+                font-size: 25px;
+                color: $red;
+                margin-left: 9px;
+                cursor: pointer;
+                box-shadow: none;
+            }
+    
+            &:not(:last-child) {
+                button::before {
+                    position: absolute;
+                    content: "";
+                    width: 185px;
+                    height: 4px;
+                    background-color: $white;
+                    top: 18px;
+                    left: 48px;
+                }
+            }
+    
+            &:nth-child(1) {
+                button:before {
+                    background-color: $red;
+                }
+            }
+        }
+    
+        &__btn_active {
+            border: 10px solid rgba(241, 95, 121, 0.5);
+            border-radius: 50%;
+    
+            button {
+                background-color: $red;
+                border-color: $red;
+                color: $white;
+                cursor: default;
+            }
+        }
+    
+        &__btn_viewed {
+            button {
+                background-color: $red;
+                border-color: $red;
+                color: $white;
+                cursor: default;
+            }
+        }
+    
+        &__dsc-title {
+            font-weight: 800;
+            font-size: 22px;
+            line-height: normal;
+            color: $white;
+            margin-bottom: 24px;
+            padding: 0 0 0 10px;
+            text-transform: uppercase;
+            margin-left: 136px;
+    
+            p {
+                display: block;
+                font-size: 40px;
+                margin-left: 182px;
+            }
+        }
+    
+        &__dsc-list {
+            padding-left: 57px;
+        }
+    
+        img {
+            width: 362px;
+            height: 218px;
+            margin: 100px 0 20px -198px;
+        }
+    
+        &__dsc-list-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 600px;
+        }
+    
+        &__dsc-item {
+            position: relative;
+            font-size: 16px;
+            line-height: normal;
+            margin-bottom: 22px;
+            color: $white;
+
+            &:nth-child(1) {
+                width: 271px;
+            }
+
+            &:nth-child(2) {
+                width: 171px;
+            }
+
+            &:nth-child(3) {
+                width: 271px;
+            }
+
+            &:nth-child(4) {
+                width: 271px;
+            }
+
+            &:nth-child(5) {
+                width: 271px;
+            }
+        }
+    
+        &__dsc-item::before {
+            position: absolute;
+            content: " ";
+            background-image: url("../img/desc/mark.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 37px;
+            height: 37px;
+            top: 1px;
+            left: -58px;
+        }
+    
+        &__dsc-link {
+            width: 328px;
+            margin: 0 0 0 -181px;
+            padding: 10px 0;
+            font-size: 14px;
+            line-height: normal;
+            text-decoration-line: underline;
+            text-align: center;
+            color: $white;
+            border-radius: 15px;
+        }
+    
+        .none {
+            display: none;
+        }
     }
 }
