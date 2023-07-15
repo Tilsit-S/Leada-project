@@ -205,7 +205,13 @@
         &__wrapper {
             display: flex;
             flex-direction: row;
-            padding: 31px 0 43px;
+            padding: 18px 0 43px;
+        }
+
+        &__chapter {
+            font-size: 18px;
+            line-height: normal;
+            margin-bottom: 10px
         }
         
         &__info {
@@ -234,16 +240,16 @@
         }
 
         img {
-            top: 30px;
-            left: 290px;
-            width: 386px;
-            height: 343px;
+            top: 59px;
+            left: 406px;
+            width: 326px;
+            height: 325px;
 
             @media (max-width: 650px) {
                 top: 37px;
                 left: 290px;
-                width: 363px;
-                height: 322px;
+                width: 326px;
+                height: 325px;
                 z-index: -1;
             }
 
@@ -262,13 +268,17 @@
         }
 
         &__title {
-            width: 285px;
+            width: 100%;
             font-weight: 800;
             font-size: 29px;
             line-height: 35px;
             text-transform: uppercase;
             color: $black;
             margin-bottom: 29px;
+
+            br {
+                display: none;
+            }
 
             @media (max-width: 650px) {
                 font-size: 26px;
