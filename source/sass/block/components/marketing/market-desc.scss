@@ -486,6 +486,11 @@
                     width: 223x;
                     font-size: 16px;
                     line-height: 22px;
+
+                    &::before {
+                        top: -9px;
+                        left: -45px;
+                    }
                 }
             }
         
