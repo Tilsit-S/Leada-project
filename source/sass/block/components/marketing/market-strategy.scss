@@ -371,3 +371,213 @@
         }
     }
 }
+
+@media (max-width: $mobile-width) {
+    .market-strategy {
+        overflow: hidden;
+        background-color: $black;
+        padding-bottom: 30px;
+    
+        &__title {
+            position: relative;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: uppercase;
+            padding: 40px 0 25px 0;
+            text-align: center;
+            color: $white;
+    
+            &::before {
+                position: absolute;
+                content: " ";
+                background-image: url("../img/main/whatsapp_whiteline.svg");
+                background-size: cover;
+                bottom: 33px;
+                left: -539px;
+                width: 713px;
+                height: 34px;
+                transform: matrix(-1,0,0,1,0,0);
+            }
+    
+            &::after {
+                position: absolute;
+                content: " ";
+                background-image: url("../img/main/whatsapp_whiteline.svg");
+                background-size: cover;
+                bottom: 33px;
+                right: -540px;
+                width: 713px;
+                height: 34px;
+            }
+        }
+    
+        &__btn-list {
+            width: 285px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0 auto;
+    
+        }
+    
+        &__btn {
+            position: relative;
+            button {
+                display: block;
+                width: 33px;
+                height: 33px;
+                border-radius: 50%;
+                border: none;
+                font-weight: 500;
+                font-size: 25px;
+                color: $red;
+                margin-left: 0;
+                cursor: pointer;
+                box-shadow: none;
+            }
+    
+            &:not(:nth-child(3)) {
+                margin: 0 70px 20px 0;
+
+                button::before {
+                    position: absolute;
+                    content: "";
+                    width: 185px;
+                    height: 4px;
+                    background-color: $white;
+                    top: 18px;
+                    left: 48px;
+                    
+                    &:nth-child(3) {
+                        display: none;
+                    }
+                }
+            }
+
+            &:nth-child(6) {
+                margin-right: 0;
+            }
+    
+            &:nth-child(1) {
+                button:before {
+                    background-color: $red;
+                }
+            }
+        }
+    
+        &__btn_active {
+            border: 10px solid rgba(241, 95, 121, 0.5);
+            border-radius: 50%;
+    
+            button {
+                background-color: $red;
+                border-color: $red;
+                color: $white;
+                cursor: default;
+            }
+        }
+    
+        &__btn_viewed {
+            button {
+                background-color: $red;
+                border-color: $red;
+                color: $white;
+                cursor: default;
+            }
+        }
+    
+        &__dsc-title {
+            font-weight: 800;
+            font-size: 16px;
+            line-height: normal;
+            color: $white;
+            margin: 0 0 21px 0;
+            padding: 0 0 0 10px;
+            text-transform: uppercase;
+    
+            p {
+                display: block;
+                font-size: 22px;
+                margin-left: 133px;
+            }
+        }
+    
+        &__dsc-list {
+            padding-left: 43px;
+        }
+    
+        img {
+            width: 333px;
+            height: 200px;
+            margin: 344px 0 20px -347px;
+        }
+    
+        &__dsc-list-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 600px;
+        }
+    
+        &__dsc-item {
+            position: relative;
+            font-size: 14px;
+            line-height: normal;
+            margin-bottom: 22px;
+            color: $white;
+
+            &:nth-child(1) {
+                width: 271px;
+            }
+
+            &:nth-child(2) {
+                width: 250px;
+            }
+
+            &:nth-child(3) {
+                width: 240px;
+                margin-bottom: 13px;
+            }
+
+            &:nth-child(4) {
+                width: 271px;
+                margin-bottom: 12px;
+            }
+
+            &:nth-child(5) {
+                width: 271px;
+            }
+        }
+    
+        &__dsc-item::before {
+            position: absolute;
+            content: " ";
+            background-image: url("../img/desc/mark.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 33px;
+            height: 33px;
+            top: 2px;
+            left: -43px;
+        }
+    
+        &__dsc-link {
+            width: 328px;
+            margin: 0 0 0 -181px;
+            padding: 10px 0;
+            font-size: 14px;
+            line-height: normal;
+            text-decoration-line: underline;
+            text-align: center;
+            color: $white;
+            border-radius: 15px;
+        }
+    
+        .none {
+            display: none;
+        }
+    }
+}

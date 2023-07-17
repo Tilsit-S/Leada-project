@@ -15,7 +15,7 @@
     &__item {
         position: relative;
         width: 374px;
-        height: 278px;
+        min-height: 278px;
         background: $black;
         border-radius: 33px;
         z-index: 10;
@@ -180,7 +180,7 @@
         &__item {
             position: relative;
             width: 374px;
-            height: 267px;
+            min-height: 267px;
             background: $black;
             border-radius: 33px;
             z-index: 10;
@@ -324,6 +324,163 @@
             line-height: 24px;
             color: #fff;
             padding: 43px 55px 0 30px;
+            text-align: start;
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .market-features {
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px 20px;
+            margin-bottom: 40px;
+    
+            @media (max-width: 1000px) {
+                justify-content: space-between;
+            }
+        }
+    
+        &__item {
+            position: relative;
+            width: 100%;
+            min-height: 244px;
+            background: $black;
+            border-radius: 33px;
+            z-index: 10;
+    
+            &::after {
+                position: absolute;
+                content: " ";
+                background-image: url("../img/main/cooperation_radius.png");
+                background-size: cover;
+                top: 0;
+                left: 0;
+                width: 112px;
+                height: 105px;
+                opacity: 0.4;
+            }
+    
+            &:nth-child(1) {
+                svg {
+                    margin: 20px 0 0 29px;
+                    width: 49px;
+                    height: 63px;
+                    fill: $white;
+                    opacity: 1;
+                }
+            }
+    
+            &:nth-child(2) {
+                svg {
+                    margin: 20px 0 0 20px;
+                    width: 69px;
+                    height: 63px;
+                    fill: $white;
+                    opacity: 1;
+                }
+            }
+    
+            &:nth-child(3) {
+                svg {
+                    margin: 19px 0 0 33px;
+                    width: 41px;
+                    height: 64px;
+                    fill: $white;
+                    opacity: 1;
+                }
+            }
+    
+            &:nth-child(4) {
+                svg {
+                    margin: 22px 0 0 25px;
+                    width: 57px;
+                    height: 63px;
+                    fill: $white;
+                    opacity: 1;
+                }
+            }
+    
+            &:nth-child(5) {
+                svg {
+                    margin: 21px 0 0 21px;
+                    width: 64px;
+                    height: 64px;
+                    fill: $white;
+                    opacity: 1;
+                }
+            }
+    
+            &:nth-child(6) {
+                svg {
+                    margin: 21px 0 0 30px;
+                    width: 49px;
+                    height: 63px;
+                    fill: $white;
+                    opacity: 1;
+                }
+            }
+        }
+    
+        &__title {
+            width: 100%;
+            font-size: 24px;
+            line-height: normal;
+            padding: 8px 0 23px 0;
+            text-align: center;
+    
+            &::before {
+                position: absolute;
+                content: url("../img/main/coop_blackline.svg");
+                background-size: contain;
+                top: 34px;
+                right: 0;
+                width: 70px;
+                height: 15px;
+            }
+    
+            &::after {
+                display: none;
+            }
+        }
+    
+        &__item:nth-child(2) {
+            p {
+                padding: 30px 27px 0;
+            }
+        }
+    
+        &__item:nth-child(3) {
+            p {
+                padding: 31px 115px 0 27px;
+            }
+        }
+
+        &__item:nth-child(4) {
+            p {
+                padding: 28px 45px 0 27px;
+            }
+        }
+
+        &__item:nth-child(5) {
+            p {
+                padding: 28px 45px 0 27px;
+            }
+        }
+    
+        &__item:nth-child(6) {
+            p {
+                padding: 30px 34px 0 27px;
+            }
+        }
+    
+        &__text {
+            font-size: 18px;
+            line-height: 22px;
+            color: #fff;
+            padding: 30px 55px 0 27px;
             text-align: start;
         }
     }

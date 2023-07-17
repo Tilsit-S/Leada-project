@@ -383,7 +383,7 @@
         &__wrapper {
             display: flex;
             flex-direction: row;
-            padding: 17px 0 54px 0;
+            padding: 17px 0 32px 0;
         }
         
         &__info {
@@ -496,7 +496,7 @@
                     line-height: 21px;
 
                     &::before {
-                        top: -9px;
+                        top: -2px;
                         left: -45px;
                     }
                 }
