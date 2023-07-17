@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Leada" />
+        <title>Leada</title>
+        <link rel="stylesheet" href="css/style.min.css" />
+    </head>
+    <body>
+        <header class="page-header header header__not-main">
+            <div class="header__wrapper container">
+                <div class="header__navigation navigation">
+                    <a href="index.html" class="navigation__logo">
+                        <img
+                            src="../img/header/logo.svg"
+                            alt="Leada-logo"
+                            width="185"
+                            height="65"
+                        />
+                    </a>
+                    <ul class="navigation__list">
+                        <li class="navigation__item link">
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li class="navigation__item link">
+                            <a href="partners.html">Партнёры</a>
+                        </li>
+                        <li class="navigation__item link">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="navigation__item link">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="navigation__item link">
+                            <a href="#">Кейсы</a>
+                        </li>
+                        <li class="navigation__item link">
+                            <a href="#">Решения</a>
+                        </li>
+                        <li class="navigation__item link">
+                            <a href="blog.html">Блог</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="navigation__button burger-btn">
+                        <img
+                            src="../img/header/burger.svg"
+                            width="27"
+                            height="27"
+                            alt="menu button"
+                        />
+                    </button>
+
+                    <div class="navigation__pop-up pop-up">
+                        <div class="pop-up__wrapper">
+                            <button class="pop-up__burger-button-close burger-btn-close"></button>
+                            <ul class="pop-up__list">
+                                <li class="pop-up__item">
+                                    <a class="pop-up__item-link link" href="#">Услуги</a>
+                                    <label for="placeholder" type="button" class="pop-up__sublist-button"></label>
+                                    <input class="pop-up__placeholder-input visually-hidden" type="checkbox" id="placeholder"></input>
+                                    <ul class="pop-up__sublist">
+                                        <li class="pop-up__sublist-item link">
+                                            <a href="#">Такая услуга</a>
+                                        </li>
+                                        <li class="pop-up__sublist-item link">
+                                            <a href="#">Такая услуга</a>
+                                        </li>
+                                        <li class="pop-up__sublist-item link">
+                                            <a href="#">Такая услуга</a>
+                                        </li>
+                                        <li class="pop-up__sublist-item link">
+                                            <a href="#">Такая услуга</a>
+                                        </li>
+                                        <li class="pop-up__sublist-item link">
+                                            <a href="#">Такая услуга</a>
+                                        </li>
+                                        <li class="pop-up__sublist-item link">
+                                            <a href="#">Такая услуга</a>
+                                        </li>
+                                        <li class="pop-up__sublist-item link">
+                                            <a href="#">Такая услуга</a>
+                                        </li>
+                                        <li class="pop-up__sublist-item link">
+                                            <a href="#">Такая услуга</a>
+                                        </li>
+                                        <li class="pop-up__sublist-item link">
+                                            <a href="#">Такая услуга</a>
+                                        </li>
+                                        <li class="pop-up__sublist-item link">
+                                            <a href="#">Такая услуга</a>
+                                        </li>
+                                        <li class="pop-up__sublist-item link">
+                                            <a href="#">Такая услуга</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pop-up__item">
+                                    <a class="pop-up__item-link link" href="partners.html"
+                                        >Партнёры</a
+                                    >
+                                </li>
+                                <li class="pop-up__item">
+                                    <a class="pop-up__item-link link" href="#"
+                                        >О компании</a
+                                    >
+                                </li>
+                                <li class="pop-up__item">
+                                    <a class="pop-up__item-link link" href="#"
+                                        >Отзывы</a
+                                    >
+                                </li>
+                                <li class="pop-up__item">
+                                    <a class="pop-up__item-link link" href="#"
+                                        >Кейсы</a
+                                    >
+                                </li>
+                                <li class="pop-up__item">
+                                    <a class="pop-up__item-link link" href="#"
+                                        >Решения</a
+                                    >
+                                </li>
+                                <li class="pop-up__item">
+                                    <a class="pop-up__item-link link" href="blog.html"
+                                        >Блог</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="pop-up__link">
+                                <a href="#" class="pop-up__whatsapp">
+                                    <svg
+                                        width="46"
+                                        height="46"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M23.0049 9.43529C15.6983 9.43529 9.75391 15.3413 9.75391 22.6008C9.75391 24.9964 10.4078 27.3412 11.644 29.3816L11.8926 29.791L10.6972 35.2555L15.9418 33.7532L16.3879 34.0086C18.3904 35.1573 20.6789 35.7647 23.0049 35.7647C30.3115 35.7647 36.2559 29.8586 36.2559 22.5991C36.2559 15.3397 30.3115 9.43359 23.0049 9.43359V9.43529ZM30.3575 28.7031C30.3575 28.7031 29.1281 30.3374 26.533 29.9889C21.801 29.3528 18.3887 25.3686 18.3887 25.3686C18.3887 25.3686 13.7707 20.9733 15.448 17.0957C16.4816 15.2923 17.3738 15.2855 17.3738 15.2855H18.467C18.7735 15.2855 18.9608 15.6222 18.9608 15.6222C18.9608 15.6222 20.2464 18.5405 20.4184 18.9313C20.5904 19.3221 20.3656 19.7062 20.3656 19.7062L19.1941 21.1797C19.1941 21.1797 19.0715 21.3624 19.1941 21.5925C21.1063 25.1791 24.6583 26.3228 24.6583 26.3228C24.6583 26.3228 25.1334 26.5613 25.399 26.2703C25.5863 26.0656 26.1942 25.147 26.6216 24.5938C26.7953 24.3671 27.1069 24.296 27.364 24.4229C28.2188 24.8475 30.068 25.756 30.6946 25.9861C31.5205 26.2906 30.6691 28.4155 30.3558 28.6998L30.3575 28.7031Z"
+                                            fill="white"
+                                        />
+                                        <path
+                                            d="M23.0045 0C10.2984 0 0 10.232 0 22.8562C0 35.4803 10.2984 45.7123 23.0045 45.7123C35.7106 45.7123 46.0089 35.4803 46.0089 22.8562C46.0089 10.232 35.7089 0 23.0045 0ZM34.0844 33.6092C31.125 36.5495 27.1899 38.1686 23.0045 38.1686C20.4282 38.1686 17.891 37.5392 15.6332 36.3415L7.47006 38.6795L9.32438 30.2002C8.02006 27.8859 7.33384 25.2687 7.33384 22.599C7.33384 18.4406 8.9634 14.5308 11.9228 11.5905C14.8822 8.65015 18.8173 7.0311 23.0028 7.0311C27.1882 7.0311 31.1233 8.65015 34.0827 11.5905C37.0421 14.5308 38.6717 18.4406 38.6717 22.599C38.6717 26.7574 37.0421 30.6672 34.0827 33.6075L34.0844 33.6092Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                                <a href="#" class="pop-up__telegram">
+                                    <svg width="46" height="46" xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M23 0C10.2981 0 0 10.2964 0 23C0 35.7036 10.2964 46 23 46C35.7036 46 46 35.7036 46 23C46 10.2964 35.7019 0 23 0ZM33.7509 15.5246L31.0798 32.6375C30.8312 34.2327 28.9858 35.0039 27.6766 34.0591L20.1144 28.6112C19.5713 28.2197 19.5151 27.4315 19.9986 26.9684L27.5898 19.6939C28.0086 19.2921 27.4791 18.6315 26.9956 18.955L16.7265 25.8158C16.0353 26.2772 15.1807 26.4219 14.3771 26.2142L9.37535 24.917C8.60755 24.7178 8.52923 23.6571 9.25958 23.3473L31.6246 13.8664C32.738 13.3948 33.9382 14.3295 33.7509 15.5246Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="navigation__link">
+                        <a href="#" class="navigation__whatsapp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="46" viewBox="0 0 47 46" fill="none">
+                                <path d="M23.0049 9.43516C15.6983 9.43516 9.75391 15.3412 9.75391 22.6007C9.75391 24.9963 10.4078 27.3411 11.644 29.3814L11.8926 29.7908L10.6972 35.2553L15.9418 33.753L16.3879 34.0085C18.3904 35.1572 20.6789 35.7646 23.0049 35.7646C30.3115 35.7646 36.2559 29.8585 36.2559 22.599C36.2559 15.3395 30.3115 9.43347 23.0049 9.43347V9.43516ZM30.3575 28.703C30.3575 28.703 29.1281 30.3373 26.533 29.9888C21.801 29.3527 18.3887 25.3685 18.3887 25.3685C18.3887 25.3685 13.7707 20.9732 15.448 17.0956C16.4816 15.2922 17.3738 15.2854 17.3738 15.2854H18.467C18.7735 15.2854 18.9608 15.6221 18.9608 15.6221C18.9608 15.6221 20.2464 18.5404 20.4184 18.9312C20.5904 19.322 20.3656 19.7061 20.3656 19.7061L19.1941 21.1796C19.1941 21.1796 19.0715 21.3623 19.1941 21.5924C21.1063 25.179 24.6583 26.3227 24.6583 26.3227C24.6583 26.3227 25.1334 26.5612 25.399 26.2702C25.5863 26.0655 26.1942 25.1469 26.6216 24.5936C26.7953 24.3669 27.1069 24.2959 27.364 24.4228C28.2188 24.8474 30.068 25.7559 30.6946 25.986C31.5205 26.2905 30.6691 28.4154 30.3558 28.6996L30.3575 28.703Z" fill="#F15F79"/>
+                                <path d="M23.0045 0C10.2984 0 0 10.232 0 22.8562C0 35.4803 10.2984 45.7123 23.0045 45.7123C35.7106 45.7123 46.0089 35.4803 46.0089 22.8562C46.0089 10.232 35.7089 0 23.0045 0ZM34.0844 33.6092C31.125 36.5495 27.1899 38.1686 23.0045 38.1686C20.4282 38.1686 17.891 37.5392 15.6332 36.3415L7.47006 38.6795L9.32438 30.2002C8.02006 27.8859 7.33384 25.2687 7.33384 22.599C7.33384 18.4406 8.9634 14.5308 11.9228 11.5905C14.8822 8.65015 18.8173 7.0311 23.0028 7.0311C27.1882 7.0311 31.1233 8.65015 34.0827 11.5905C37.0421 14.5308 38.6717 18.4406 38.6717 22.599C38.6717 26.7574 37.0421 30.6672 34.0827 33.6075L34.0844 33.6092Z" fill="#F15F79"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="navigation__telegram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                <path d="M23 0C10.2981 0 0 10.2964 0 23C0 35.7036 10.2964 46 23 46C35.7036 46 46 35.7036 46 23C46 10.2964 35.7019 0 23 0ZM33.7509 15.5246L31.0798 32.6375C30.8312 34.2327 28.9858 35.0039 27.6766 34.0591L20.1144 28.6112C19.5713 28.2197 19.5151 27.4315 19.9986 26.9684L27.5898 19.6939C28.0086 19.2921 27.4791 18.6315 26.9956 18.955L16.7265 25.8158C16.0353 26.2772 15.1807 26.4219 14.3771 26.2142L9.37535 24.917C8.60755 24.7178 8.52923 23.6571 9.25958 23.3473L31.6246 13.8664C32.738 13.3948 33.9382 14.3295 33.7509 15.5246Z" fill="#F15F79"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page-main main">
+
+            <section class="main__catalog catalog">
+                <div class="container">
+                    <div class="catalog__wrapper">
+                        <p class="catalog__link"><a href="index.html">Главная - </a> Каталог</p>
+                        <h1 class="catalog__title">Каталог Онлайн касс</h1>
+
+                        <div class="catalog__filter">
+
+                        </div>
+
+                        <ul class="catalog__list">
+                            <li class="catalog__item catalog-item">
+                                <div class="catalog-item__wrapper">
+                                    <p class="catalog-item__title">Наименование товара в две строки</p>
+                                    <div class="catalog-item__img-wrapper">
+                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    </div>
+                                    <ul class="catalog-item__list">
+                                        <li class="catalog-item__item-resource">
+                                            <p class="catalog-item__date">Новая</p>
+                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                        </li>
+                                        <li class="catalog-item__item-time">
+                                            <p class="catalog-item__description">Б/у</p>
+                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-item__button button black">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="catalog__item catalog-item">
+                                <div class="catalog-item__wrapper">
+                                    <p class="catalog-item__title">Наименование товара в две строки</p>
+                                    <div class="catalog-item__img-wrapper">
+                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    </div>
+                                    <ul class="catalog-item__list">
+                                        <li class="catalog-item__item-resource">
+                                            <p class="catalog-item__date">Новая</p>
+                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                        </li>
+                                        <li class="catalog-item__item-time">
+                                            <p class="catalog-item__description">Б/у</p>
+                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-item__button button black">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="catalog__item catalog-item">
+                                <div class="catalog-item__wrapper">
+                                    <p class="catalog-item__title">Наименование товара в две строки</p>
+                                    <div class="catalog-item__img-wrapper">
+                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    </div>
+                                    <ul class="catalog-item__list">
+                                        <li class="catalog-item__item-resource">
+                                            <p class="catalog-item__date">Новая</p>
+                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                        </li>
+                                        <li class="catalog-item__item-time">
+                                            <p class="catalog-item__description">Б/у</p>
+                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-item__button button black">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="catalog__item catalog-item">
+                                <div class="catalog-item__wrapper">
+                                    <p class="catalog-item__title">Наименование товара в две строки</p>
+                                    <div class="catalog-item__img-wrapper">
+                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    </div>
+                                    <ul class="catalog-item__list">
+                                        <li class="catalog-item__item-resource">
+                                            <p class="catalog-item__date">Новая</p>
+                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                        </li>
+                                        <li class="catalog-item__item-time">
+                                            <p class="catalog-item__description">Б/у</p>
+                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-item__button button black">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="catalog__item catalog-item">
+                                <div class="catalog-item__wrapper">
+                                    <p class="catalog-item__title">Наименование товара в две строки</p>
+                                    <div class="catalog-item__img-wrapper">
+                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    </div>
+                                    <ul class="catalog-item__list">
+                                        <li class="catalog-item__item-resource">
+                                            <p class="catalog-item__date">Новая</p>
+                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                        </li>
+                                        <li class="catalog-item__item-time">
+                                            <p class="catalog-item__description">Б/у</p>
+                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-item__button button black">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="catalog__item catalog-item">
+                                <div class="catalog-item__wrapper">
+                                    <p class="catalog-item__title">Наименование товара в две строки</p>
+                                    <div class="catalog-item__img-wrapper">
+                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    </div>
+                                    <ul class="catalog-item__list">
+                                        <li class="catalog-item__item-resource">
+                                            <p class="catalog-item__date">Новая</p>
+                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                        </li>
+                                        <li class="catalog-item__item-time">
+                                            <p class="catalog-item__description">Б/у</p>
+                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-item__button button black">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="catalog__item catalog-item">
+                                <div class="catalog-item__wrapper">
+                                    <p class="catalog-item__title">Наименование товара в две строки</p>
+                                    <div class="catalog-item__img-wrapper">
+                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    </div>
+                                    <ul class="catalog-item__list">
+                                        <li class="catalog-item__item-resource">
+                                            <p class="catalog-item__date">Новая</p>
+                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                        </li>
+                                        <li class="catalog-item__item-time">
+                                            <p class="catalog-item__description">Б/у</p>
+                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-item__button button black">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="catalog__item catalog-item">
+                                <div class="catalog-item__wrapper">
+                                    <p class="catalog-item__title">Наименование товара в две строки</p>
+                                    <div class="catalog-item__img-wrapper">
+                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    </div>
+                                    <ul class="catalog-item__list">
+                                        <li class="catalog-item__item-resource">
+                                            <p class="catalog-item__date">Новая</p>
+                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                        </li>
+                                        <li class="catalog-item__item-time">
+                                            <p class="catalog-item__description">Б/у</p>
+                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-item__button button black">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="catalog__item catalog-item">
+                                <div class="catalog-item__wrapper">
+                                    <p class="catalog-item__title">Наименование товара в две строки</p>
+                                    <div class="catalog-item__img-wrapper">
+                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    </div>
+                                    <ul class="catalog-item__list">
+                                        <li class="catalog-item__item-resource">
+                                            <p class="catalog-item__date">Новая</p>
+                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                        </li>
+                                        <li class="catalog-item__item-time">
+                                            <p class="catalog-item__description">Б/у</p>
+                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-item__button button black">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="catalog__item catalog-item">
+                                <div class="catalog-item__wrapper">
+                                    <p class="catalog-item__title">Наименование товара в две строки</p>
+                                    <div class="catalog-item__img-wrapper">
+                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    </div>
+                                    <ul class="catalog-item__list">
+                                        <li class="catalog-item__item-resource">
+                                            <p class="catalog-item__date">Новая</p>
+                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                        </li>
+                                        <li class="catalog-item__item-time">
+                                            <p class="catalog-item__description">Б/у</p>
+                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-item__button button black">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="catalog__item catalog-item">
+                                <div class="catalog-item__wrapper">
+                                    <p class="catalog-item__title">Наименование товара в две строки</p>
+                                    <div class="catalog-item__img-wrapper">
+                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    </div>
+                                    <ul class="catalog-item__list">
+                                        <li class="catalog-item__item-resource">
+                                            <p class="catalog-item__date">Новая</p>
+                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                        </li>
+                                        <li class="catalog-item__item-time">
+                                            <p class="catalog-item__description">Б/у</p>
+                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-item__button button black">Заказать</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <nav class="blog__pagination pagination">
+                            <a href=# disabled class="pagination__ion-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25" fill="none">
+                                    <path d="M13.3889 2L3 12.5L14 23" stroke="#1D2931" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                            </a>
+                            <ul class="pagination__list">
+                              <li class="current"><a href=#1>1</a>
+                              <li><a href=#2>2</a>
+                              <li><a href=#3>…</a>
+                              <li><a href=#5>5</a>
+                            </ul>
+                            <a href=#2 class="pagination__ion-right">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25" fill="none">
+                                    <path d="M13.3889 2L3 12.5L14 23" stroke="#1D2931" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="page-footer footer">
+            <div class="footer__wrapper container">
+                <div class="footer__navigation navigation">
+                    <div class="navigation__wrapper">
+                        <a href="#" class="navigation__logo">
+                            <img
+                                src="../img/footer/logo_white.svg"
+                                alt="Leada-logo"
+                                width="179"
+                                height="66"
+                            />
+                        </a>
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a class="navigation__item-link link" href="#"
+                                    >Услуги</a
+                                >
+                                <ul class="navigation__sublist">
+                                    <li class="navigation__sublist-item link">
+                                        <a href="#">Такая услуга</a>
+                                    </li>
+                                    <li class="navigation__sublist-item link">
+                                        <a href="#">Такая услуга</a>
+                                    </li>
+                                    <li class="navigation__sublist-item link">
+                                        <a href="#">Такая услуга</a>
+                                    </li>
+                                    <li class="navigation__sublist-item link">
+                                        <a href="#">Такая услуга</a>
+                                    </li>
+                                    <li class="navigation__sublist-item link">
+                                        <a href="#">Такая услуга</a>
+                                    </li>
+                                    <li class="navigation__sublist-item link">
+                                        <a href="#">Такая услуга</a>
+                                    </li>
+                                    <li class="navigation__sublist-item link">
+                                        <a href="#">Такая услуга</a>
+                                    </li>
+                                    <li class="navigation__sublist-item link">
+                                        <a href="#">Такая услуга</a>
+                                    </li>
+                                    <li class="navigation__sublist-item link">
+                                        <a href="#">Такая услуга</a>
+                                    </li>
+                                    <li class="navigation__sublist-item link">
+                                        <a href="#">Такая услуга</a>
+                                    </li>
+                                    <li class="navigation__sublist-item link">
+                                        <a href="#">Такая услуга</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__item-link link" href="#"
+                                    >Партнёры</a
+                                >
+                            </li>
+                            <li class="navigation__item link">
+                                <a class="navigation__item-link" href="#"
+                                    >О компании</a
+                                >
+                            </li>
+                            <li class="navigation__item link">
+                                <a class="navigation__item-link" href="#"
+                                    >Отзывы</a
+                                >
+                            </li>
+                            <li class="navigation__item link">
+                                <a class="navigation__item-link" href="#"
+                                    >Кейсы</a
+                                >
+                            </li>
+                            <li class="navigation__item link">
+                                <a class="navigation__item-link" href="#"
+                                    >Решения</a
+                                >
+                            </li>
+                            <li class="navigation__item link">
+                                <a class="navigation__item-link" href="#"
+                                    >Блог</a
+                                >
+                            </li>
+                        </ul>
+                        <div class="navigation__link">
+                            <a href="#" class="navigation__whatsapp">
+                                <svg
+                                    width="46"
+                                    height="46"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M23.0049 9.43529C15.6983 9.43529 9.75391 15.3413 9.75391 22.6008C9.75391 24.9964 10.4078 27.3412 11.644 29.3816L11.8926 29.791L10.6972 35.2555L15.9418 33.7532L16.3879 34.0086C18.3904 35.1573 20.6789 35.7647 23.0049 35.7647C30.3115 35.7647 36.2559 29.8586 36.2559 22.5991C36.2559 15.3397 30.3115 9.43359 23.0049 9.43359V9.43529ZM30.3575 28.7031C30.3575 28.7031 29.1281 30.3374 26.533 29.9889C21.801 29.3528 18.3887 25.3686 18.3887 25.3686C18.3887 25.3686 13.7707 20.9733 15.448 17.0957C16.4816 15.2923 17.3738 15.2855 17.3738 15.2855H18.467C18.7735 15.2855 18.9608 15.6222 18.9608 15.6222C18.9608 15.6222 20.2464 18.5405 20.4184 18.9313C20.5904 19.3221 20.3656 19.7062 20.3656 19.7062L19.1941 21.1797C19.1941 21.1797 19.0715 21.3624 19.1941 21.5925C21.1063 25.1791 24.6583 26.3228 24.6583 26.3228C24.6583 26.3228 25.1334 26.5613 25.399 26.2703C25.5863 26.0656 26.1942 25.147 26.6216 24.5938C26.7953 24.3671 27.1069 24.296 27.364 24.4229C28.2188 24.8475 30.068 25.756 30.6946 25.9861C31.5205 26.2906 30.6691 28.4155 30.3558 28.6998L30.3575 28.7031Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M23.0045 0C10.2984 0 0 10.232 0 22.8562C0 35.4803 10.2984 45.7123 23.0045 45.7123C35.7106 45.7123 46.0089 35.4803 46.0089 22.8562C46.0089 10.232 35.7089 0 23.0045 0ZM34.0844 33.6092C31.125 36.5495 27.1899 38.1686 23.0045 38.1686C20.4282 38.1686 17.891 37.5392 15.6332 36.3415L7.47006 38.6795L9.32438 30.2002C8.02006 27.8859 7.33384 25.2687 7.33384 22.599C7.33384 18.4406 8.9634 14.5308 11.9228 11.5905C14.8822 8.65015 18.8173 7.0311 23.0028 7.0311C27.1882 7.0311 31.1233 8.65015 34.0827 11.5905C37.0421 14.5308 38.6717 18.4406 38.6717 22.599C38.6717 26.7574 37.0421 30.6672 34.0827 33.6075L34.0844 33.6092Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#" class="navigation__telegram">
+                                <svg
+                                    width="46"
+                                    height="46"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M23 0C10.2981 0 0 10.2964 0 23C0 35.7036 10.2964 46 23 46C35.7036 46 46 35.7036 46 23C46 10.2964 35.7019 0 23 0ZM33.7509 15.5246L31.0798 32.6375C30.8312 34.2327 28.9858 35.0039 27.6766 34.0591L20.1144 28.6112C19.5713 28.2197 19.5151 27.4315 19.9986 26.9684L27.5898 19.6939C28.0086 19.2921 27.4791 18.6315 26.9956 18.955L16.7265 25.8158C16.0353 26.2772 15.1807 26.4219 14.3771 26.2142L9.37535 24.917C8.60755 24.7178 8.52923 23.6571 9.25958 23.3473L31.6246 13.8664C32.738 13.3948 33.9382 14.3295 33.7509 15.5246Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <a class="navigation__rights link" href="#"
+                        >Политика конфиденциальности</a
+                    >
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/lib.js" type="module"></script>
+        <script src="js/burgerMenu.js" type="module"></script>
+    </body>
+</html>

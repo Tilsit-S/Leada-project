@@ -1,0 +1,310 @@
+.catalog-item {
+    overflow: hidden;
+    position: relative;
+    width: 273px;
+    padding: 20px;
+    border: 1px solid $black;
+    border-radius: 6px;
+
+    @media (max-width: 890px) {
+        max-width: 328px;
+    }
+
+    @media (max-width: 795px) {
+        max-width: 315px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    &__img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 100px 0;
+    }
+
+    img {
+        //width: 100%;
+    }
+
+    &__date {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        color: $white;
+        margin-bottom: 4px;
+        padding-right: 25px;
+    }
+
+    &__list {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 235px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: left;
+        margin-bottom: 3px;
+        color: $white;
+    }
+
+    &__item-resource {
+        width: 50%;
+        background: $red;
+        color: $white;
+        padding: 8px 0 0 20px;
+    }
+
+    &__number {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__item-time {
+        width: 50%;
+        background: $black;
+        color: $white;
+        padding: 9px 0 9px 20px;
+        text-align: start;
+    }
+
+    &__result {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__button {
+        width: 100%;
+        min-height: 55px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: $white;
+        border-radius: 33px;
+    }
+
+    a {
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &:hover {
+        border: 1px solid $red;
+    
+        &__information {
+            color: $red;
+        }
+    }
+}
+
+.catalog__catalog-item:hover {
+    border: 1px solid $red;
+    
+    .catalog-item__information {
+        color: $red;
+    }
+
+    a {
+        opacity: 1;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .catalog-item {
+        overflow: hidden;
+        max-width: 328px;
+        border: 1px solid $black;
+        border-radius: 33px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+            height: 197px;
+        }
+
+        &__date {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: $white;
+            margin-bottom: 4px;
+            padding-right: 25px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-bottom: 20px;
+        }
+
+        &__description {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: right;
+            margin-bottom: 3px;
+            color: $white;
+        }
+
+        &__item-resource {
+            width: 50%;
+            background: $red;
+            color: $white;
+            padding: 6px 0 0 20px;
+        }
+
+        &__information {
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 0 19px;
+            margin-bottom: 12px;
+            color: $black;
+        }
+
+        &__text {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 0 19px;
+            margin-bottom: 18px;
+            color: $black;
+        }
+
+        &__number {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__item-time {
+            width: 50%;
+            background: $red;
+            color: $white;
+            padding: 5px 17px 6px 0;
+            text-align: end;
+        }
+
+        &__result {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .catalog-item {
+        overflow: hidden;
+        max-width: 326px;
+        border: 1px solid $black;
+        border-radius: 33px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+            height: 181px;
+        }
+
+        &__date {
+            font-size: 12px;
+            line-height: 15px;
+            margin-bottom: 4px;
+            padding-right: 0;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-bottom: 11px;
+        }
+
+        &__description {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: right;
+            margin-bottom: 3px;
+            color: $white;
+        }
+
+        &__item-resource {
+            width: 50%;
+            background: $red;
+            color: $white;
+            padding: 6px 0 0 20px;
+        }
+
+        &__information {
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 0 19px;
+            margin-bottom: 12px;
+            color: $black;
+        }
+
+        &__text {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 0 19px;
+            margin-bottom: 18px;
+            color: $black;
+        }
+
+        &__number {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__item-time {
+            width: 50%;
+            background: $red;
+            color: $white;
+            padding: 5px 17px 3px 0;
+            text-align: end;
+        }
+
+        &__result {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
