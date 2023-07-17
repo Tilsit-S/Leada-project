@@ -451,6 +451,7 @@
 
         &__list {
             flex-direction: column;
+            margin-bottom: 31px;
         }
 
         &__item {
@@ -470,6 +471,7 @@
     
             &:nth-child(1) {
                 order: 1;
+                margin-bottom: -10px;
     
                 p {
                     width: 235px;
@@ -481,11 +483,17 @@
             &:nth-child(2) {
                 order: 2;
                 margin: 0;
+                margin-bottom: -11px;
+
+                br {
+                    display: none;
+                }
     
                 p {
-                    width: 223x;
+                    
+                    width: 144px;
                     font-size: 16px;
-                    line-height: 22px;
+                    line-height: 21px;
 
                     &::before {
                         top: -9px;
@@ -498,7 +506,7 @@
                 order: 3;
     
                 p {
-                    width: 315px;
+                    width: 250px;
                     font-size: 16px;
                     line-height: 19px;
                 }
