@@ -1,14 +1,14 @@
 .catalog {
     &__wrapper {
         position: relative;
-        padding: 30px 0 30px 0;
+        padding: 30px 0 63px 0;
     }
 
     &__link {
         font-size: 14px;
         font-weight: 500;
         line-height: normal;
-        margin: 50px 0;
+        margin: 17px 0 48px 0;
     }
 
     &__title {
@@ -26,11 +26,10 @@
             background-image: url("../img/partners/redline.svg");
             background-size: 743px 34px;
             background-repeat: no-repeat;
-            bottom: 17px;
-            right: -362px;
-            top: 8px;
             width: 743px;
             height: 34px;
+            right: -242px;
+            top: 9px;
             transform: scale(-1, 1)
         }
     }
@@ -41,10 +40,53 @@
         margin: 0 auto;
     }
 
+
+    
     .filter {
         width: 273px;
-    }
 
+        &__sublist-button {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        &__placeholder-input:checked ~ .filter__sublist {
+            display: flex;
+        }
+
+        &__placeholder-input:checked ~ &__sublist-button {
+            color: $red;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            clip: rect(1px 1px 1px 1px);
+            padding: 0;
+            border: 0;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+        }
+
+        &__sublist {
+            display: none;
+            flex-flow: row wrap;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+            color: $red;
+            list-style: none;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     &__list {
         width: 879px;
         display: flex;
