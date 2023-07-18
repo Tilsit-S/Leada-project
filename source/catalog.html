@@ -185,240 +185,251 @@
                     <div class="catalog__wrapper">
                         <p class="catalog__link"><a href="index.html">Главная - </a> Каталог</p>
                         <h1 class="catalog__title">Каталог Онлайн касс</h1>
-
-                        <div class="catalog__filter">
-
-                        </div>
-
-                        <ul class="catalog__list">
-                            <li class="catalog__item catalog-item">
-                                <div class="catalog-item__wrapper">
-                                    <p class="catalog-item__title">Наименование товара в две строки</p>
-                                    <div class="catalog-item__img-wrapper">
-                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
-                                    </div>
-                                    <ul class="catalog-item__list">
-                                        <li class="catalog-item__item-resource">
-                                            <p class="catalog-item__date">Новая</p>
-                                            <p class="catalog-item__number">9 999 999 ₽</p>
-                                        </li>
-                                        <li class="catalog-item__item-time">
-                                            <p class="catalog-item__description">Б/у</p>
-                                            <p class="catalog-item__result">9 999 999 ₽</p>
-                                        </li>
-                                    </ul>
-                                    <button class="catalog-item__button button black">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="catalog__item catalog-item">
-                                <div class="catalog-item__wrapper">
-                                    <p class="catalog-item__title">Наименование товара в две строки</p>
-                                    <div class="catalog-item__img-wrapper">
-                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
-                                    </div>
-                                    <ul class="catalog-item__list">
-                                        <li class="catalog-item__item-resource">
-                                            <p class="catalog-item__date">Новая</p>
-                                            <p class="catalog-item__number">9 999 999 ₽</p>
-                                        </li>
-                                        <li class="catalog-item__item-time">
-                                            <p class="catalog-item__description">Б/у</p>
-                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                        <div class="catalog__market">
+                            <div class="catalog__filter filter">
+                                <form action="" class="filter-form">
+                                    <ul class="filter__brand-list">
+                                        <li class="filter__brand-item">
+                                            <label for="placeholder" type="button" class="filter__item-link link">Бренд</label>
+                                            <input type="checkbox" id="placeholder" class="filter__placeholder-input visually-hidden">
+                                            <label for="placeholder" type="button" class="filter__sublist-button"></label>
+                                            <ul class="sublist">
+                                                <li class="filter__sublist-item link">
+                                                    <input type="radio"><p>Наименование</p>
+                                                </li>
+                                                <li class="filter__sublist-item link">
+                                                    <input type="radio"><p>Наименование</p>
+                                                </li>
+                                                <li class="filter__sublist-item link">
+                                                    <input type="radio"><p>Наименование</p>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                    <button class="catalog-item__button button black">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="catalog__item catalog-item">
-                                <div class="catalog-item__wrapper">
-                                    <p class="catalog-item__title">Наименование товара в две строки</p>
-                                    <div class="catalog-item__img-wrapper">
-                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
-                                    </div>
-                                    <ul class="catalog-item__list">
-                                        <li class="catalog-item__item-resource">
-                                            <p class="catalog-item__date">Новая</p>
-                                            <p class="catalog-item__number">9 999 999 ₽</p>
+                                    <ul class="brand__type">
+                                        <li class="filter__brand-item">
+                                            <p>Тип оборудования</p>
                                         </li>
-                                        <li class="catalog-item__item-time">
-                                            <p class="catalog-item__description">Б/у</p>
-                                            <p class="catalog-item__result">9 999 999 ₽</p>
+                                        <li class="filter__brand-item">
+                                            <input type="radio"><p>Наименование</p>
+                                        </li>
+                                        <li class="filter__brand-item">
+                                            <input type="radio"><p>Наименование</p>
+                                        </li>
+                                        <li class="filter__brand-item">
+                                            <input type="radio"><p>Наименование</p>
                                         </li>
                                     </ul>
-                                    <button class="catalog-item__button button black">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="catalog__item catalog-item">
-                                <div class="catalog-item__wrapper">
-                                    <p class="catalog-item__title">Наименование товара в две строки</p>
-                                    <div class="catalog-item__img-wrapper">
-                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    <div class="filter__range">
+                                        <p class="filter__range-price">Цена</p>
+                                        <label for="">
+                                            От
+                                            <input type="number" name="min-price" value="0">
+                                        </label>
+                                        <label for="">
+                                            До
+                                            <input type="number" name="max-price" value="99 999">
+                                        </label>
+                                        <input  type="range" min="0" max="100" value="50" name="range" step="1"/>
                                     </div>
-                                    <ul class="catalog-item__list">
-                                        <li class="catalog-item__item-resource">
-                                            <p class="catalog-item__date">Новая</p>
-                                            <p class="catalog-item__number">9 999 999 ₽</p>
-                                        </li>
-                                        <li class="catalog-item__item-time">
-                                            <p class="catalog-item__description">Б/у</p>
-                                            <p class="catalog-item__result">9 999 999 ₽</p>
-                                        </li>
-                                    </ul>
-                                    <button class="catalog-item__button button black">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="catalog__item catalog-item">
-                                <div class="catalog-item__wrapper">
-                                    <p class="catalog-item__title">Наименование товара в две строки</p>
-                                    <div class="catalog-item__img-wrapper">
-                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                    <button class="filter__button button red">Показать</button>
+                                    <button class="filter__button-reset">Сбросить фильтр</button>
+                                </form>
+                            </div>
+    
+                            <ul class="catalog__list">
+                                <li class="catalog__item catalog-item">
+                                    <div class="catalog-item__wrapper">
+                                        <p class="catalog-item__title">Наименование товара в две строки</p>
+                                        <div class="catalog-item__img-wrapper">
+                                            <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                        </div>
+                                        <ul class="catalog-item__list">
+                                            <li class="catalog-item__item-resource">
+                                                <p class="catalog-item__date">Новая</p>
+                                                <p class="catalog-item__number">9 999 999 ₽</p>
+                                            </li>
+                                            <li class="catalog-item__item-time">
+                                                <p class="catalog-item__description">Б/у</p>
+                                                <p class="catalog-item__result">9 999 999 ₽</p>
+                                            </li>
+                                        </ul>
+                                        <button class="catalog-item__button button black">Заказать</button>
                                     </div>
-                                    <ul class="catalog-item__list">
-                                        <li class="catalog-item__item-resource">
-                                            <p class="catalog-item__date">Новая</p>
-                                            <p class="catalog-item__number">9 999 999 ₽</p>
-                                        </li>
-                                        <li class="catalog-item__item-time">
-                                            <p class="catalog-item__description">Б/у</p>
-                                            <p class="catalog-item__result">9 999 999 ₽</p>
-                                        </li>
-                                    </ul>
-                                    <button class="catalog-item__button button black">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="catalog__item catalog-item">
-                                <div class="catalog-item__wrapper">
-                                    <p class="catalog-item__title">Наименование товара в две строки</p>
-                                    <div class="catalog-item__img-wrapper">
-                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                </li>
+                                <li class="catalog__item catalog-item">
+                                    <div class="catalog-item__wrapper">
+                                        <p class="catalog-item__title">Наименование товара в две строки</p>
+                                        <div class="catalog-item__img-wrapper">
+                                            <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                        </div>
+                                        <ul class="catalog-item__list">
+                                            <li class="catalog-item__item-resource">
+                                                <p class="catalog-item__date">Новая</p>
+                                                <p class="catalog-item__number">9 999 999 ₽</p>
+                                            </li>
+                                            <li class="catalog-item__item-time">
+                                                <p class="catalog-item__description">Б/у</p>
+                                                <p class="catalog-item__result">9 999 999 ₽</p>
+                                            </li>
+                                        </ul>
+                                        <button class="catalog-item__button button black">Заказать</button>
                                     </div>
-                                    <ul class="catalog-item__list">
-                                        <li class="catalog-item__item-resource">
-                                            <p class="catalog-item__date">Новая</p>
-                                            <p class="catalog-item__number">9 999 999 ₽</p>
-                                        </li>
-                                        <li class="catalog-item__item-time">
-                                            <p class="catalog-item__description">Б/у</p>
-                                            <p class="catalog-item__result">9 999 999 ₽</p>
-                                        </li>
-                                    </ul>
-                                    <button class="catalog-item__button button black">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="catalog__item catalog-item">
-                                <div class="catalog-item__wrapper">
-                                    <p class="catalog-item__title">Наименование товара в две строки</p>
-                                    <div class="catalog-item__img-wrapper">
-                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                </li>
+                                <li class="catalog__item catalog-item">
+                                    <div class="catalog-item__wrapper">
+                                        <p class="catalog-item__title">Наименование товара в две строки</p>
+                                        <div class="catalog-item__img-wrapper">
+                                            <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                        </div>
+                                        <ul class="catalog-item__list">
+                                            <li class="catalog-item__item-resource">
+                                                <p class="catalog-item__date">Новая</p>
+                                                <p class="catalog-item__number">9 999 999 ₽</p>
+                                            </li>
+                                            <li class="catalog-item__item-time">
+                                                <p class="catalog-item__description">Б/у</p>
+                                                <p class="catalog-item__result">9 999 999 ₽</p>
+                                            </li>
+                                        </ul>
+                                        <button class="catalog-item__button button black">Заказать</button>
                                     </div>
-                                    <ul class="catalog-item__list">
-                                        <li class="catalog-item__item-resource">
-                                            <p class="catalog-item__date">Новая</p>
-                                            <p class="catalog-item__number">9 999 999 ₽</p>
-                                        </li>
-                                        <li class="catalog-item__item-time">
-                                            <p class="catalog-item__description">Б/у</p>
-                                            <p class="catalog-item__result">9 999 999 ₽</p>
-                                        </li>
-                                    </ul>
-                                    <button class="catalog-item__button button black">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="catalog__item catalog-item">
-                                <div class="catalog-item__wrapper">
-                                    <p class="catalog-item__title">Наименование товара в две строки</p>
-                                    <div class="catalog-item__img-wrapper">
-                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                </li>
+                                <li class="catalog__item catalog-item">
+                                    <div class="catalog-item__wrapper">
+                                        <p class="catalog-item__title">Наименование товара в две строки</p>
+                                        <div class="catalog-item__img-wrapper">
+                                            <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                        </div>
+                                        <ul class="catalog-item__list">
+                                            <li class="catalog-item__item-resource">
+                                                <p class="catalog-item__date">Новая</p>
+                                                <p class="catalog-item__number">9 999 999 ₽</p>
+                                            </li>
+                                            <li class="catalog-item__item-time">
+                                                <p class="catalog-item__description">Б/у</p>
+                                                <p class="catalog-item__result">9 999 999 ₽</p>
+                                            </li>
+                                        </ul>
+                                        <button class="catalog-item__button button black">Заказать</button>
                                     </div>
-                                    <ul class="catalog-item__list">
-                                        <li class="catalog-item__item-resource">
-                                            <p class="catalog-item__date">Новая</p>
-                                            <p class="catalog-item__number">9 999 999 ₽</p>
-                                        </li>
-                                        <li class="catalog-item__item-time">
-                                            <p class="catalog-item__description">Б/у</p>
-                                            <p class="catalog-item__result">9 999 999 ₽</p>
-                                        </li>
-                                    </ul>
-                                    <button class="catalog-item__button button black">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="catalog__item catalog-item">
-                                <div class="catalog-item__wrapper">
-                                    <p class="catalog-item__title">Наименование товара в две строки</p>
-                                    <div class="catalog-item__img-wrapper">
-                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                </li>
+                                <li class="catalog__item catalog-item">
+                                    <div class="catalog-item__wrapper">
+                                        <p class="catalog-item__title">Наименование товара в две строки</p>
+                                        <div class="catalog-item__img-wrapper">
+                                            <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                        </div>
+                                        <ul class="catalog-item__list">
+                                            <li class="catalog-item__item-resource">
+                                                <p class="catalog-item__date">Новая</p>
+                                                <p class="catalog-item__number">9 999 999 ₽</p>
+                                            </li>
+                                            <li class="catalog-item__item-time">
+                                                <p class="catalog-item__description">Б/у</p>
+                                                <p class="catalog-item__result">9 999 999 ₽</p>
+                                            </li>
+                                        </ul>
+                                        <button class="catalog-item__button button black">Заказать</button>
                                     </div>
-                                    <ul class="catalog-item__list">
-                                        <li class="catalog-item__item-resource">
-                                            <p class="catalog-item__date">Новая</p>
-                                            <p class="catalog-item__number">9 999 999 ₽</p>
-                                        </li>
-                                        <li class="catalog-item__item-time">
-                                            <p class="catalog-item__description">Б/у</p>
-                                            <p class="catalog-item__result">9 999 999 ₽</p>
-                                        </li>
-                                    </ul>
-                                    <button class="catalog-item__button button black">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="catalog__item catalog-item">
-                                <div class="catalog-item__wrapper">
-                                    <p class="catalog-item__title">Наименование товара в две строки</p>
-                                    <div class="catalog-item__img-wrapper">
-                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                </li>
+                                <li class="catalog__item catalog-item">
+                                    <div class="catalog-item__wrapper">
+                                        <p class="catalog-item__title">Наименование товара в две строки</p>
+                                        <div class="catalog-item__img-wrapper">
+                                            <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                        </div>
+                                        <ul class="catalog-item__list">
+                                            <li class="catalog-item__item-resource">
+                                                <p class="catalog-item__date">Новая</p>
+                                                <p class="catalog-item__number">9 999 999 ₽</p>
+                                            </li>
+                                            <li class="catalog-item__item-time">
+                                                <p class="catalog-item__description">Б/у</p>
+                                                <p class="catalog-item__result">9 999 999 ₽</p>
+                                            </li>
+                                        </ul>
+                                        <button class="catalog-item__button button black">Заказать</button>
                                     </div>
-                                    <ul class="catalog-item__list">
-                                        <li class="catalog-item__item-resource">
-                                            <p class="catalog-item__date">Новая</p>
-                                            <p class="catalog-item__number">9 999 999 ₽</p>
-                                        </li>
-                                        <li class="catalog-item__item-time">
-                                            <p class="catalog-item__description">Б/у</p>
-                                            <p class="catalog-item__result">9 999 999 ₽</p>
-                                        </li>
-                                    </ul>
-                                    <button class="catalog-item__button button black">Заказать</button>
-                                </div>
-                            </li>
-                            <li class="catalog__item catalog-item">
-                                <div class="catalog-item__wrapper">
-                                    <p class="catalog-item__title">Наименование товара в две строки</p>
-                                    <div class="catalog-item__img-wrapper">
-                                        <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                </li>
+                                <li class="catalog__item catalog-item">
+                                    <div class="catalog-item__wrapper">
+                                        <p class="catalog-item__title">Наименование товара в две строки</p>
+                                        <div class="catalog-item__img-wrapper">
+                                            <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                        </div>
+                                        <ul class="catalog-item__list">
+                                            <li class="catalog-item__item-resource">
+                                                <p class="catalog-item__date">Новая</p>
+                                                <p class="catalog-item__number">9 999 999 ₽</p>
+                                            </li>
+                                            <li class="catalog-item__item-time">
+                                                <p class="catalog-item__description">Б/у</p>
+                                                <p class="catalog-item__result">9 999 999 ₽</p>
+                                            </li>
+                                        </ul>
+                                        <button class="catalog-item__button button black">Заказать</button>
                                     </div>
-                                    <ul class="catalog-item__list">
-                                        <li class="catalog-item__item-resource">
-                                            <p class="catalog-item__date">Новая</p>
-                                            <p class="catalog-item__number">9 999 999 ₽</p>
-                                        </li>
-                                        <li class="catalog-item__item-time">
-                                            <p class="catalog-item__description">Б/у</p>
-                                            <p class="catalog-item__result">9 999 999 ₽</p>
-                                        </li>
-                                    </ul>
-                                    <button class="catalog-item__button button black">Заказать</button>
-                                </div>
-                            </li>
-                        </ul>
-                        <nav class="blog__pagination pagination">
-                            <a href=# disabled class="pagination__ion-left">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25" fill="none">
-                                    <path d="M13.3889 2L3 12.5L14 23" stroke="#1D2931" stroke-width="3" stroke-linecap="round"/>
-                                    </svg>
-                            </a>
-                            <ul class="pagination__list">
-                              <li class="current"><a href=#1>1</a>
-                              <li><a href=#2>2</a>
-                              <li><a href=#3>…</a>
-                              <li><a href=#5>5</a>
+                                </li>
+                                <li class="catalog__item catalog-item">
+                                    <div class="catalog-item__wrapper">
+                                        <p class="catalog-item__title">Наименование товара в две строки</p>
+                                        <div class="catalog-item__img-wrapper">
+                                            <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                        </div>
+                                        <ul class="catalog-item__list">
+                                            <li class="catalog-item__item-resource">
+                                                <p class="catalog-item__date">Новая</p>
+                                                <p class="catalog-item__number">9 999 999 ₽</p>
+                                            </li>
+                                            <li class="catalog-item__item-time">
+                                                <p class="catalog-item__description">Б/у</p>
+                                                <p class="catalog-item__result">9 999 999 ₽</p>
+                                            </li>
+                                        </ul>
+                                        <button class="catalog-item__button button black">Заказать</button>
+                                    </div>
+                                </li>
+                                <li class="catalog__item catalog-item">
+                                    <div class="catalog-item__wrapper">
+                                        <p class="catalog-item__title">Наименование товара в две строки</p>
+                                        <div class="catalog-item__img-wrapper">
+                                            <img src="../img/catalog/exam-pic.png" width="143" height="143" alt="catalog picture"/>
+                                        </div>
+                                        <ul class="catalog-item__list">
+                                            <li class="catalog-item__item-resource">
+                                                <p class="catalog-item__date">Новая</p>
+                                                <p class="catalog-item__number">9 999 999 ₽</p>
+                                            </li>
+                                            <li class="catalog-item__item-time">
+                                                <p class="catalog-item__description">Б/у</p>
+                                                <p class="catalog-item__result">9 999 999 ₽</p>
+                                            </li>
+                                        </ul>
+                                        <button class="catalog-item__button button black">Заказать</button>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href=#2 class="pagination__ion-right">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25" fill="none">
-                                    <path d="M13.3889 2L3 12.5L14 23" stroke="#1D2931" stroke-width="3" stroke-linecap="round"/>
-                                    </svg>
-                            </a>
-                        </nav>
+                            <nav class="blog__pagination pagination">
+                                <a href=# disabled class="pagination__ion-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25" fill="none">
+                                        <path d="M13.3889 2L3 12.5L14 23" stroke="#1D2931" stroke-width="3" stroke-linecap="round"/>
+                                        </svg>
+                                </a>
+                                <ul class="pagination__list">
+                                  <li class="current"><a href=#1>1</a>
+                                  <li><a href=#2>2</a>
+                                  <li><a href=#3>…</a>
+                                  <li><a href=#5>5</a>
+                                </ul>
+                                <a href=#2 class="pagination__ion-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25" fill="none">
+                                        <path d="M13.3889 2L3 12.5L14 23" stroke="#1D2931" stroke-width="3" stroke-linecap="round"/>
+                                        </svg>
+                                </a>
+                            </nav>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
