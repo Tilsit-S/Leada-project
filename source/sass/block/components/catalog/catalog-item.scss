@@ -2,17 +2,17 @@
     overflow: hidden;
     position: relative;
     width: 273px;
-    min-height: 402px;
+    //height: 402px;
     padding: 20px;
     border: 1px solid $black;
     border-radius: 6px;
 
     @media (max-width: 890px) {
-        max-width: 328px;
+        width: 328px;
     }
 
     @media (max-width: 795px) {
-        max-width: 315px;
+        width: 315px;
     }
 
     &__wrapper {
@@ -135,24 +135,35 @@
 
 @media (max-width: $tablet-width) {
     .catalog-item {
-        overflow: hidden;
-        max-width: 328px;
-        border: 1px solid $black;
-        border-radius: 33px;
+        width: 212px;
+        padding: 20px 10px;
 
         &__wrapper {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
-        img {
-            width: 100%;
-            height: 197px;
+        &__title {
+            width: 185px;
+            font-size: 14px;
+            line-height: 17px;
+            margin: 0 0 12px 0;
+        }
+
+        &__img-wrapper {
+            margin: 0 0 91px 0;
+            width: 135px;
+            height: 135px;
+
+            img {
+                background-size: contain;
+            }
+            
         }
 
         &__date {
-            font-weight: 600;
-            font-size: 12px;
+            font-size: 13px;
             line-height: 15px;
             color: $white;
             margin-bottom: 4px;
@@ -163,23 +174,20 @@
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         &__description {
             font-weight: 500;
             font-size: 12px;
             line-height: 15px;
-            text-align: right;
+            text-align: left;
             margin-bottom: 3px;
             color: $white;
         }
 
         &__item-resource {
-            width: 50%;
-            background: $red;
-            color: $white;
-            padding: 6px 0 0 20px;
+            padding: 13px 0 13px 10px;
         }
 
         &__information {
@@ -208,10 +216,13 @@
 
         &__item-time {
             width: 50%;
-            background: $red;
             color: $white;
-            padding: 5px 17px 6px 0;
-            text-align: end;
+            padding: 14px 1px 6px 12px;
+            text-align: start;
+        }
+
+        &__button {
+            min-height: 45px;
         }
 
         &__result {
@@ -225,18 +236,30 @@
 @media (max-width: $mobile-width) {
     .catalog-item {
         overflow: hidden;
-        max-width: 326px;
+        width: 300px;
         border: 1px solid $black;
-        border-radius: 33px;
+        border-radius: 6px;
 
         &__wrapper {
             display: flex;
             flex-direction: column;
         }
 
-        img {
-            width: 100%;
-            height: 181px;
+        &__title {
+            width: 200px;
+            font-size: 16px;
+            margin: 0 0 12px 0;
+        }
+
+        &__img-wrapper {
+            margin: 0 0 91px 0;
+            width: 166px;
+            height: 166px;
+
+            img {
+                background-size: contain;
+            }
+            
         }
 
         &__date {

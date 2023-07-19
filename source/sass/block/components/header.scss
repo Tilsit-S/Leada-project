@@ -25,11 +25,27 @@
         }
 
         @media (max-width: 860px) {
-            padding: 20px 0;
+            padding: 5px 0;
         }
 
         &__logo {
             margin-right: -30px;
+
+            img {
+                width: 171px;
+                height: 62px;
+
+                @media (max-width: $fixed-width) {
+                    padding-left: 0;
+                    width: 126px;
+                    height: 54px;
+                }
+
+                @media (max-width: 1000px) {
+                    width: 100px;
+                    height: 40px;
+                }
+            }
 
             svg {
                 width: 171px;
