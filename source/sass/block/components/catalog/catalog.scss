@@ -34,30 +34,22 @@
         }
     }
 
-    &__market {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        margin: 0 auto;
-    }
-
-
-    
     .filter {
         width: 273px;
-
+    
         &__sublist-button {
             display: block;
             margin-bottom: 10px;
         }
-
+        
         &__placeholder-input:checked ~ .filter__sublist {
             display: flex;
         }
-
+        
         &__placeholder-input:checked ~ &__sublist-button {
             color: $red;
         }
-
+        
         .visually-hidden {
             position: absolute;
             clip: rect(1px 1px 1px 1px);
@@ -67,7 +59,7 @@
             width: 1px;
             overflow: hidden;
         }
-
+        
         &__sublist {
             display: none;
             flex-flow: row wrap;
@@ -78,14 +70,13 @@
             list-style: none;
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+    &__market {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 0 auto;
+    }
     
     &__list {
         width: 879px;
@@ -161,3 +152,11 @@
         }
     }
 }
+
+
+
+
+
+
+
+
