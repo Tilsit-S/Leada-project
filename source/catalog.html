@@ -193,52 +193,48 @@
 
                                     <ul class="filter__brand-list">
                                         <li class="filter__brand-item">
-
-                                            
-                                            
                                             <input type="checkbox" id="filter-placeholder" class="filter__placeholder-input visually-hidden">
                                             <label for="filter-placeholder" class="filter__sublist-button">Бренд</label>
-                                            
                                             <ul class="filter__sublist">
                                                 <li class="filter__sublist-item">
-                                                    <input type="radio"><p>Наименование</p>
+                                                    <input type="radio">Наименование
                                                 </li>
                                                 <li class="filter__sublist-item">
-                                                    <input type="radio"><p>Наименование</p>
+                                                    <input type="radio">Наименование
                                                 </li>
                                                 <li class="filter__sublist-item">
-                                                    <input type="radio"><p>Наименование</p>
+                                                    <input type="radio">Наименование
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="filter__brand-type">
+                                            <input type="checkbox" id="brand-type" class="filter__brand-placeholder-input visually-hidden">
+                                            <label for="brand-type" class="filter__brand-button">Тип оборудования</label>
+                                            <ul class="filter__brand-sublist">
+                                                <li class="filter__brand-sublist-item">
+                                                    <input type="radio">Наименование
+                                                </li>
+                                                <li class="filter__brand-sublist-item">
+                                                    <input type="radio">Наименование
+                                                </li>
+                                                <li class="filter__brand-sublist-item">
+                                                    <input type="radio">Наименование
                                                 </li>
                                             </ul>
                                         </li>
                                     </ul>
 
-
-                                    <ul class="brand__type">
-                                        <li class="filter__brand-item">
-                                            <p>Тип оборудования</p>
-                                        </li>
-                                        <li class="filter__brand-item">
-                                            <input type="radio"><p>Наименование</p>
-                                        </li>
-                                        <li class="filter__brand-item">
-                                            <input type="radio"><p>Наименование</p>
-                                        </li>
-                                        <li class="filter__brand-item">
-                                            <input type="radio"><p>Наименование</p>
-                                        </li>
-                                    </ul>
                                     <div class="filter__range">
                                         <p class="filter__range-price">Цена</p>
                                         <label for="">
-                                            От
+                                            от
                                             <input type="number" name="min-price" value="0">
                                         </label>
                                         <label for="">
-                                            До
+                                            до
                                             <input type="number" name="max-price" value="99 999">
                                         </label>
-                                        <input  type="range" min="0" max="100" value="50" name="range" step="1"/>
+                                        <input  type="range" min="0" max="100" value="50" name="range" step="1" class="filter__scroll">
                                     </div>
                                     <button class="filter__button button red">Показать</button>
                                     <button class="filter__button-reset">Сбросить фильтр</button>
