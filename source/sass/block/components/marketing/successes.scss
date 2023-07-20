@@ -20,7 +20,7 @@
             left: -441px;
             width: 713px;
             height: 34px;
-            transform: matrix(-1,0,0,1,0,0);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
         }
 
         &::after {
@@ -49,11 +49,16 @@
 
     .item-card {
         position: relative;
+        display: none;
         width: 576px;
         padding: 32px 30px 29px 30px;
-        background: #FF738C;
+        background: #ff738c;
         border-radius: 33px;
         box-shadow: 0px 40px 28px -36px rgba(0, 0, 0, 0.25);
+
+        &--show {
+            display: block;
+        }
 
         &::before {
             position: absolute;
@@ -132,7 +137,7 @@
     }
 
     &__button {
-        display: block;
+        display: none;
         width: 374px;
         min-height: 65px;
         background-color: $black;
@@ -140,22 +145,26 @@
         border: none;
         border-radius: 33px;
         margin: 0 auto;
+
+        &.show {
+            display: block;
+        }
     }
 }
 
 @media (max-width: $tablet-width) {
     .successes {
         padding: 50px 0 50px 0;
-    
+
         &__title {
             font-size: 35px;
             line-height: 43px;
             margin-bottom: 74px;
-    
+
             &::before {
                 left: -539px;
             }
-    
+
             &::after {
                 position: absolute;
                 content: "";
@@ -166,11 +175,11 @@
                 left: -300%;
             }
         }
-    
+
         &__colortext {
             color: $white;
         }
-    
+
         &__list {
             display: flex;
             flex-direction: row;
@@ -178,17 +187,17 @@
             gap: 20px 20px;
             margin-bottom: 18px;
         }
-    
+
         .item-card {
             overflow: hidden;
             position: relative;
             width: 328px;
             padding: 22px 20px 20px 20px;
-            background: #FF738C;
+            background: #ff738c;
             border-radius: 33px;
             box-shadow: 0px 40px 28px -36px rgba(0, 0, 0, 0.25);
             z-index: 5;
-    
+
             &::before {
                 position: absolute;
                 content: "";
@@ -202,14 +211,14 @@
                 transform: rotate(20deg);
                 z-index: 0;
             }
-    
+
             &__title {
                 position: relative;
                 margin: 3px 0 3px 88px;
                 font-size: 14px;
                 line-height: normal;
                 text-transform: uppercase;
-    
+
                 &::before {
                     position: absolute;
                     content: "";
@@ -221,20 +230,20 @@
                     left: -87px;
                 }
             }
-    
+
             &__activity {
                 font-size: 12px;
                 line-height: normal;
                 margin: 0 0 30px 89px;
                 color: $white;
             }
-    
+
             &__description {
                 width: 273px;
                 font-size: 16px;
                 line-height: 20px;
                 margin: 0 0 147px 0;
-    
+
                 &::after {
                     position: absolute;
                     content: "";
@@ -246,7 +255,7 @@
                     right: 48px;
                 }
             }
-    
+
             &__button {
                 position: relative;
                 display: block;
@@ -260,13 +269,13 @@
                 color: $white;
                 text-align: center;
             }
-    
+
             &:hover {
                 cursor: pointer;
                 box-shadow: 0 0 0 2px $white;
             }
         }
-    
+
         &__button {
             display: block;
             width: 328px;
@@ -283,13 +292,13 @@
 @media (max-width: $mobile-width) {
     .successes {
         padding: 42px 0 40px 0;
-    
+
         &__title {
             font-size: 24px;
             line-height: 28px;
             margin-bottom: 23px;
             text-align: center;
-    
+
             &::before {
                 left: -51px;
                 top: 72px;
@@ -297,7 +306,7 @@
                 width: 121px;
                 height: 15px;
             }
-    
+
             &::after {
                 position: absolute;
                 content: "";
@@ -308,11 +317,11 @@
                 left: -300%;
             }
         }
-    
+
         &__colortext {
             color: $white;
         }
-    
+
         &__list {
             display: flex;
             flex-direction: row;
@@ -320,17 +329,17 @@
             gap: 20px 20px;
             margin-bottom: 20px;
         }
-    
+
         .item-card {
             overflow: hidden;
             position: relative;
             width: 328px;
             padding: 22px 20px 20px 20px;
-            background: #FF738C;
+            background: #ff738c;
             border-radius: 33px;
             box-shadow: 0px 40px 28px -36px rgba(0, 0, 0, 0.25);
             z-index: 5;
-    
+
             &::before {
                 position: absolute;
                 content: "";
@@ -345,14 +354,14 @@
                 transform: rotate(27deg);
                 z-index: 0;
             }
-    
+
             &__title {
                 position: relative;
                 margin: 3px 0 3px 76px;
                 font-size: 14px;
                 line-height: normal;
                 text-transform: uppercase;
-    
+
                 &::before {
                     position: absolute;
                     content: "";
@@ -364,20 +373,20 @@
                     left: -75px;
                 }
             }
-    
+
             &__activity {
                 font-size: 12px;
                 line-height: normal;
                 margin: 0 0 23px 77px;
                 color: $white;
             }
-    
+
             &__description {
                 width: 266px;
                 font-size: 16px;
                 line-height: 20px;
                 margin: 0 0 164px 0;
-    
+
                 &::after {
                     position: absolute;
                     content: "";
@@ -390,7 +399,7 @@
                     right: 27px;
                 }
             }
-    
+
             &__button {
                 position: relative;
                 padding: 9px 0;
@@ -400,13 +409,13 @@
                 width: 100%;
                 min-height: 43px;
             }
-    
+
             &:hover {
                 cursor: pointer;
                 box-shadow: 0 0 0 2px $white;
             }
         }
-    
+
         &__button {
             display: block;
             width: 100%;
