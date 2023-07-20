@@ -43,6 +43,34 @@
             top: 19px;
             right: -165%;
         }
+
+        @media (max-width: 1265px) {
+            font-size: 39px;
+
+            &::after {
+                right: -301px;
+                top: 5px
+            }
+        }
+
+        @media (max-width: 1070px) {
+            font-size: 35px;
+
+            &::after {
+                background-size: 720px 29px;
+                width: 720px;
+                height: 29px;
+                right: -301px;
+                top: 5px;
+            }
+        }
+
+        @media (max-width: 950px) {
+
+            &::after {
+                right: -515px;
+            }
+        }
     }
 
     &__filter-button {
@@ -60,6 +88,11 @@
         flex-wrap: wrap;
         gap: 30px;
         margin-bottom: 31px;
+
+        @media (max-width: 1265px) {
+            align-items: center;
+            justify-content: center;
+        }
     }
 
         /*----------------------------------------------------------brand--------------------------------------------------------------*/
@@ -304,7 +337,7 @@
 
         &__wrapper {
             position: relative;
-            padding: 13px 0 63px 0;
+            padding: 13px 0 48px 0;
         }
     
         &__link {
@@ -319,6 +352,9 @@
             margin-bottom: 31px;
     
             &::after {
+                background-size: 743px 34px;
+                width: 743px;
+                height: 34px;
                 right: -523px;
                 top: 1px;
             }
@@ -332,23 +368,70 @@
                 top: 19px;
                 right: -165%;
             }
+
+            @media (max-width: 650px) {
+                width: 265px;
+                font-size: 27px;
+
+                &::after {
+                    right: -715px;
+                    top: 15px;
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
         }
 
-        &__filter-button {
-            display: none;
+        @media (max-width: 700px) {
+            &__filter {
+                display: none;
+            }
         }
     
         &__market {
             display: grid;
             grid-template-columns: 1fr 3fr;
             margin: 0 auto;
+
+            @media (max-width: 700px) {
+                display: flex;
+            }
         }
         
         &__list {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            margin-bottom: 31px;
+            margin-bottom: 17px;
+        }
+
+        &__filter-button {
+            @media (max-width: 700px) {
+                position: relative;
+                display: block;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                border: none;
+                background: transparent;
+                margin: 0 0 19px 27px;
+    
+                &::after {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background-image: url("../img/catalog/filter.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 11px;
+                    height: 9px;
+                    left: -10px;
+                    top: 4px;
+                }
+            }
         }
     
             /*----------------------------------------------------------brand--------------------------------------------------------------*/
@@ -587,38 +670,61 @@
 
         &__wrapper {
             position: relative;
-            padding: 13px 0 63px 0;
+            padding: 13px 0 35px 0;
         }
     
         &__link {
-            font-size: 14px;
-            font-weight: 500;
-            line-height: normal;
-            margin: 17px 0 48px 0;
+            font-size: 12px;
+            margin: 7px 0 20px;
         }
     
         &__title {
-            font-size: 29px;
-            margin-bottom: 31px;
-    
-            &::after {
-                right: -523px;
-                top: 1px;
+            width: 175px;
+            font-size: 20px;
+            margin-bottom: 20px;
+
+            &::before {
+                display: none;
             }
     
-            &::before {
+            &::after {
+                display: block;
                 position: absolute;
                 content: "";
-                width: 150%;
-                height: 4px;
-                background-color: #f15f79;
-                top: 19px;
-                right: -165%;
+                background-image: url("../img/partners/redline.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 318px;
+                height: 16px;
+                left: 215px;
+                top: 17px;
+                transform: scale(-1,1);
             }
         }
 
         &__filter-button {
+            position: relative;
             display: block;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border: none;
+            background: transparent;
+            margin: 0 0 19px 235px;
+
+            &::after {
+                position: absolute;
+                display: block;
+                content: "";
+                background-image: url("../img/catalog/filter.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 11px;
+                height: 9px;
+                left: -10px;
+                top: 4px;
+            }
         }
     
         &__market {
@@ -630,7 +736,7 @@
         &__list {
             flex-direction: column;
             gap: 20px 0;
-            margin-bottom: 31px;
+            margin-bottom: 20px;
         }
     
             /*----------------------------------------------------------brand--------------------------------------------------------------*/
