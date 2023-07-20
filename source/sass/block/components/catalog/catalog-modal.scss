@@ -5,7 +5,7 @@
     left: 50%;
     top: 174px;
     width: 464px;
-    padding: 40px 30px 30px 30px;
+    padding: 40px;
     border-radius: 33px;
     background-color: white;
     transform: translate(-50%, 0%);
@@ -61,8 +61,8 @@
         font-size: 26px;
         line-height: 32px;
         text-align: center;
-        margin: 0 auto;
-        padding-bottom: 15px;
+        margin: 30px 0 40px;
+        padding-bottom: 0;
         text-transform: uppercase;
 
         &::before {
@@ -72,8 +72,8 @@
             background-size: cover;
             width: 125px;
             height: 20px;
-            top: 38px;
-            left: -140px;
+            left: -41px;
+            top: -26px;
         }
 
         &::after {
@@ -83,8 +83,8 @@
             background-size: cover;
             width: 125px;
             height: 20px;
-            top: 38px;
-            right: -140px;
+            right: -41px;
+            top: -26px;
             transform: matrix(-1, 0, 0, 1, 0, 0);
         }
     }
@@ -117,12 +117,42 @@
         }
     }
 
-    &__box {
-        .filter__brand-sublist-item,
-        .filter__sublist-item {
+    .filter {
+        &__sublist-item:not(:last-child),
+        &__brand-sublist-item:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        &__brand-sublist-item,
+        &__sublist-item {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+        }
+
+        &__sublist {
+            margin-bottom: 40px;
+        }
+
+        &__brand-sublist-item {
+            margin-bottom: 40px;
+        }
+
+        &__sublist-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        &__item-title {
+            input {
+                margin-right: 10px;
+            }
+        }
+
+        &__item-sell {
+            color: $red;
         }
     }
 
