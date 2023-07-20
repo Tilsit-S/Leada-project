@@ -137,7 +137,8 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        max-height: 900px;
+        //max-height: 900px;
+        max-height: 720px;
     }
 
     &__dsc-item {
@@ -235,7 +236,7 @@
                 font-weight: 500;
                 font-size: 25px;
                 color: $red;
-                margin-left: 9px;
+                margin-left: 0;
                 cursor: pointer;
                 box-shadow: none;
             }
@@ -248,13 +249,19 @@
                     height: 4px;
                     background-color: $white;
                     top: 18px;
-                    left: 48px;
+                    left: 40px;
                 }
             }
     
             &:nth-child(1) {
                 button:before {
                     background-color: $red;
+                }
+            }
+
+            &:nth-child(5) {
+                button::before {
+                    width: 120px;
                 }
             }
         }
