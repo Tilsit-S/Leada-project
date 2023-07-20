@@ -1,0 +1,565 @@
+.catalog-modal {
+    overflow: hidden;
+    position: absolute;
+    //display: none;
+    left: 50%;
+    top: 174px;
+    width: 464px;
+    padding: 40px 30px 30px 30px;
+    border-radius: 33px;
+    background-color: white;
+    transform: translate(-50%, 0%);
+
+    &.open {
+        display: block;
+    }
+
+    &__close {
+        position: absolute;
+        top: -26px;
+        right: -26px;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &::after,
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &:active {
+            &::after,
+            &::before {
+                background-color: $red;
+            }
+        }
+    }
+
+    &__title {
+        position: relative;
+        width: 384px;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("../img/main/redline-modal.svg");
+            background-size: cover;
+            width: 125px;
+            height: 20px;
+            top: 38px;
+            left: -140px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url("../img/main/redline-modal.svg");
+            background-size: cover;
+            width: 125px;
+            height: 20px;
+            top: 38px;
+            right: -140px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+    }
+
+    &__description {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__form {
+        position: relative;
+        width: 100%;
+        height: 79px;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 0 0 50px 10px;
+        margin-bottom: 20px;
+        resize: none;
+        color: #1d2931;
+        border-radius: 20px;
+        border: 1px solid #1d2931;
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: 15px;
+            color: #7d92a1;
+        }
+    }
+
+    &__box {
+        .filter__brand-sublist-item,
+        .filter__sublist-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    /*------------------------------------------counter--------------------------------------------*/
+
+    &__counter {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 42px;
+
+        p {
+            font-size: 16px;
+            color: $red;
+        }
+    }
+
+    &__counter-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__counter-btn {
+        border: 0;
+        background: 0 0;
+        font-size: 33px;
+        line-height: 0;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__field {
+        width: 75px;
+        border-radius: 3px;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: inherit;
+    }
+
+    /*-----------------------------------------------------------------------------------------------*/
+
+    &__button {
+        position: relative;
+        padding: 22px 0;
+        width: 100%;
+        height: 65px;
+        background: #1d2931;
+        border-radius: 33px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1px;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 9px;
+    }
+
+    &__privacy {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #7d92a1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: $tablet-width) {
+    .catalog-modal {
+        position: absolute;
+        left: 50%;
+        top: 174px;
+        width: 464px;
+        padding: 30px 20px;
+        border-radius: 33px;
+        background-color: white;
+        transform: translate(-50%, 0%);
+
+        @media (max-width: 550px) {
+            width: 315px;
+        }
+
+        &__close {
+            position: absolute;
+            top: -26px;
+            right: -26px;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+
+            @media (max-width: 550px) {
+                top: -45px;
+                right: 135px;
+            }
+
+            &::after,
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                border-radius: 8px;
+                background-color: white;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+            }
+
+            &::before {
+                transform: rotate(45deg);
+            }
+        }
+
+        &__title {
+            width: 200px;
+            font-size: 22px;
+            line-height: 27px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url("../img/main/redline-modal-tablet.svg");
+                background-size: cover;
+                width: 126px;
+                height: 20px;
+                top: 31px;
+                left: -132px;
+
+                @media (max-width: 550px) {
+                    width: 106px;
+                    height: 16px;
+                    top: 31px;
+                    left: -60px;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url("../img/main/redline-modal-tablet.svg");
+                background-size: cover;
+                width: 126px;
+                height: 20px;
+                top: 31px;
+                left: 207px;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+
+                @media (max-width: 550px) {
+                    width: 106px;
+                    height: 16px;
+                    top: 31px;
+                    left: 154px;
+                }
+            }
+        }
+
+        &__description {
+            width: 350px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 21px;
+
+            @media (max-width: 550px) {
+                width: auto;
+            }
+        }
+
+        &__form {
+            border-radius: 20px;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 0 0 30px 10px;
+            height: 65px;
+            margin-bottom: 10px;
+        }
+
+        &__user {
+            position: relative;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &__user-name {
+            width: 100%;
+            padding: 17px 0 17px 20px;
+            border: 1px solid #1d2931;
+            border-radius: 33px;
+            margin-bottom: 10px;
+        }
+
+        &__phone {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+
+            &::before {
+                visibility: hidden;
+                top: -109px;
+                left: 200px;
+            }
+        }
+
+        &__user-phone {
+            width: 100%;
+            padding: 17px 0 17px 20px;
+            border: 1px solid #1d2931;
+            border-radius: 33px;
+            margin-bottom: 20px;
+        }
+
+        &__button {
+            padding: 17px 0;
+            width: 100%;
+            height: 55px;
+            background: #1d2931;
+            border-radius: 33px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 9px;
+        }
+
+        &__privacy {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #7d92a1;
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .catalog-modal {
+        width: 300px;
+        height: auto;
+        padding: 30px 20px 50px 20px;
+        border-radius: 33px;
+        background-color: #ffffff;
+        z-index: 999;
+
+        &__close {
+            position: absolute;
+            top: -45px;
+            right: 125px;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+
+            &::after,
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                border-radius: 8px;
+                background-color: white;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+            }
+
+            &::before {
+                transform: rotate(45deg);
+            }
+        }
+
+        &__title {
+            position: relative;
+            width: 182px;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            margin: 0 auto;
+            text-transform: uppercase;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url("../img/main/form_redline.svg");
+                background-size: cover;
+                width: 273px;
+                height: 15px;
+                top: 38px;
+                left: -245px;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url("../img/main/form_redline.svg");
+                background-size: cover;
+                width: 273px;
+                height: 15px;
+                top: 38px;
+                right: -280px;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+            }
+        }
+
+        &__description {
+            width: auto;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            margin-bottom: 21px;
+        }
+
+        &__form {
+            border-radius: 20px;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 0 0 30px 10px;
+            height: 60px;
+            color: #7d92a1;
+            margin-bottom: 10px;
+        }
+
+        &__user {
+            display: block;
+            position: relative;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &__user-name {
+            width: 100%;
+            padding: 12px 0 12px 20px;
+            border: 1px solid #1d2931;
+            border-radius: 33px;
+            margin-bottom: 20px;
+        }
+
+        &__phone {
+            display: block;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+
+            &::before {
+                visibility: hidden;
+                top: -19px;
+                left: 23px;
+            }
+        }
+
+        &__user-phone {
+            width: 100%;
+            padding: 12px 0 12px 20px;
+            border: 1px solid #1d2931;
+            border-radius: 33px;
+            margin-bottom: 20px;
+        }
+
+        &__button {
+            padding: 14px 0;
+            width: 100%;
+            height: 45px;
+            background: #1d2931;
+            border-radius: 33px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 9px;
+        }
+
+        &__privacy {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #7d92a1;
+        }
+    }
+}

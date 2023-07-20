@@ -259,7 +259,7 @@
                                                 <p class="catalog-item__result">9 999 999 ₽</p>
                                             </li>
                                         </ul>
-                                        <button class="catalog-item__button button black">Заказать</button>
+                                        <button class="catalog-item__button button modal-btn black">Заказать</button>
                                     </div>
                                 </li>
                                 
@@ -279,7 +279,7 @@
                                                 <p class="catalog-item__result">9 999 999 ₽</p>
                                             </li>
                                         </ul>
-                                        <button class="catalog-item__button button black">Заказать</button>
+                                        <button class="catalog-item__button button modal-btn black">Заказать</button>
                                     </div>
                                 </li>
                                 
@@ -299,7 +299,7 @@
                                                 <p class="catalog-item__result">9 999 999 ₽</p>
                                             </li>
                                         </ul>
-                                        <button class="catalog-item__button button black">Заказать</button>
+                                        <button class="catalog-item__button button modal-btn black">Заказать</button>
                                     </div>
                                 </li>
                                 <li class="catalog__item catalog-item">
@@ -318,7 +318,7 @@
                                                 <p class="catalog-item__result">9 999 999 ₽</p>
                                             </li>
                                         </ul>
-                                        <button class="catalog-item__button button black">Заказать</button>
+                                        <button class="catalog-item__button button modal-btn black">Заказать</button>
                                     </div>
                                 </li>
                                 <li class="catalog__item catalog-item">
@@ -337,7 +337,7 @@
                                                 <p class="catalog-item__result">9 999 999 ₽</p>
                                             </li>
                                         </ul>
-                                        <button class="catalog-item__button button black">Заказать</button>
+                                        <button class="catalog-item__button button modal-btn black">Заказать</button>
                                     </div>
                                 </li>
                                 <li class="catalog__item catalog-item">
@@ -356,7 +356,7 @@
                                                 <p class="catalog-item__result">9 999 999 ₽</p>
                                             </li>
                                         </ul>
-                                        <button class="catalog-item__button button black">Заказать</button>
+                                        <button class="catalog-item__button button modal-btn black">Заказать</button>
                                     </div>
                                 </li>
                                 <li class="catalog__item catalog-item">
@@ -375,7 +375,7 @@
                                                 <p class="catalog-item__result">9 999 999 ₽</p>
                                             </li>
                                         </ul>
-                                        <button class="catalog-item__button button black">Заказать</button>
+                                        <button class="catalog-item__button button modal-btn black">Заказать</button>
                                     </div>
                                 </li>
                                 <li class="catalog__item catalog-item">
@@ -394,7 +394,7 @@
                                                 <p class="catalog-item__result">9 999 999 ₽</p>
                                             </li>
                                         </ul>
-                                        <button class="catalog-item__button button black">Заказать</button>
+                                        <button class="catalog-item__button button modal-btn black">Заказать</button>
                                     </div>
                                 </li>
                                 <li class="catalog__item catalog-item">
@@ -413,7 +413,7 @@
                                                 <p class="catalog-item__result">9 999 999 ₽</p>
                                             </li>
                                         </ul>
-                                        <button class="catalog-item__button button black">Заказать</button>
+                                        <button class="catalog-item__button button modal-btn black">Заказать</button>
                                     </div>
                                 </li>
                             
@@ -565,6 +565,73 @@
                 </div>
             </div>
         </footer>
+    
+        <div class="modal-overlay">
+            <div class="catalog-modal" id="modal-form">
+                <form class="catalog-modal__box">
+                    <button class="catalog-modal__close">
+                        <span class="visually-hidden"
+                            >Закрыть модальное окно</span
+                        >
+                    </button>
+                    <h3 class="catalog-modal__title">
+                        Наименование товара
+                    </h3>
+                    
+                    <ul class="filter__sublist">
+                        <li class="filter__sublist-item">
+                            <input type="radio">Наименование позиции
+                            <p class="filter__item-sell">99 999 ₽</p>
+                        </li>
+                        <li class="filter__sublist-item">
+                            <input type="radio">Наименование
+                            <p class="filter__item-sell">99 999 ₽</p>
+                        </li>
+                        <li class="filter__sublist-item">
+                            <input type="radio">Наименование позиции
+                            <p class="filter__item-sell">99 999 ₽</p>
+                        </li>
+                    </ul>
+
+                    <h3>Дополнительные услуги</h3>
+
+                    <ul class="filter__brand-sublist">
+                        <li class="filter__brand-sublist-item">
+                            <input type="radio">Наименование
+                            <p class="filter__item-sell">99 999 ₽</p>
+                        </li>
+                        <li class="filter__brand-sublist-item">
+                            <input type="radio">Наименование
+                            <p class="filter__item-sell">99 999 ₽</p>
+                        </li>
+                        <li class="filter__brand-sublist-item">
+                            <input type="radio">Наименование
+                            <p class="filter__item-sell">99 999 ₽</p>
+                        </li>
+                    </ul>
+
+                    <div class="catalog-modal__counter">
+                        <p>Количество</p>
+                          <div class="catalog-modal__counter-wrapper">
+                            <button id="decrement-btn" class="catalog-modal__counter-btn">-</button>
+                              <div id="counter-value" class="catalog-modal__field">0</div>
+                              <button id="increment-btn" class="catalog-modal__counter-btn">+</button>
+                          </div>
+                      </div>
+                    
+                    <button class="catalog-modal__button black button">
+                        Заказать
+                    </button>
+                </form>
+            </div>
+
+            <div class="modal-message">
+                <div class="loader">Отправка...</div>
+                <p class="modal-message__title">Успех!</p>
+                <p class="modal-message__text">Ваша заявка успешно отправлена. Мы перезвоним вам как можно скорее.</p>
+                <button class="catalog-modal__close" type="button" title="Закрыть окно"></button>
+            </div>
+        </div>
 
         <script src="js/lib.js" type="module"></script>
         <script src="js/indexPageSlider.js" type="module"></script>
@@ -572,5 +639,6 @@
         <script src="js/indexTabs.js" type="module"></script>
         <script src="js/feedbackModal.js" type="module"></script>
         <script src="js/burgerMenu.js" type="module"></script>
+        <script src="js/counter.js" type="module"></script>
     </body>
 </html>
