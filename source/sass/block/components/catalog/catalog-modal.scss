@@ -218,37 +218,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: $tablet-width) {
     .catalog-modal {
         position: absolute;
@@ -366,45 +335,43 @@
             margin-bottom: 10px;
         }
 
-        &__user {
-            position: relative;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 22px;
-            margin-bottom: 10px;
-
-            &::before {
-                display: none;
+        .filter {
+            &__sublist-item:not(:last-child),
+            &__brand-sublist-item:not(:last-child) {
+                margin-bottom: 5px;
             }
-        }
-
-        &__user-name {
-            width: 100%;
-            padding: 17px 0 17px 20px;
-            border: 1px solid #1d2931;
-            border-radius: 33px;
-            margin-bottom: 10px;
-        }
-
-        &__phone {
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 22px;
-            margin-bottom: 10px;
-
-            &::before {
-                visibility: hidden;
-                top: -109px;
-                left: 200px;
+    
+            &__brand-sublist-item,
+            &__sublist-item {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
             }
-        }
-
-        &__user-phone {
-            width: 100%;
-            padding: 17px 0 17px 20px;
-            border: 1px solid #1d2931;
-            border-radius: 33px;
-            margin-bottom: 20px;
+    
+            &__sublist {
+                margin-bottom: 40px;
+            }
+    
+            &__brand-sublist-item {
+                margin-bottom: 40px;
+            }
+    
+            &__sublist-title {
+                font-size: 16px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+    
+            &__item-title {
+                input {
+                    margin-right: 10px;
+                }
+            }
+    
+            &__item-sell {
+                color: $red;
+            }
         }
 
         &__button {
@@ -419,14 +386,6 @@
             text-align: center;
             color: #ffffff;
             margin-bottom: 9px;
-        }
-
-        &__privacy {
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 16px;
-            text-align: center;
-            color: #7d92a1;
         }
     }
 }
