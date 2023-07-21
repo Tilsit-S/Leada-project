@@ -176,12 +176,8 @@
         }
     
         &__item {
-            position: relative;
-            width: 374px;
+            width: 328px;
             min-height: 267px;
-            background: $black;
-            border-radius: 33px;
-            z-index: 10;
     
             &::after {
                 position: absolute;
@@ -423,12 +419,14 @@
     
             &::before {
                 position: absolute;
-                content: url("../img/main/coop_blackline.svg");
-                background-size: contain;
-                top: 34px;
-                right: 0;
-                width: 70px;
-                height: 15px;
+                content: "";
+                background: url(../img/main/coop_blackline.svg);
+                background-size: 397px 23px;
+                background-repeat: no-repeat;
+                top: 41px;
+                right: -132px;
+                width: 213px;
+                height: 23px;
             }
     
             &::after {
