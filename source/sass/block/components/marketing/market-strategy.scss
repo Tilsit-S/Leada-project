@@ -1,7 +1,7 @@
 .market-strategy {
     overflow: hidden;
     background-color: $black;
-    padding-bottom: 49px;
+    padding-bottom: 3px;
 
     &__title {
         @include main-title;
@@ -161,24 +161,36 @@
         p {
             display: inline-block;
             font-size: 45px;
+            margin-right: 20px;
         }
     }
 
     &__dsc-list {
-        //max-width: 553px;
         padding-left: 124px;
+        margin-bottom: 46px;
+
+        @media (max-width: 1220px) {
+            width: 500px;
+        }
+
+        @media (max-width: 1050px) {
+            width: 350px;
+        }
     }
 
     img {
-        margin-bottom: 22px;
+        margin: -91px 0 22px 0;
+
+        @media (max-width: 1050px) {
+            margin: 50px 0 22px -75px;
+        }
     }
 
     &__dsc-list-wrapper {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        //max-height: 900px;
-        max-height: 720px;
+        max-height: 600px;
     }
 
     &__dsc-item {
@@ -192,7 +204,7 @@
     &__dsc-item::before {
         position: absolute;
         content: " ";
-        background-image: url(../img/desc/mark.svg);
+        background-image: url("../img/desc/mark.svg");
         background-repeat: no-repeat;
         background-size: cover;
         width: 43px;
@@ -211,6 +223,56 @@
         text-align: center;
         color: $white;
         border-radius: 15px;
+
+        @media (max-width: 1050px) {
+            width: 240px;
+        }
+    }
+
+    &__block-1 {
+        li:nth-child(1) {
+            button::before {
+                background-color: $white;
+            }
+        }
+
+        img {
+            margin: 20px 0 22px;
+
+            @media (max-width: 1040px) {
+                margin: 130px 0 22px -285px;
+            }
+        }
+
+        .market-strategy__dsc-link {
+            @media (max-width: 1040px) {
+                margin: 0 0 0 -110px;
+            }
+        }
+    }
+
+    &__block-3 {
+        li:nth-child(2) {
+            button::before {
+                background-color: $red;
+            }
+        }
+
+        .market-strategy__dsc-list-wrapper {
+            max-height: 612px;
+        }
+
+        img {
+            margin: 20px 0 22px;
+        }
+    }
+
+    &__block-4 {
+        li:nth-child(3) {
+            button::before {
+                background-color: $red;
+            }
+        }
     }
 
     .none {
@@ -414,19 +476,30 @@
     
         &__dsc-list {
             padding-left: 57px;
+            margin-bottom: 0;
         }
     
         img {
             width: 362px;
             height: 218px;
             margin: -321px 0 21px 331px;
+
+            @media (max-width: 600px) {
+                margin: 10px 0 10px 0;
+            }
         }
     
         &__dsc-list-wrapper {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            max-height: 600px;
+
+            @media (max-width: 600px) {
+                max-height: 865px;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
         }
     
         &__dsc-item {
@@ -479,6 +552,21 @@
             text-align: center;
             color: $white;
             border-radius: 15px;
+
+            @media (max-width: 600px) {
+                margin: 0;
+            }
+        }
+
+        &__block-1 {
+    
+            .market-strategy__dsc-link {
+                margin: 0 0 0 365px;
+
+                @media (max-width: 600px) {
+                    margin: 0;
+                }
+            }
         }
     
         .none {
@@ -640,7 +728,7 @@
         img {
             width: 333px;
             height: 200px;
-            margin: 277px 0 20px -347px;
+            margin: 277px 0 20px -440px;
         }
     
         &__dsc-list-wrapper {
@@ -694,7 +782,7 @@
     
         &__dsc-link {
             width: 300px;
-            margin: 499px 0 0 -313px;
+            margin: 499px 0 0 -400px;
             padding: 10px 0;
             font-size: 14px;
             line-height: normal;
@@ -702,6 +790,17 @@
             text-align: center;
             color: $white;
             border-radius: 15px;
+        }
+
+        &__block-1 {
+
+            img {
+                margin: 25px 1px 20px -77px;
+            }
+    
+            .market-strategy__dsc-link {
+                margin: 0 0 0 -48px;
+            }
         }
     
         .none {
