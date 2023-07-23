@@ -340,6 +340,10 @@
 
             img {
                 margin: 1px 0 22px 44px;
+
+                @media (max-width: 1260px) {
+                    margin: 1px 0 22px -103px;
+                }
     
                 @media (max-width: 1050px) {
                     margin: 148px 0 22px -265px;
@@ -348,6 +352,10 @@
 
             .market-strategy__dsc-link {
                 margin: 0 0 0 70px;
+
+                @media (max-width: 1260px) {
+                    margin: 0 0 0 -99px;
+                }
             }
         }
 
@@ -355,9 +363,18 @@
             width: 645px;
             padding: 0 0 0 133px;
             margin: 0 0 54px 0;
+
+            @media (max-width: 1260px) {
+                width: 580px;
+            }
             
             @media (max-width: 1050px) {
                 max-height: 744px;
+                padding-left: 50px;
+            }
+
+            @media (max-width: 990px) {
+                width: 370px;
             }
         }
 
@@ -763,7 +780,7 @@
                 }
     
                 img {
-                    margin: 96px 0 22px -314px;
+                    margin: 96px 0 22px -201px;
         
                     @media (max-width: 600px) {
                         margin: -30px 0 22px 0px;
@@ -771,7 +788,7 @@
                 }
 
                 .market-strategy__dsc-link {
-                    margin: 0 0 0 -297px;
+                    margin: 0 0 0 -185px;
 
                     @media (max-width: 600px) {
                         margin: 0;
@@ -785,7 +802,11 @@
             }
 
             .market-strategy__dsc-title {
-                padding: 0 0 0 30px;
+                padding: 0 0 0 97px;
+
+                p {
+                    margin: -1px -45px 0 0;
+                }
             }
     
             .market-strategy__dsc-list {
@@ -1137,19 +1158,29 @@
 
             .market-strategy__dsc-list-wrapper {
                 max-height: 836px;
+
+                img {
+                    //margin: 573px 0 21px -680px;
+                }
+
+                .market-strategy__dsc-link {
+                    margin: 0 0 0 -32px;
+                }
             }
 
-            img {
-                margin: 611px 0 22px -509px;
-            }
+            
 
             .market-strategy__dsc-title {
                 margin: 0 64px 21px 29px;
                 padding: 0;
+
+                p {
+                    margin: -1px 0px 0 0;
+                }
             }
 
             .market-strategy__dsc-list {
-                padding-left: 24px;
+                padding-left: 50px;
             }
 
             .market-strategy__dsc-item:nth-child(1) {
@@ -1160,7 +1191,6 @@
                 width: 208px;
                 margin-bottom: 13px;
             }
-            .market-strategy__dsc-item:nth-child(3) {}
             .market-strategy__dsc-item:nth-child(4) {
                 width: 227px;
                 margin-bottom: 10px;
@@ -1172,7 +1202,6 @@
             .market-strategy__dsc-item:nth-child(6) {
                 margin-bottom: 20px;
             }
-            .market-strategy__dsc-item:nth-child(7) {}
 
             .market-strategy__dsc-link {
                 margin: 0;
