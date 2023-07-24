@@ -253,12 +253,26 @@
         }
 
         &__button-reset {
+            position: relative;
             display: block;
             width: 100%;
             border: none;
             background: transparent;
             font-size: 14px;
             cursor: pointer;
+
+            &::after {
+                position: absolute;
+                display: block;
+                content: "";
+                background-image: url("../img/catalog/close-btn.svg");
+                background-size: 10px 10px;
+                background-repeat: no-repeat;
+                width: 10px;
+                height: 10px;
+                left: 52px;
+                top: 4px;
+            }
         }
     }
 
