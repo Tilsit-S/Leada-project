@@ -332,10 +332,10 @@
                     height: 2px;
                     border-radius: 8px;
                     background-color: white;
-                    
+
                     &:active,
                     &:hover {
-                        background-color: $red;
+                        color: $red;
                     }
                 }
 

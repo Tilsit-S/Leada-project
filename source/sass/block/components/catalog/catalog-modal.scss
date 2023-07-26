@@ -152,7 +152,24 @@
 
             input {
                 margin-right: 10px;
+                box-sizing: border-box;
+                appearance: none;
+                background: white;
+                border-radius: 3px;
                 border: 1px solid rgba(0, 0, 0, 0.12);
+                width: 18px;
+                height: 18px;
+                margin-right: 9px;
+
+                &:checked {
+                    content: '';
+                    display: inline-block;
+                    background-image: url("../img/catalog/checked.svg");
+                    width: 18px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
             }
         }
 
@@ -239,15 +256,15 @@
             &::before {
                 width: 126px;
                 height: 20px;
-                left: -41px;
-                top: -26px;
+                left: -75px;
+                top: 0px;
             }
     
             &::after {
                 width: 126px;
                 height: 20px;
-                right: -41px;
-                top: -26px;
+                right: -75px;
+                top: 0px;
             }
         }
 
@@ -262,7 +279,7 @@
             }
 
             &__item-sell {
-                margin-left: 22px;
+                margin-left: 27px;
             }
         }
 
