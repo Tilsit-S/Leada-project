@@ -779,6 +779,66 @@
             </div>
         </footer>
 
+        <div class="modal-overlay">
+            <div class="modal-callback" id="modal-form">
+                <form class="modal-callback__box">
+                    <button class="modal-callback__close">
+                        <span class="visually-hidden"
+                            >Закрыть модальное окно</span
+                        >
+                    </button>
+                    <h3 class="modal-callback__title">
+                        Заполните
+                        <span class="launch__colortext">форму</span>
+                    </h3>
+                    <p class="modal-callback__description">
+                        Чтобы получить
+                        <span class="launch__colortext">бесплатную</span>
+                        консультацию от нашего эксперта:
+                    </p>
+                    <input class="modal-callback__form" placeholder="Чем вы занимаетесь? Или ссылка на ваш сайт" >
+                    <input class="modal-callback__form" placeholder="Какие показатели вы хотите достичь (желаемый оборот)?">
+                    <input class="modal-callback__form" placeholder="Есть ли у вас критерии желаемых клиентов?">
+                    <input class="modal-callback__form" placeholder="Укажите ваши текущие показатели или текущую ситуацию?">
+                    <input class="modal-callback__form" placeholder="Укажите конверсию вашего сайта (если знаете)">
+                    <input class="modal-callback__form" placeholder="Укажите ваш средний чек (если знаете)">
+
+                    <div class="input-wrapper">
+                        <div class="input-wrapper__label">
+                            <label class="modal-callback__user" for="user-name">Ваше имя</label>
+                            <span>Введены некорректные данные</span>
+                        </div>
+                        <input type="text" class="modal-callback__user-name" id="user-name" placeholder="Ф.И.О." required>
+                    </div>
+
+                    <div class="input-wrapper error">
+                        <div class="input-wrapper__label">
+                            <label class="modal-callback__phone" for="tel">Ваш телефон</label>
+                            <span>Такой номер не зарегистрирован</span>
+                        </div>
+                        <input type="tel" class="modal-callback__user-phone" id="tel" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <button class="modal-callback__button black button">
+                        Отправить форму
+                    </button>
+                    <p class="modal-callback__privacy">
+                        Отправляя данные, вы соглашаетесь с условиями
+                        <a
+                            ><span class="launch__colortext"
+                                >политики конфиденциальности</span
+                            ></a
+                        >
+                    </p>
+                </form>
+            </div>
+
+            <div class="modal-message">
+                <div class="loader">Отправка...</div>
+                <p class="modal-message__title">Успех!</p>
+                <p class="modal-message__text">Ваша заявка успешно отправлена. Мы перезвоним вам как можно скорее.</p>
+                <button class="modal-callback__close" type="button" title="Закрыть окно"></button>
+            </div>
+        </div>
 
         <script src="js/lib.js" type="module"></script>
         <script src="js/feedbackModal.js" type="module"></script>
