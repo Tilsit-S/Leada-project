@@ -15,7 +15,6 @@
         text-align: center;
         margin: 0 auto;
         padding-bottom: 30px;
-        padding-left: 20px;
 
         @media (max-width: 1200px) {
             font-size: 43px;
@@ -338,6 +337,10 @@
                 height: 34px;
                 top: 12px;
                 left: -625px;
+
+                @media(max-width: 500px) {
+                    left: -700px;
+                }
             }
 
             &::after {
@@ -350,6 +353,10 @@
                 height: 34px;
                 top: 12px;
                 right: -645px;
+
+                @media(max-width: 500px) {
+                    right: -700px;
+                }
             }
         }
 
@@ -551,6 +558,10 @@
             text-transform: uppercase;
             padding-left: 0;
             padding-bottom: 22px;
+
+            @media(max-width: 500px) {
+                width: auto;
+            }
         }
 
         &__text {
@@ -730,10 +741,18 @@
 
                 &::before {
                     top: 37px;
+
+                    @media(max-width: 500px) {
+                        top: -28px;
+                    }
                 }
 
                 &::after {
                     top: 37px;
+
+                    @media(max-width: 500px) {
+                        top: -28px;
+                    }
                 }
             }
 
